@@ -75,7 +75,7 @@ val aeropuertosMap = aeropuertos.map(airport => airport.cod -> airport).toMap //
       for{
         v<-vuelosDesdeCod1//sacamos cada vuelo v de vuelosDesdeCod1
         if!visitados(v.Dst)// si el vuelo siguiente a cada vuelo v, es desir el destino de v(v.Dst) no se ha visitado, hacemos:
-        itRestante<-formarItinerarios(v.Dst,cod2,visitados + v.Dst)// aplicacamos recursivamente formarItinerarios a cada vuelo v de vuelosDesdeCod1 siendo ahora cod1 el codigo del aeropuerto destino del vuelo anterior y adicionamos
+        itRestante<-formarItinerarios(v.Dst,cod2,visitados + v.Dst)// aplicacamos recursivamente formarItinerarios a cada vuelo v de vuelosDesdeCod1 siendo ahora cod1=v.Dst que es el codigo del aeropuerto destino del vuelo v, qes desir el codigo del aeropuerto origen del vuelo siguiente y adicionamos
                                                                    //el vuelo v presente al conjunto de visitados ya que no se puede visitar un aeropuerto dos veces. cod2 pasa igual ya que es el codigo del aeropuerto de destino. Posterior mente desempaquetamos cada itinerario en itRestante
      } yield v::itRestante                                         // y le adicionamos el vuelo v presente a la caveza del itRestante ya que es el vuelo de origen que no se incluyo en formarItinerarios(v.Dst,cod2,visitados + v.Dst).
                
