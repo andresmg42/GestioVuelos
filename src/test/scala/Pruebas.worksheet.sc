@@ -55,30 +55,41 @@ val vuelosCurso = List(
 )
 
 //Itinerarios normal--------------------------------------------------------------------------------------------------------------------
+    """
+    Esta función retorna todos los itinerarios que salen de cod1 hasta cod2
+
+    Args:
+        vuelos(List[Vuelo]: lista de objetos de tipo Vuelo
+        aeropuertos(List[Aeropuerto]): lista de objetos de tipo Aeropuerto
+
+    Returns:
+        List[Itinerario]=List(List[Vuelo]): una lista  de Itinerarios de los vuelos que parten de cod1 hasta cod2   """
+
+
 def itinerarios(vuelos:List[Vuelo],aeropuertos:List[Aeropuerto]):(String,String)=>List[Itinerario]={
-val aeropuertosMap = aeropuertos.map(airport => airport.cod -> airport).toMap
-  def formarItinerarios(cod1:String,cod2:String,visitados:Set[String]):List[Itinerario]={
-    if(cod1==cod2) List(Nil)
+val aeropuertosMap = aeropuertos.map(airport => airport.cod -> airport).toMap //retorna una estructura tipo Map tal que la llave sea el codigo del aeropuerto y el valor el objeto Aeropuerto
+  def formarItinerarios(cod1:String,cod2:String,visitados:Set[String]):List[Itinerario]={//funcion auxiliar que resive los codigos de los aeropuertos y un conjunto(Visitados:Set[String]) donde se almacenan los codigos de los aeropuertos visitados sin repertirse.
+    if(cod1==cod2) List(Nil)// caso base, la funcion se detiene cuando el aeropuerto de origen es el aeropuerto de destino y devuelve una lista con una lista vacia(Nil).
     else{
-      val vuelosDesdeCod1=vuelos.filter(_.Org==cod1) 
+      val vuelosDesdeCod1=vuelos.filter(_.Org==cod1) // filtramos todos los vuelos cuyo origen sea cod1 y los guardamos en vuelosDesdeCod1
       for{
-        v<-vuelosDesdeCod1
-        if!visitados(v.Dst)
-        itRestante<-formarItinerarios(v.Dst,cod2,visitados + v.Dst)
-       
-     } yield v::itRestante
+        v<-vuelosDesdeCod1//sacamos cada vuelo v de vuelosDesdeCod1
+        if!visitados(v.Dst)// si el vuelo siguiente a cada vuelo v, es desir el destino del anterior no se ha visitado entonces hacemos:
+        itRestante<-formarItinerarios(v.Dst,cod2,visitados + v.Dst)// aplicacamos recursivamente formarItinerarios a cada vuelo v de vuelosDesdeCod1 siendo ahora cod1 el codigo del aeropuerto destino del vuelo anterior y adicionamos
+                                                                   //el vuelo v presente al conjunto de visitados ya que no se puede visitar un aeropuerto dos veces. cod2 pasa igual ya que es el codigo del aeropuerto de destino. Posterior mente desempaquetamos cada itinerario en itRestante
+     } yield v::itRestante                                         // y le adicionamos el vuelo v presente a la caveza del itRestante ya que es el vuelo de origen que no se incluyo en formarItinerarios(v.Dst,cod2,visitados + v.Dst).
                
   
     
     }
   }
 
-  (cod1: String, cod2: String) => {
-    val aeropuerto1 = aeropuertosMap.get(cod1)
-    val aeropuerto2 = aeropuertosMap.get(cod2)
-    (aeropuerto1, aeropuerto2) match {
+  (cod1: String, cod2: String) => {             //finalmente creamos una funcion anonima que resive cod1 y cod2 
+    val aeropuerto1 = aeropuertosMap.get(cod1) //luego se extraen los objetos aeropuerto1 y aeropuerto2, de la estructura Map con .get(cod1) y  .get(cod2)
+    val aeropuerto2 = aeropuertosMap.get(cod2) 
+    (aeropuerto1, aeropuerto2) match {  //utilizamos reconosimiento de patrones son Some(aeropuerto1) y some(aeropurto2) los cuales si existe un aeropuerto con ese codigo devuelven algo, sino devuelven null
       case (Some(airport1), Some(airport2)) =>
-        formarItinerarios(cod1, cod2, Set(cod1))
+        formarItinerarios(cod1, cod2, Set(cod1)) // en caso de que existan esos aeropuertos se invoca a la funcion formarItinerarios(cod1,cod2,set(cod1)) donde set(cod1) es el conjunto de los aeropuertos visitados, se coloca cod1 ya que es el aeropuerto de origen.
       case _ => Nil // Si alguno de los aeropuertos no existe, devolver una lista vacía
     }
   }
