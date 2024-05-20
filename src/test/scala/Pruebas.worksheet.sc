@@ -56,6 +56,7 @@ val vuelosCurso = List(
 
 //Itinerarios normal--------------------------------------------------------------------------------------------------------------------
     """
+    funcion itinerarios:
     Esta función retorna todos los itinerarios que salen de cod1 hasta cod2
 
     Args:
@@ -95,32 +96,204 @@ val aeropuertosMap = aeropuertos.map(airport => airport.cod -> airport).toMap //
   }
 }
 
-//Itinerarios Inverso---------------------------------------------------------------------------------------------------------------
-def itinerariosInversos(vuelos: List[Vuelo], aeropuertos: List[Aeropuerto]): (String, String) => List[Itinerario] = {
+
+    """
+    funcion sumarHoras:
+    Esta función suma y resta horas en formato 24H.
+
+    Args:
+        h1:Int->Hora antes de el simbolo operador
+        m1:Int->minutos antes del simbolo operador
+        h2:Int->hora despues del operador
+        m2:Int->minutos despues del operador
+        op:Int->operador('+','-')
+
+    Returns:
+        (Int,Int): tupla que contienen en la primera pocicion la hora y en la segunda los minutos de haber sumado o restado dos horas (H:M) determinadas  """
+
+def sumarHoras(h1: Int, m1: Int, h2: Int, m2: Int, op: Char): (Int, Int) = {
+  // Convertir la primera hora y minutos en total de minutos
+  val H1 = h1 * 60 + m1 
+  // Convertir la segunda hora y minutos en total de minutos
+  val H2 = h2 * 60 + m2 
+  // Aplicar el operador para sumar o restar los minutos totales
+  val suma = op match {
+    case '+' => H1 + H2  // Sumar los minutos totales
+    case '-' => H1 - H2  // Restar los minutos totales
+  }
+  // Si el resultado de la operación es negativo, ajustarlo para que sea positivo dentro del rango de un día (1440 minutos)
+  if (suma < 0) {
+    val result = suma + 1440  // Ajustar el tiempo negativo sumando un día completo en minutos
+
+    // Devolver las horas y minutos correspondientes del resultado ajustado
+    (result / 60, result % 60)  
+  } else {
+    // Si el resultado no es negativo, simplemente devolver las horas y minutos del resultado
+    (suma / 60, suma % 60)
+  }
+}
+
+   """
+    funcion convertirHorasGMT:
+    Esta función suma y resta horas en formato 24H.
+
+    Args:
+        h:Int->hora local
+        m:Int->minutos locales
+        gmt:Int->uso Horario GMT 
+
+    Returns:
+        (Int,Int): tupla que contienen en la primera pocicion la hora y en la segunda los minutos convertidos a formato GMT con uso horario (0) """
+
+//si gmt es menor que 0, sumamos el valor absoluto del uso horario sino restamos el uso horario normal a la hora local, cave resaltar que gmt es de un solo digito.
+
+def convertirHorasGMT(h: Int, m: Int, gmt: Int): (Int, Int) =if (gmt < 0) sumarHoras(h, m, -gmt, 0, '+') else sumarHoras(h, m, gmt, 0, '-')
+
+
+   """
+    funcion tiempoVueloIt:
+    Esta funcion calcula el tiempo de vuelo de un determinado Itinerario.
+
+    Args:
+        itinerario:Itinerario-> lista de vuelos 
+        aeropuertos:List[Aeropuerto]-> lista de aeropuertos
+
+    Returns:
+        Int: entero que representa el tiempo total de vuelo de un determinado itienerario """
+
+def tiempoVueloIt(
+    itinerario: Itinerario,
+    aeropuertos: List[Aeropuerto]
+): Int = {
+  // Crear un mapa de códigos de aeropuerto a objetos de aeropuerto para acceso rápido
   val aeropuertosMap = aeropuertos.map(airport => airport.cod -> airport).toMap
 
-  def formarItinerarios(cod1: String, cod2: String, visitados: Set[String]): List[Itinerario] = {
-    if (cod1 == cod2)
-      List(Nil)
+  // Calcular el tiempo de vuelo para cada vuelo en el itinerario
+  val horasViajeItinerario = itinerario.map(vuelo => {
+    // Obtener el uso horario GMT de el origen del vuelo
+    val gmtO = aeropuertosMap(vuelo.Org).GMT / 100
+    // Obtener el suo horario GMT de el destino del vuelo
+    val gmtD = aeropuertosMap(vuelo.Dst).GMT / 100
+    // Convertir la hora de salida a GMT
+    val HGMTO = convertirHorasGMT(vuelo.HS, vuelo.MS, gmtO)
+    // Convertir la hora de llegada a GMT
+    val HGMTD = convertirHorasGMT(vuelo.HL, vuelo.ML, gmtD)
+    // Calcular la diferencia entre la hora de llegada y la hora de salida en GMT
+    sumarHoras(HGMTD._1, HGMTD._2, HGMTO._1, HGMTO._2, '-')
+  })
+
+  // Convertir cada tiempo de vuelo (horas, minutos) a minutos y sumarlos todos para obtener el tiempo total de vuelo
+  horasViajeItinerario.map(hora => hora._1 * 60 + hora._2).sum
+}
+
+
+"""
+    funcion tiempoEsperaIt:
+    Esta funcion calcula el tiempo de Espera de un determinado Itinerario.
+
+    Args:
+        itinerario:Itinerario-> lista de vuelos 
+
+    Returns:
+        Int: entero que representa el tiempo total de Espera de un determinado itienerario """
+
+
+def tiempoEsperaIt(itinerario: Itinerario): Int = {
+  // Si el itinerario está vacío, el tiempo de espera es 0
+  if (itinerario.isEmpty) 0
+  else {
+    // Calcular el tiempo de espera entre cada par de vuelos consecutivos
+    val result = (0 until itinerario.length - 1).map(i => {
+      val v = itinerario(i)
+      val vNext = itinerario(i + 1)
+      // Calcular la diferencia entre la hora de salida del siguiente vuelo y la hora de llegada del vuelo actual
+      sumarHoras(vNext.HS, vNext.MS, v.HL, v.ML, '-')
+    }).toList
+
+    // Convertir cada tiempo de espera (horas, minutos) a minutos y sumarlos todos para obtener el tiempo total de espera
+    result.map(hora => hora._1 * 60 + hora._2).sum
+  }
+}
+
+
+"funciones de Ordenamiento que ya se vio en el taller 2"
+
+def menoresQue_noMenoresQue[T](
+    l: List[T],
+    v: T,
+    comp: (T, T) => Boolean
+): (List[T], List[T]) = {
+  def aux(l: List[T], l1: List[T], l2: List[T]): (List[T], List[T]) = {
+    if (l.isEmpty) (l1, l2)
     else {
-      val vuelosHastaCod2 = vuelos.filter(_.Dst == cod2)
-
-      for{
-        v<-vuelosHastaCod2
-        if!visitados(v.Org)
-        itRestante<-formarItinerarios(cod1,v.Org,visitados + v.Org)
-      }yield itRestante:+v
-
+      val head = l.head
+      val tail = l.tail
+      if (comp(head, v)) aux(tail, head :: l1, l2)
+      else aux(tail, l1, head :: l2)
     }
   }
 
-  (cod1: String, cod2: String) => {
-    val aeropuerto1 = aeropuertosMap.get(cod1)
-    val aeropuerto2 = aeropuertosMap.get(cod2)
-    (aeropuerto1, aeropuerto2) match {
-      case (Some(airport1), Some(airport2)) =>
-        formarItinerarios(cod1, cod2, Set(cod2)) // Empezamos desde el aeropuerto de destino (cod2)
-      case _ => Nil // Si alguno de los aeropuertos no existe, devolver una lista vacía
+  aux(l, List(), List())
+}
+
+
+
+
+def quickSort[T](comp: (T, T) => Boolean): List[T] => List[T] = {
+  def quick(l: List[T]): List[T] = {
+
+    if (l.isEmpty || l.tail.isEmpty) l
+    else {
+      val pivot = l.head
+      val (less, greater) = menoresQue_noMenoresQue(l.tail, pivot, comp)
+      val less1 = quick(less)
+      val greater1 = quick(greater)
+      less1 ++ (pivot :: greater1)
+
     }
   }
-} 
+  quick
+}
+
+
+
+"""
+    funcion itinerariosTiempo:
+    Esta funcion calcula los tres itinerarios(si los hay) que tienen menos tiempo total de viaje entre el destino y origen.
+
+    Args:
+        itinerario:Itinerario-> lista de vuelos
+        aeropuertos:List['Aeropuerto']->lista de aeropuertos 
+
+    Returns:
+        Int: entero que representa el tiempo total de Espera de un determinado itienerario """
+
+def itinerariosTiempo(
+    vuelos: List[Vuelo],
+    aeropuertos: List[Aeropuerto]
+): (String, String) => List[Itinerario] = { (cod1: String, cod2: String) =>
+  {
+    // Obtener todos los posibles itinerarios entre los dos aeropuertos dados
+    val it = itinerarios(vuelos, aeropuertos)(cod1, cod2)
+    
+    // Si no hay itinerarios, devolver una lista vacía
+    if (it.isEmpty) Nil
+    else {
+      // Calcular el tiempo total (vuelo + espera) para cada itinerario
+      val tiemposIt = for {
+        i <- it
+      } yield (tiempoVueloIt(i, aeropuertos) + tiempoEsperaIt(i), i)
+      
+      // Ordenar los itinerarios por el tiempo total usando quickSort
+      val itsTiempo = quickSort[(Int, Itinerario)](
+        (a: (Int, Itinerario), b: (Int, Itinerario)) => a._1 < b._1
+      )(tiemposIt.toList) map (t => t._2)
+      
+      // Seleccionar los tres itinerarios con el menor tiempo total
+      (for {
+        i <- 0 until itsTiempo.length
+        if i <= 2
+      } yield itsTiempo(i)).toList
+    }
+  }
+}
