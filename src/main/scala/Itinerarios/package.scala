@@ -56,40 +56,56 @@ package object Itinerarios {
   )
 
 //Itinerarios normal--------------------------------------------------------------------------------------------------------------------
-  def itinerarios(
-      vuelos: List[Vuelo],
-      aeropuertos: List[Aeropuerto]
-  ): (String, String) => List[Itinerario] = {
-    val aeropuertosMap =
-      aeropuertos.map(airport => airport.cod -> airport).toMap
-    def formarItinerarios(
-        cod1: String,
-        cod2: String,
-        visitados: Set[String]
-    ): List[Itinerario] = {
-      if (cod1 == cod2) List(Nil)
-      else {
-        val vuelosDesdeCod1 = vuelos.filter(_.Org == cod1)
-        for {
-          v <- vuelosDesdeCod1
-          if !visitados(v.Dst)
-          itRestante <- formarItinerarios(v.Dst, cod2, visitados + v.Dst)
+    def itinerarios(vuelos: List[Vuelo], aeropuertos: List[Aeropuerto]): (String, String) => List[Itinerario] = {
+        val aeropuertosMap =
+        aeropuertos.map(airport => airport.cod -> airport).toMap
+        
+        def formarItinerarios(cod1: String,cod2: String,visitados: Set[String]): List[Itinerario] = {
+        if (cod1 == cod2) List(Nil)
+        else {
+            val vuelosDesdeCod1 = vuelos.filter(_.Org == cod1)
+            for {
+            v <- vuelosDesdeCod1
+            if !visitados(v.Dst)
+            itRestante <- formarItinerarios(v.Dst, cod2, visitados + v.Dst)
 
-        } yield v :: itRestante
+            } yield v :: itRestante
 
-      }
+        }
+        }
+
+        (cod1: String, cod2: String) => {
+        val aeropuerto1 = aeropuertosMap.get(cod1)
+        val aeropuerto2 = aeropuertosMap.get(cod2)
+        (aeropuerto1, aeropuerto2) match {
+            case (Some(airport1), Some(airport2)) =>
+            formarItinerarios(cod1, cod2, Set(cod1))
+            case _ =>
+            Nil 
+        }
+        }
     }
 
-    (cod1: String, cod2: String) => {
-      val aeropuerto1 = aeropuertosMap.get(cod1)
-      val aeropuerto2 = aeropuertosMap.get(cod2)
-      (aeropuerto1, aeropuerto2) match {
-        case (Some(airport1), Some(airport2)) =>
-          formarItinerarios(cod1, cod2, Set(cod1))
-        case _ =>
-          Nil 
-      }
-    }
-  }
 
+    def itinerariosEscalas(vuelos:List[Vuelo],aeropuertos: List[Aeropuerto]): (String, String) => List[Itinerario] = {
+        val itinerariosFunc = itinerarios(vuelos, aeropuertos)
+
+        (origen: String, destino: String) => {
+            val todosItinerarios = itinerariosFunc(origen, destino)
+
+            // Función para calcular el número total de escalas en un itinerario
+            def numeroDeEscalas(itinerario: Itinerario): Int = {
+            itinerario.sliding(2).map {
+                case List(vuelo1, vuelo2) => vuelo1.Esc + (if (vuelo1.Dst != vuelo2.Org) 1 else 0)
+                case _ => 0
+              }.sum
+            }
+
+            // Encontrar el número mínimo de escalas en todos los itinerarios
+            val minNumEscalas = todosItinerarios.map(numeroDeEscalas).min
+
+            // Filtrar los itinerarios con el menor número de escalas
+            todosItinerarios.filter(itinerario => numeroDeEscalas(itinerario) == minNumEscalas)
+        }
+    }
 }
