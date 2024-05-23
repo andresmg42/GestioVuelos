@@ -90,6 +90,37 @@ package object Itinerarios {
     def itinerariosEscalas(vuelos:List[Vuelo],aeropuertos: List[Aeropuerto]): (String, String) => List[Itinerario] = {
         val itinerariosFunc = itinerarios(vuelos, aeropuertos)
 
+        (cod1: String, cod2: String) => {
+            val todosItinerarios = itinerariosFunc(cod1, cod2)
+
+            // Función para calcular el número total de escalas en un itinerario
+            def numeroDeEscalas(itinerario: Itinerario): Int = {
+                if (itinerario.isEmpty) 0
+                else {
+                    val inicial = (0, itinerario.head)
+                    val (numEscalas, _) = itinerario.tail.foldLeft(inicial) { case ((acumulado, vueloAnterior), vueloActual) =>
+                    val escalasVuelo = vueloActual.Esc
+                    val escalasConPrev = if (vueloAnterior.Dst != vueloActual.Org) 1 else 0
+                    (acumulado + escalasVuelo + escalasConPrev, vueloActual)
+                    }
+                    numEscalas
+                }
+            }
+
+            // Encontrar el número mínimo de escalas en todos los itinerarios
+            val minNumEscalas = todosItinerarios.map(numeroDeEscalas).min
+
+            // Filtrar los itinerarios con el menor número de escalas
+            val itinerariosConMinEscalas = todosItinerarios.filter(itinerario => numeroDeEscalas(itinerario) == minNumEscalas)
+
+            // Tomar solo los primeros tres itinerarios
+            itinerariosConMinEscalas.take(3)
+        }
+    }
+
+    def itinerariosEscalas1(vuelos:List[Vuelo],aeropuertos: List[Aeropuerto]): (String, String) => List[Itinerario] = {
+        val itinerariosFunc = itinerarios(vuelos, aeropuertos)
+
         (origen: String, destino: String) => {
             val todosItinerarios = itinerariosFunc(origen, destino)
 
