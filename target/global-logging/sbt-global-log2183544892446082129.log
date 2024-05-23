@@ -1,0 +1,87 @@
+[debug] > Exec(early(addDefaultCommands), None, None)
+[debug] > Exec(addDefaultCommands, None, None)
+[debug] > Exec(early(initialize), None, None)
+[debug] > Exec(initialize, None, None)
+[debug] > Exec(boot, None, None)
+[debug] > Exec(writeSbtVersion, None, None)
+[debug] > Exec(reload, None, None)
+[debug] > Exec(sbtStashOnFailure, None, None)
+[debug] > Exec(onFailure loadFailed, None, None)
+[debug] > Exec(loadp, None, None)
+[info] welcome to sbt 1.10.0 (Eclipse Adoptium Java 17)
+[debug] Load.defaultLoad until apply took 95.300238ms
+[debug]                 Load.loadUnit: plugins took 89.629014ms
+[debug]                 Load.loadUnit: defsScala took 0.258339ms
+[debug] [Loading] Scanning directory /home/andresuv/cuartoSemestre/PFC/proyecto/proyectoMain/gestionvuelos/project/project
+[debug]                   Load.loadUnit: mkEval took 6.317928ms
+[debug] [Loading] Found non-root projects 
+[debug] [Loading] Done in /home/andresuv/cuartoSemestre/PFC/proyecto/proyectoMain/gestionvuelos/project/project, returning: ()
+[debug] deducing auto plugins based on known facts Set(Atom(sbt.plugins.CorePlugin)) and clauses Clauses(Clause(Atom(sbt.plugins.JvmPlugin),Set(Atom(sbt.plugins.IvyPlugin)))
+[debug] Clause(Atom(sbt.ScriptedPlugin),Set(Atom(sbt.plugins.JvmPlugin)))
+[debug] Clause(Atom(sbt.plugins.SbtPlugin),Set(Atom(sbt.ScriptedPlugin)))
+[debug] Clause(Atom(sbt.plugins.SemanticdbPlugin),Set(Atom(sbt.plugins.JvmPlugin)))
+[debug] Clause(Atom(sbt.plugins.JUnitXmlReportPlugin),Set(Atom(sbt.plugins.JvmPlugin)))
+[debug] Clause(Atom(sbt.plugins.MiniDependencyTreePlugin),Set(Atom(sbt.plugins.JvmPlugin)))
+[debug] Clause(Atom(sbt.plugins.CorePlugin),Set(Atom(sbt.plugins.IvyPlugin)))
+[debug] Clause(Atom(sbt.plugins.IvyPlugin),Set(Atom(sbt.plugins.JvmPlugin)))
+[debug] Clause(Atom(sbt.plugins.JvmPlugin),Set(Atom(sbt.plugins.SemanticdbPlugin)))
+[debug] Clause(Atom(sbt.plugins.JvmPlugin),Set(Atom(sbt.plugins.JUnitXmlReportPlugin)))
+[debug] Clause(Atom(sbt.plugins.CorePlugin),Set(Atom(sbt.plugins.Giter8TemplatePlugin)))
+[debug] Clause(Atom(sbt.plugins.JvmPlugin),Set(Atom(sbt.plugins.MiniDependencyTreePlugin))))
+[debug]   :: deduced result: Matched(sbt.plugins.CorePlugin,sbt.plugins.Giter8TemplatePlugin,sbt.plugins.IvyPlugin,sbt.plugins.JvmPlugin,sbt.plugins.MiniDependencyTreePlugin,sbt.plugins.JUnitXmlReportPlugin,sbt.plugins.SemanticdbPlugin)
+[debug] Plugins.deducer#function took 18.229715 ms
+[info] loading settings for project gestionvuelos-build-build from metals.sbt ...
+[debug]                     Load.resolveProject(gestionvuelos-build-build) took 48.022289ms
+[debug]                   Load.loadTransitive: finalizeProject(Project(id gestionvuelos-build-build, base: /home/andresuv/cuartoSemestre/PFC/proyecto/proyectoMain/gestionvuelos/project/project, plugins: List(<none>))) took 87.802207ms
+[debug] [Loading] Done in /home/andresuv/cuartoSemestre/PFC/proyecto/proyectoMain/gestionvuelos/project/project, returning: (gestionvuelos-build-build)
+[debug]                 Load.loadUnit: loadedProjectsRaw took 671.571721ms
+[debug]                 Load.loadUnit: cleanEvalClasses took 12.156523ms
+[debug]               Load.loadUnit(file:/home/andresuv/cuartoSemestre/PFC/proyecto/proyectoMain/gestionvuelos/project/project/, ...) took 779.550603ms
+[debug]             Load.apply: load took 917.914322ms
+[debug]             Load.apply: resolveProjects took 6.229432ms
+[debug]             Load.apply: finalTransforms took 62.752263ms
+[debug]             Load.apply: config.delegates took 7.695981ms
+[debug]             Load.apply: Def.make(settings)... took 349.06269ms
+[debug]             Load.apply: structureIndex took 80.096145ms
+[debug]             Load.apply: mkStreams took 1.418127ms
+[info] loading project definition from /home/andresuv/cuartoSemestre/PFC/proyecto/proyectoMain/gestionvuelos/project/project
+[debug] Running task... Cancel: Signal, check cycles: false, forcegc: true
+[debug]           Load.loadUnit: plugins took 2284.20576ms
+[debug]           Load.loadUnit: defsScala took 0.005502ms
+[debug] [Loading] Scanning directory /home/andresuv/cuartoSemestre/PFC/proyecto/proyectoMain/gestionvuelos/project
+[debug]             Load.loadUnit: mkEval took 0.253735ms
+[debug] [Loading] Found non-root projects 
+[debug] [Loading] Done in /home/andresuv/cuartoSemestre/PFC/proyecto/proyectoMain/gestionvuelos/project, returning: ()
+[debug] deducing auto plugins based on known facts Set(Atom(sbt.plugins.CorePlugin)) and clauses Clauses(Clause(Atom(sbt.plugins.JvmPlugin),Set(Atom(sbt.plugins.IvyPlugin)))
+[debug] Clause(Atom(sbt.ScriptedPlugin),Set(Atom(sbt.plugins.JvmPlugin)))
+[debug] Clause(Atom(sbt.plugins.SbtPlugin),Set(Atom(sbt.ScriptedPlugin)))
+[debug] Clause(Atom(sbt.plugins.SemanticdbPlugin),Set(Atom(sbt.plugins.JvmPlugin)))
+[debug] Clause(Atom(sbt.plugins.JUnitXmlReportPlugin),Set(Atom(sbt.plugins.JvmPlugin)))
+[debug] Clause(Atom(sbt.plugins.MiniDependencyTreePlugin),Set(Atom(sbt.plugins.JvmPlugin)))
+[debug] Clause(Atom(bloop.integrations.sbt.BloopPlugin),Set(Atom(sbt.plugins.JvmPlugin)))
+[debug] Clause(Atom(sbt.plugins.CorePlugin),Set(Atom(sbt.plugins.IvyPlugin)))
+[debug] Clause(Atom(sbt.plugins.IvyPlugin),Set(Atom(sbt.plugins.JvmPlugin)))
+[debug] Clause(Atom(sbt.plugins.JvmPlugin),Set(Atom(sbt.plugins.SemanticdbPlugin)))
+[debug] Clause(Atom(sbt.plugins.JvmPlugin),Set(Atom(sbt.plugins.JUnitXmlReportPlugin)))
+[debug] Clause(Atom(sbt.plugins.CorePlugin),Set(Atom(sbt.plugins.Giter8TemplatePlugin)))
+[debug] Clause(Atom(sbt.plugins.JvmPlugin),Set(Atom(sbt.plugins.MiniDependencyTreePlugin)))
+[debug] Clause(Atom(sbt.plugins.JvmPlugin),Set(Atom(bloop.integrations.sbt.BloopPlugin))))
+[debug]   :: deduced result: Matched(sbt.plugins.CorePlugin,sbt.plugins.Giter8TemplatePlugin,sbt.plugins.IvyPlugin,sbt.plugins.JvmPlugin,bloop.integrations.sbt.BloopPlugin,sbt.plugins.MiniDependencyTreePlugin,sbt.plugins.JUnitXmlReportPlugin,sbt.plugins.SemanticdbPlugin)
+[debug] Plugins.deducer#function took 1.907304 ms
+[info] loading settings for project gestionvuelos-build from metals.sbt ...
+[debug]               Load.resolveProject(gestionvuelos-build) took 18.014521ms
+[debug]             Load.loadTransitive: finalizeProject(Project(id gestionvuelos-build, base: /home/andresuv/cuartoSemestre/PFC/proyecto/proyectoMain/gestionvuelos/project, plugins: List(<none>))) took 20.624804ms
+[debug] [Loading] Done in /home/andresuv/cuartoSemestre/PFC/proyecto/proyectoMain/gestionvuelos/project, returning: (gestionvuelos-build)
+[debug]           Load.loadUnit: loadedProjectsRaw took 42.699104ms
+[debug]           Load.loadUnit: cleanEvalClasses took 0.597661ms
+[debug]         Load.loadUnit(file:/home/andresuv/cuartoSemestre/PFC/proyecto/proyectoMain/gestionvuelos/project/, ...) took 2328.205895ms
+[debug]       Load.apply: load took 2330.311092ms
+[debug]       Load.apply: resolveProjects took 0.696568ms
+[debug]       Load.apply: finalTransforms took 16.401047ms
+[debug]       Load.apply: config.delegates took 0.374048ms
+[debug]       Load.apply: Def.make(settings)... took 102.506203ms
+[debug]       Load.apply: structureIndex took 30.254976ms
+[debug]       Load.apply: mkStreams took 0.002507ms
+[info] loading project definition from /home/andresuv/cuartoSemestre/PFC/proyecto/proyectoMain/gestionvuelos/project
+[debug] Evaluating tasks: bloopInstall
+[debug] Running task... Cancel: Signal, check cycles: false, forcegc: true

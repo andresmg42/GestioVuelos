@@ -67,34 +67,34 @@ val vuelosCurso = List(
         List[Itinerario]=List(List[Vuelo]): una lista  de Itinerarios de los vuelos que parten de cod1 hasta cod2   """
 
 
-def itinerarios(vuelos:List[Vuelo],aeropuertos:List[Aeropuerto]):(String,String)=>List[Itinerario]={
-val aeropuertosMap = aeropuertos.map(airport => airport.cod -> airport).toMap //retorna una estructura tipo Map tal que la llave sea el codigo del aeropuerto y el valor el objeto Aeropuerto
-  def formarItinerarios(cod1:String,cod2:String,visitados:Set[String]):List[Itinerario]={//funcion auxiliar que resive los codigos de los aeropuertos y un conjunto(Visitados:Set[String]) donde se almacenan los codigos de los aeropuertos visitados sin repertirse.
-    if(cod1==cod2) List(Nil)// caso base, la funcion se detiene cuando el aeropuerto de origen es el aeropuerto de destino y devuelve una lista con una lista vacia(Nil).
-    else{
-      val vuelosDesdeCod1=vuelos.filter(_.Org==cod1) // filtramos todos los vuelos cuyo origen sea cod1 y los guardamos en vuelosDesdeCod1
-      for{
-        v<-vuelosDesdeCod1//sacamos cada vuelo v de vuelosDesdeCod1
-        if!visitados(v.Dst)// si el vuelo siguiente a cada vuelo v, es desir el destino de v(v.Dst) no se ha visitado, hacemos:
-        itRestante<-formarItinerarios(v.Dst,cod2,visitados + v.Dst)// aplicacamos recursivamente formarItinerarios a cada vuelo v de vuelosDesdeCod1 siendo ahora cod1=v.Dst el codigo del aeropuerto destino del vuelo v,es desir el codigo del aeropuerto origen del vuelo siguiente y adicionamos
-                                                                   //el vuelo v presente al conjunto de visitados ya que no se puede visitar un aeropuerto dos veces. cod2 pasa igual ya que es el codigo del aeropuerto de destino. Posterior mente desempaquetamos cada itinerario en itRestante
-     } yield v::itRestante                                         // y le adicionamos el vuelo v presente a la caveza del itRestante ya que es el vuelo de origen que no se incluyo en formarItinerarios(v.Dst,cod2,visitados + v.Dst).
-               
-  
-    
+def itinerarios(vuelos: List[Vuelo], aeropuertos: List[Aeropuerto]): (String, String) => List[Itinerario] = {
+  // Crear un mapa de aeropuertos para un acceso más rápido
+  val aeropuertosMap = aeropuertos.map(airport => airport.cod -> airport).toMap
+
+  def generarItinerarios(cod1: String, cod2: String, visitados: Set[String]): List[Itinerario] = {
+    if (cod1 == cod2) // Si se llega al destino, devolver una lista vacía
+      List(Nil)
+    else {
+      val vuelosDesdeCod1 = vuelos.filter(_.Org == cod1) // Filtrar vuelos que salen desde cod1
+      vuelosDesdeCod1.flatMap { vuelo =>
+        if (!visitados(vuelo.Dst)) {
+          val itinerariosRestantes = generarItinerarios(vuelo.Dst, cod2, visitados + vuelo.Dst)
+          itinerariosRestantes.map(vuelo :: _)
+        } else {
+          Nil // Si ya se visitó el aeropuerto de destino, no se incluye este vuelo en el itinerario
+        }
+      }
     }
   }
 
-  (cod1: String, cod2: String) => {             //finalmente creamos una funcion anonima que resive cod1 y cod2 
-    val aeropuerto1 = aeropuertosMap.get(cod1) //luego se extraen los objetos aeropuerto1 y aeropuerto2, de la estructura Map con .get(cod1) y  .get(cod2)
-    val aeropuerto2 = aeropuertosMap.get(cod2) 
-    (aeropuerto1, aeropuerto2) match {  //utilizamos reconosimiento de patrones son Some(aeropuerto1) y some(aeropurto2) los cuales si existe un aeropuerto con ese codigo devuelven algo, sino devuelven null
-      case (Some(airport1), Some(airport2)) =>
-        formarItinerarios(cod1, cod2, Set(cod1)) // en caso de que existan esos aeropuertos se invoca a la funcion formarItinerarios(cod1,cod2,set(cod1)) donde set(cod1) es el conjunto de los aeropuertos visitados, se coloca cod1 ya que es el aeropuerto de origen.
-      case _ => Nil // Si alguno de los aeropuertos no existe, devolver una lista vacía
+  // Función final que devuelve los itinerarios dados los códigos de los aeropuertos
+  (cod1: String, cod2: String) => {
+        //verificar si los aeropuertos existen
+        if (aeropuertosMap.contains(cod1) && aeropuertosMap.contains(cod2))
+        generarItinerarios(cod1, cod2, Set(cod1))
+        else Nil // Si alguno de los aeropuertos no existe, devolver una lista vacía
     }
   }
-}
 
 
     """
@@ -216,47 +216,6 @@ def tiempoEsperaIt(itinerario: Itinerario): Int = {
 }
 
 
-"funciones de Ordenamiento que ya se vio en el taller 2"
-
-def menoresQue_noMenoresQue[T](
-    l: List[T],
-    v: T,
-    comp: (T, T) => Boolean
-): (List[T], List[T]) = {
-  def aux(l: List[T], l1: List[T], l2: List[T]): (List[T], List[T]) = {
-    if (l.isEmpty) (l1, l2)
-    else {
-      val head = l.head
-      val tail = l.tail
-      if (comp(head, v)) aux(tail, head :: l1, l2)
-      else aux(tail, l1, head :: l2)
-    }
-  }
-
-  aux(l, List(), List())
-}
-
-
-
-
-def quickSort[T](comp: (T, T) => Boolean): List[T] => List[T] = {
-  def quick(l: List[T]): List[T] = {
-
-    if (l.isEmpty || l.tail.isEmpty) l
-    else {
-      val pivot = l.head
-      val (less, greater) = menoresQue_noMenoresQue(l.tail, pivot, comp)
-      val less1 = quick(less)
-      val greater1 = quick(greater)
-      less1 ++ (pivot :: greater1)
-
-    }
-  }
-  quick
-}
-
-
-
 """
     funcion itinerariosTiempo:
     Esta funcion calcula los tres itinerarios(si los hay) que tienen menos tiempo total de viaje entre el destino y origen.
@@ -269,31 +228,28 @@ def quickSort[T](comp: (T, T) => Boolean): List[T] => List[T] = {
         Int: entero que representa el tiempo total de Espera de un determinado itienerario """
 
 def itinerariosTiempo(
-    vuelos: List[Vuelo],
-    aeropuertos: List[Aeropuerto]
-): (String, String) => List[Itinerario] = { (cod1: String, cod2: String) =>
+    vuelos: List[Vuelo],        // Parámetro: lista de vuelos
+    aeropuertos: List[Aeropuerto]   // Parámetro: lista de aeropuertos
+): (String, String) => List[Itinerario] = {  // La función devuelve una función que toma dos Strings y devuelve una lista de Itinerarios
+  
+  (cod1: String, cod2: String) =>    // Definición de la función anónima que toma dos códigos de aeropuerto
   {
-    // Obtener todos los posibles itinerarios entre los dos aeropuertos dados
-    val it = itinerarios(vuelos, aeropuertos)(cod1, cod2)
-    
-    // Si no hay itinerarios, devolver una lista vacía
-    if (it.isEmpty) Nil
-    else {
-      // Calcular el tiempo total (vuelo + espera) para cada itinerario
+    val it = itinerarios(vuelos, aeropuertos)(cod1, cod2)   // Se calculan los itinerarios disponibles entre los dos aeropuertos usando la función "itinerarios"
+    if (it.isEmpty) Nil   // Si no hay itinerarios disponibles, se devuelve una lista vacía
+
+    else{
       val tiemposIt = for {
-        i <- it
-      } yield (tiempoVueloIt(i, aeropuertos) + tiempoEsperaIt(i), i)
-      
-      // Ordenar los itinerarios por el tiempo total usando quickSort
-      val itsTiempo = quickSort[(Int, Itinerario)](
-        (a: (Int, Itinerario), b: (Int, Itinerario)) => a._1 < b._1
-      )(tiemposIt.toList) map (t => t._2)
-      
-      // Seleccionar los tres itinerarios con el menor tiempo total
-      (for {
-        i <- 0 until itsTiempo.length
-        if i <= 2
-      } yield itsTiempo(i)).toList
+        i <- it   // Se itera sobre cada itinerario en la lista "it"
+      } yield (tiempoVueloIt(i,aeropuertos)+tiempoEsperaIt(i), i)   // Se calcula el tiempo total de vuelo y espera para cada itinerario, y se almacena junto con el itinerario
+
+      tiemposIt.sortBy(t=>t._1).map(t=>t._2).take(3)   // Se ordenan los itinerarios según el tiempo total de vuelo y espera, se eliminan los tiempos y se toman los primeros tres itinerarios
     }
   }
 }
+
+
+
+
+
+
+
