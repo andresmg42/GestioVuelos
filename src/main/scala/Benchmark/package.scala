@@ -82,7 +82,7 @@ def crearPruebas(
   res.toList
 }
 
-//crear pruebas donde se recorra toda la estructura Map sin Itierar por cada Itinerario
+//crear pruebas donde se recorra toda la estructura Map sin Itierar por cada Vuelo, no funciona para itinerarioSalida.
 def crearPruebasSinCiclos(
     vuelosPrueba: Map[List[Vuelo], (String, String)],
     aeropuertos: List[Aeropuerto],
