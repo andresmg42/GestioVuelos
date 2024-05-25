@@ -2,6 +2,7 @@ import Datos._
 
 package object Itinerarios {
 
+  
   def itinerarios(
       vuelos: List[Vuelo],
       aeropuertos: List[Aeropuerto]
@@ -64,32 +65,32 @@ package object Itinerarios {
 
     val aeropuertosMap =
       aeropuertos.map(airport => airport.Cod -> airport).toMap
-    val horasViajeItinerario = itinerario.map(vuelo => {
-      val gmtO = aeropuertosMap(vuelo.Org).GMT / 100
-      val gmtD = aeropuertosMap(vuelo.Dst).GMT / 100
-      val HGMTO = convertirHorasGMT(vuelo.HS, vuelo.MS, gmtO)
-      val HGMTD = convertirHorasGMT(vuelo.HL, vuelo.ML, gmtD)
-      sumarHoras(HGMTD._1, HGMTD._2, HGMTO._1, HGMTO._2, '-')
+      itinerario.map(vuelo => {
+        val gmtO = aeropuertosMap(vuelo.Org).GMT / 100
+        val gmtD = aeropuertosMap(vuelo.Dst).GMT / 100
+        val HGMTO = convertirHorasGMT(vuelo.HS, vuelo.MS, gmtO)
+        val HGMTD = convertirHorasGMT(vuelo.HL, vuelo.ML, gmtD)
+        val (h, m) = sumarHoras(HGMTD._1, HGMTD._2, HGMTO._1, HGMTO._2, '-')
+        h * 60 + m
 
-    })
+      }).sum
 
-    horasViajeItinerario.map(hora => hora._1 * 60 + hora._2).sum
 
   }
 
   def tiempoEsperaIt(itinerario: Itinerario): Int = {
     if (itinerario.isEmpty) 0
     else {
-      val result = (0 until itinerario.length - 1)
+      (0 until itinerario.length - 1)
         .map(i => {
           val v = itinerario(i)
           val vNext = itinerario(i + 1)
-          sumarHoras(vNext.HS, vNext.MS, v.HL, v.ML, '-')
+          val (h, m) = sumarHoras(vNext.HS, vNext.MS, v.HL, v.ML, '-')
+          h * 60 + m
 
-        })
-        .toList
+        }).sum
 
-      result.map(hora => hora._1 * 60 + hora._2).sum
+
     }
   }
 
