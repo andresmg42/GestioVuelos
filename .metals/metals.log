@@ -6713,3 +6713,1418 @@ INFO: Unsupported notification method: $/setTrace
 2024.05.20 12:13:58 INFO  Deduplicating compilation of root from bsp client 'Metals 1.3.1' (since 31.193s)
 2024.05.20 12:13:58 INFO  compiling root (1 scala source)
 2024.05.20 12:14:15 INFO  time: compiled root in 16s
+2024.05.20 12:24:55 INFO  Shutting down server
+2024.05.20 12:24:55 INFO  shutting down Metals
+2024.05.20 12:24:55 INFO  Shut down connection with build server.
+2024.05.20 12:24:55 INFO  Shut down connection with build server.
+2024.05.20 12:24:55 INFO  Exiting server
+2024.05.20 21:25:27 INFO  Started: Metals version 1.3.1 in folders '/Users/victoriamac/Desktop/Univalle/Cuarto Semestre/Programacion funcional y concurrente/proyectoFinal/GestioVuelos' for client Visual Studio Code 1.89.1.
+SLF4J(W): Class path contains multiple SLF4J providers.
+SLF4J(W): Found provider [scribe.slf4j.ScribeServiceProvider@161763dc]
+SLF4J(W): Found provider [ch.qos.logback.classic.spi.LogbackServiceProvider@77d71b82]
+SLF4J(W): See https://www.slf4j.org/codes.html#multiple_bindings for an explanation.
+SLF4J(I): Actual provider is of type [scribe.slf4j.ScribeServiceProvider@161763dc]
+2024.05.20 21:25:30 WARN  Flyway upgrade recommended: H2 2.2.224 is newer than this version of Flyway and support has not been tested. The latest supported version of H2 is 2.2.220.
+2024.05.20 21:25:31 INFO  Attempting to connect to the build server...
+2024.05.20 21:25:36 INFO  no build target found for /Users/victoriamac/Desktop/Univalle/Cuarto Semestre/Programacion funcional y concurrente/proyectoFinal/GestioVuelos/src/main/scala/Itinerarios/package.scala. Using presentation compiler with project's scala-library version: 3.3.3
+2024.05.20 21:25:40 INFO  no build target found for /Users/victoriamac/Desktop/Univalle/Cuarto Semestre/Programacion funcional y concurrente/proyectoFinal/GestioVuelos/src/main/scala/Itinerarios/package.scala. Using presentation compiler with project's scala-library version: 3.3.3
+may 20, 2024 9:25:40 P. M. org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+WARNING: Unmatched cancel notification for request id 3
+2024.05.20 21:25:40 INFO  no build target found for /Users/victoriamac/Desktop/Univalle/Cuarto Semestre/Programacion funcional y concurrente/proyectoFinal/GestioVuelos/src/main/scala/Itinerarios/package.scala. Using presentation compiler with project's scala-library version: 3.3.3
+may 20, 2024 9:25:40 P. M. org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+WARNING: Unmatched cancel notification for request id 10
+may 20, 2024 9:25:40 P. M. org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+WARNING: Unmatched cancel notification for request id 13
+2024.05.20 21:25:40 INFO  no build target found for /Users/victoriamac/Desktop/Univalle/Cuarto Semestre/Programacion funcional y concurrente/proyectoFinal/GestioVuelos/src/main/scala/Itinerarios/package.scala. Using presentation compiler with project's scala-library version: 3.3.3
+2024.05.20 21:25:40 INFO  no build target found for /Users/victoriamac/Desktop/Univalle/Cuarto Semestre/Programacion funcional y concurrente/proyectoFinal/GestioVuelos/src/main/scala/Itinerarios/package.scala. Using presentation compiler with project's scala-library version: 3.3.3
+2024.05.20 21:25:50 INFO  no build target found for /Users/victoriamac/Desktop/Univalle/Cuarto Semestre/Programacion funcional y concurrente/proyectoFinal/GestioVuelos/src/main/scala/Itinerarios/package.scala. Using presentation compiler with project's scala-library version: 3.3.3
+2024.05.20 21:25:51 INFO  tracing is disabled for protocol BSP, to enable tracing of incoming and outgoing JSON messages create an empty file at /Users/victoriamac/Desktop/Univalle/Cuarto Semestre/Programacion funcional y concurrente/proyectoFinal/GestioVuelos/.metals/bsp.trace.json or /Users/victoriamac/Library/Caches/org.scalameta.metals/bsp.trace.json
+2024.05.20 21:25:51 INFO  no build target found for /Users/victoriamac/Desktop/Univalle/Cuarto Semestre/Programacion funcional y concurrente/proyectoFinal/GestioVuelos/src/main/scala/Itinerarios/package.scala. Using presentation compiler with project's scala-library version: 3.3.3
+2024.05.20 21:25:53 INFO  Attempting to connect to the build server...
+2024.05.20 21:25:53 INFO  tracing is disabled for protocol BSP, to enable tracing of incoming and outgoing JSON messages create an empty file at /Users/victoriamac/Desktop/Univalle/Cuarto Semestre/Programacion funcional y concurrente/proyectoFinal/GestioVuelos/project/.metals/bsp.trace.json or /Users/victoriamac/Library/Caches/org.scalameta.metals/bsp.trace.json
+2024.05.20 21:25:53 INFO  time: Connected to build server in 21s
+2024.05.20 21:25:53 INFO  Connected to Build server: Bloop v1.5.17
+2024.05.20 21:25:54 INFO  time: Imported build in 0.55s
+2024.05.20 21:26:26 INFO  time: indexed workspace in 32s
+may 20, 2024 9:27:42 P. M. org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+WARNING: Unmatched cancel notification for request id 230
+may 20, 2024 9:28:55 P. M. org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+WARNING: Unmatched cancel notification for request id 453
+may 20, 2024 9:29:06 P. M. org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+WARNING: Unmatched cancel notification for request id 491
+may 20, 2024 9:29:50 P. M. org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+WARNING: Unmatched cancel notification for request id 580
+may 20, 2024 9:30:10 P. M. org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+WARNING: Unmatched cancel notification for request id 612
+may 20, 2024 9:30:28 P. M. org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+WARNING: Unmatched cancel notification for request id 652
+may 20, 2024 9:31:26 P. M. org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+WARNING: Unmatched cancel notification for request id 853
+may 20, 2024 9:31:29 P. M. org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+WARNING: Unmatched cancel notification for request id 864
+may 20, 2024 9:31:47 P. M. org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+WARNING: Unmatched cancel notification for request id 899
+may 20, 2024 9:33:41 P. M. org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+WARNING: Unmatched cancel notification for request id 1159
+may 20, 2024 9:34:27 P. M. org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+WARNING: Unmatched cancel notification for request id 1274
+may 20, 2024 9:34:33 P. M. org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+WARNING: Unmatched cancel notification for request id 1317
+2024.05.20 21:35:56 INFO  compiling root (1 scala source)
+2024.05.20 21:36:16 INFO  time: compiled root in 19s
+2024.05.20 22:48:10 INFO  Shutting down server
+2024.05.20 22:48:10 INFO  shutting down Metals
+2024.05.20 22:48:11 INFO  Shut down connection with build server.
+2024.05.20 22:48:11 INFO  Shut down connection with build server.
+2024.05.20 22:48:11 INFO  Exiting server
+2024.05.23 11:48:16 INFO  Started: Metals version 1.3.1 in folders '/Users/victoriamac/Desktop/Univalle/Cuarto Semestre/Programacion funcional y concurrente/proyectoFinal/GestioVuelos' for client Visual Studio Code 1.89.1.
+SLF4J(W): Class path contains multiple SLF4J providers.
+SLF4J(W): Found provider [scribe.slf4j.ScribeServiceProvider@161763dc]
+SLF4J(W): Found provider [ch.qos.logback.classic.spi.LogbackServiceProvider@77d71b82]
+SLF4J(W): See https://www.slf4j.org/codes.html#multiple_bindings for an explanation.
+SLF4J(I): Actual provider is of type [scribe.slf4j.ScribeServiceProvider@161763dc]
+2024.05.23 11:48:19 WARN  Flyway upgrade recommended: H2 2.2.224 is newer than this version of Flyway and support has not been tested. The latest supported version of H2 is 2.2.220.
+2024.05.23 11:48:22 INFO  no build target found for /Users/victoriamac/Desktop/Univalle/Cuarto Semestre/Programacion funcional y concurrente/proyectoFinal/GestioVuelos/src/main/scala/Itinerarios/package.scala. Using presentation compiler with project's scala-library version: 3.3.3
+2024.05.23 11:48:23 INFO  Attempting to connect to the build server...
+2024.05.23 11:48:45 INFO  tracing is disabled for protocol BSP, to enable tracing of incoming and outgoing JSON messages create an empty file at /Users/victoriamac/Desktop/Univalle/Cuarto Semestre/Programacion funcional y concurrente/proyectoFinal/GestioVuelos/.metals/bsp.trace.json or /Users/victoriamac/Library/Caches/org.scalameta.metals/bsp.trace.json
+2024.05.23 11:48:46 INFO  Attempting to connect to the build server...
+2024.05.23 11:48:46 INFO  tracing is disabled for protocol BSP, to enable tracing of incoming and outgoing JSON messages create an empty file at /Users/victoriamac/Desktop/Univalle/Cuarto Semestre/Programacion funcional y concurrente/proyectoFinal/GestioVuelos/project/.metals/bsp.trace.json or /Users/victoriamac/Library/Caches/org.scalameta.metals/bsp.trace.json
+2024.05.23 11:48:46 INFO  time: Connected to build server in 23s
+2024.05.23 11:48:46 INFO  Connected to Build server: Bloop v1.5.17
+2024.05.23 11:48:46 INFO  time: Imported build in 0.54s
+2024.05.23 11:49:10 INFO  time: indexed workspace in 23s
+may 23, 2024 11:50:50 A. M. org.eclipse.lsp4j.jsonrpc.services.GenericEndpoint notify
+INFO: Unsupported notification method: $/setTrace
+may 23, 2024 11:50:51 A. M. org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+WARNING: Unmatched cancel notification for request id 13
+may 23, 2024 11:50:52 A. M. org.eclipse.lsp4j.jsonrpc.services.GenericEndpoint notify
+INFO: Unsupported notification method: $/setTrace
+2024.05.23 12:12:11 INFO  compiling root (1 scala source)
+may 23, 2024 12:12:16 P. M. org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+WARNING: Unmatched cancel notification for request id 173
+may 23, 2024 12:12:19 P. M. scala.meta.internal.pc.CompilerAccess retryWithCleanCompiler
+INFO: compiler crashed due to an error in the Scala compiler, retrying with new compiler instance.
+2024.05.23 12:12:19 INFO  time: compiled root in 8.25s
+may 23, 2024 12:12:39 P. M. org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+WARNING: Unmatched cancel notification for request id 343
+may 23, 2024 12:12:41 P. M. scala.meta.internal.pc.CompilerAccess retryWithCleanCompiler
+INFO: compiler crashed due to an error in the Scala compiler, retrying with new compiler instance.
+2024.05.23 12:12:51 INFO  compiling root (1 scala source)
+2024.05.23 12:12:51 INFO  time: compiled root in 0.63s
+2024.05.23 12:13:28 INFO  compiling root (1 scala source)
+2024.05.23 12:13:28 INFO  time: compiled root in 0.61s
+2024.05.23 12:13:55 INFO  compiling root (1 scala source)
+2024.05.23 12:13:58 INFO  time: compiled root in 3.46s
+2024.05.23 12:13:58 INFO  compiling root (1 scala source)
+2024.05.23 12:14:00 INFO  time: compiled root in 1.8s
+2024.05.23 12:14:24 INFO  compiling root (1 scala source)
+2024.05.23 12:14:25 INFO  time: compiled root in 1.45s
+2024.05.23 12:14:40 INFO  compiling root (1 scala source)
+2024.05.23 12:14:42 INFO  time: compiled root in 1.14s
+may 23, 2024 12:14:56 P. M. org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+WARNING: Unmatched cancel notification for request id 1319
+may 23, 2024 12:14:57 P. M. org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+WARNING: Unmatched cancel notification for request id 1327
+2024.05.23 12:15:12 INFO  compiling root (1 scala source)
+2024.05.23 12:15:12 INFO  time: compiled root in 0.96s
+2024.05.23 12:15:46 INFO  compiling root (1 scala source)
+2024.05.23 12:15:47 INFO  time: compiled root in 1.15s
+2024.05.23 12:16:13 INFO  compiling root (1 scala source)
+2024.05.23 12:16:13 INFO  time: compiled root in 0.77s
+2024.05.23 12:16:31 INFO  compiling root (1 scala source)
+2024.05.23 12:16:32 INFO  time: compiled root in 1.22s
+2024.05.23 12:16:51 INFO  compiling root (1 scala source)
+2024.05.23 12:16:51 INFO  time: compiled root in 0.6s
+2024.05.23 12:17:10 INFO  compiling root (1 scala source)
+2024.05.23 12:17:10 INFO  time: compiled root in 0.94s
+may 23, 2024 12:17:20 P. M. org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+WARNING: Unmatched cancel notification for request id 2197
+2024.05.23 12:17:20 INFO  compiling root (1 scala source)
+2024.05.23 12:17:20 INFO  time: compiled root in 0.23s
+2024.05.23 12:17:27 INFO  compiling root (1 scala source)
+2024.05.23 12:17:27 INFO  time: compiled root in 0.23s
+2024.05.23 12:17:36 INFO  compiling root (1 scala source)
+2024.05.23 12:17:36 INFO  time: compiled root in 0.14s
+2024.05.23 12:17:49 INFO  compiling root (1 scala source)
+2024.05.23 12:17:49 INFO  time: compiled root in 0.19s
+2024.05.23 12:18:03 INFO  compiling root (1 scala source)
+2024.05.23 12:18:03 INFO  time: compiled root in 0.73s
+2024.05.23 12:18:33 INFO  compiling root (1 scala source)
+2024.05.23 12:18:33 INFO  time: compiled root in 0.14s
+2024.05.23 12:18:38 INFO  compiling root (1 scala source)
+2024.05.23 12:18:38 INFO  time: compiled root in 0.15s
+2024.05.23 12:18:43 INFO  compiling root (1 scala source)
+2024.05.23 12:18:55 INFO  time: compiled root in 12s
+may 23, 2024 12:22:16 P. M. org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+WARNING: Unmatched cancel notification for request id 2568
+may 23, 2024 12:22:16 P. M. org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+WARNING: Unmatched cancel notification for request id 2570
+2024.05.23 12:22:19 INFO  compiling root (1 scala source)
+2024.05.23 12:22:22 INFO  time: compiled root in 2.58s
+may 23, 2024 12:31:36 P. M. org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+WARNING: Unmatched cancel notification for request id 2617
+2024.05.23 12:33:17 INFO  Deduplicating compilation of root from bsp client 'Metals 1.3.1' (since 44m 31.091s)
+2024.05.23 12:33:17 INFO  compiling root (1 scala source)
+2024.05.23 12:33:17 INFO  compiling root (1 scala source)
+2024.05.23 12:33:20 INFO  time: compiled root in 1.97s
+2024.05.23 12:33:30 INFO  compiling root (1 scala source)
+2024.05.23 12:33:32 INFO  time: compiled root in 1.43s
+2024.05.23 12:37:30 INFO  compiling root (1 scala source)
+2024.05.23 12:37:32 INFO  time: compiled root in 2.75s
+may 23, 2024 12:38:09 P. M. org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+WARNING: Unmatched cancel notification for request id 2985
+may 23, 2024 12:38:27 P. M. org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+WARNING: Unmatched cancel notification for request id 3064
+may 23, 2024 12:39:04 P. M. org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+WARNING: Unmatched cancel notification for request id 3215
+2024.05.23 12:39:24 INFO  compiling root (1 scala source)
+2024.05.23 12:39:27 INFO  time: compiled root in 2.72s
+may 23, 2024 12:39:49 P. M. org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+WARNING: Unmatched cancel notification for request id 3255
+2024.05.23 12:39:52 INFO  compiling root (1 scala source)
+2024.05.23 12:39:52 INFO  time: compiled root in 0.97s
+2024.05.23 12:45:56 INFO  compiling root (1 scala source)
+2024.05.23 12:45:57 INFO  time: compiled root in 1.42s
+2024.05.23 12:46:03 INFO  compiling root (1 scala source)
+may 23, 2024 12:46:03 P. M. org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+WARNING: Unmatched cancel notification for request id 3353
+2024.05.23 12:46:05 INFO  time: compiled root in 2.6s
+2024.05.23 12:46:08 INFO  compiling root (1 scala source)
+2024.05.23 12:46:08 INFO  time: compiled root in 0.87s
+may 23, 2024 12:52:40 P. M. org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+WARNING: Unmatched cancel notification for request id 3516
+2024.05.23 12:52:44 INFO  compiling root (1 scala source)
+2024.05.23 12:52:46 INFO  time: compiled root in 2.05s
+may 23, 2024 1:01:40 P. M. org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+WARNING: Unmatched cancel notification for request id 3567
+may 23, 2024 1:01:40 P. M. org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+WARNING: Unmatched cancel notification for request id 3568
+2024.05.23 13:06:24 INFO  compiling root (1 scala source)
+2024.05.23 13:06:27 INFO  time: compiled root in 2.66s
+may 23, 2024 1:10:15 P. M. org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+WARNING: Unmatched cancel notification for request id 3738
+2024.05.23 13:10:21 INFO  compiling root (1 scala source)
+2024.05.23 13:10:23 INFO  time: compiled root in 1.66s
+2024.05.23 13:10:33 INFO  compiling root (1 scala source)
+2024.05.23 13:10:33 INFO  time: compiled root in 0.45s
+may 23, 2024 1:11:23 P. M. org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+WARNING: Unmatched cancel notification for request id 3933
+2024.05.23 13:11:33 INFO  compiling root (1 scala source)
+2024.05.23 13:11:35 INFO  time: compiled root in 1.38s
+may 23, 2024 1:11:36 P. M. org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+WARNING: Unmatched cancel notification for request id 4032
+may 23, 2024 1:11:36 P. M. org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+WARNING: Unmatched cancel notification for request id 4031
+may 23, 2024 1:11:36 P. M. org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+WARNING: Unmatched cancel notification for request id 4033
+may 23, 2024 1:11:36 P. M. org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+WARNING: Unmatched cancel notification for request id 4034
+2024.05.23 13:11:39 INFO  compiling root (1 scala source)
+2024.05.23 13:11:40 INFO  time: compiled root in 1.2s
+2024.05.23 13:11:57 INFO  compiling root (1 scala source)
+2024.05.23 13:11:57 INFO  time: compiled root in 0.81s
+may 23, 2024 1:13:07 P. M. scala.meta.internal.pc.CompilerAccess handleError
+SEVERE: A severe compiler error occurred, full details of the error can be found in the error report /Users/victoriamac/Desktop/Univalle/Cuarto Semestre/Programacion funcional y concurrente/proyectoFinal/GestioVuelos/.metals/.reports/metals-full/2024-05-23/r_compiler-error_(root)_13-13-07-667.md
+may 23, 2024 1:13:07 P. M. scala.meta.internal.pc.CompilerAccess handleError
+SEVERE: A severe compiler error occurred, full details of the error can be found in the error report /Users/victoriamac/Desktop/Univalle/Cuarto Semestre/Programacion funcional y concurrente/proyectoFinal/GestioVuelos/.metals/.reports/metals-full/2024-05-23/r_compiler-error_(root)_13-13-07-671.md
+may 23, 2024 1:13:07 P. M. org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+WARNING: Unmatched cancel notification for request id 4163
+2024.05.23 13:13:07 WARN  Could not find semantic tokens for: file:///Users/victoriamac/Desktop/Univalle/Cuarto%20Semestre/Programacion%20funcional%20y%20concurrente/proyectoFinal/GestioVuelos/src/main/scala/Itinerarios/package.scala
+2024.05.23 13:14:25 INFO  compiling root (1 scala source)
+2024.05.23 13:14:27 INFO  time: compiled root in 1.82s
+2024.05.23 13:14:44 INFO  compiling root (1 scala source)
+2024.05.23 13:14:44 INFO  time: compiled root in 0.67s
+2024.05.23 13:14:52 INFO  compiling root (1 scala source)
+2024.05.23 13:14:52 INFO  time: compiled root in 0.7s
+2024.05.23 13:18:42 INFO  compiling root (1 scala source)
+2024.05.23 13:18:43 INFO  time: compiled root in 1.49s
+2024.05.23 13:19:42 INFO  compiling root (1 scala source)
+2024.05.23 13:19:44 INFO  time: compiled root in 1.67s
+may 23, 2024 7:57:22 P. M. scala.meta.internal.pc.CompilerAccess handleError
+SEVERE: A severe compiler error occurred, full details of the error can be found in the error report /Users/victoriamac/Desktop/Univalle/Cuarto Semestre/Programacion funcional y concurrente/proyectoFinal/GestioVuelos/.metals/.reports/metals-full/2024-05-23/r_compiler-error_(root)_19-57-22-398.md
+2024.05.23 19:57:22 WARN  Could not find semantic tokens for: file:///Users/victoriamac/Desktop/Univalle/Cuarto%20Semestre/Programacion%20funcional%20y%20concurrente/proyectoFinal/GestioVuelos/src/main/scala/Itinerarios/package.scala
+2024.05.23 19:57:25 INFO  compiling root (1 scala source)
+2024.05.23 19:57:25 INFO  time: compiled root in 0.91s
+may 23, 2024 7:59:26 P. M. org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+WARNING: Unmatched cancel notification for request id 4457
+may 23, 2024 7:59:36 P. M. org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+WARNING: Unmatched cancel notification for request id 4496
+2024.05.23 20:02:36 INFO  compiling root (1 scala source)
+2024.05.23 20:02:39 INFO  time: compiled root in 2.72s
+may 23, 2024 8:03:19 P. M. org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+WARNING: Unmatched cancel notification for request id 4617
+2024.05.23 20:03:19 INFO  compiling root (1 scala source)
+2024.05.23 20:03:20 INFO  time: compiled root in 1.26s
+2024.05.23 20:04:52 INFO  compiling root (1 scala source)
+2024.05.23 20:04:54 INFO  time: compiled root in 1.65s
+2024.05.23 20:09:55 INFO  compiling root (1 scala source)
+2024.05.23 20:09:57 INFO  time: compiled root in 2.35s
+2024.05.23 20:10:17 INFO  compiling root (1 scala source)
+2024.05.23 20:10:18 INFO  time: compiled root in 1.08s
+may 23, 2024 8:10:37 P. M. org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+WARNING: Unmatched cancel notification for request id 4784
+2024.05.23 20:10:40 INFO  compiling root (1 scala source)
+2024.05.23 20:10:40 INFO  time: compiled root in 0.96s
+2024.05.23 20:12:11 INFO  compiling root (1 scala source)
+2024.05.23 20:12:12 INFO  time: compiled root in 1.4s
+2024.05.23 20:13:59 INFO  compiling root (1 scala source)
+2024.05.23 20:14:03 INFO  time: compiled root in 4.89s
+2024.05.23 20:14:22 INFO  compiling root (1 scala source)
+2024.05.23 20:14:27 INFO  time: compiled root in 5.57s
+2024.05.23 20:16:24 INFO  compiling root (1 scala source)
+2024.05.23 20:16:26 INFO  time: compiled root in 2.32s
+2024.05.23 20:16:30 INFO  compiling root (1 scala source)
+2024.05.23 20:16:32 INFO  time: compiled root in 1.53s
+2024.05.23 20:16:38 INFO  compiling root (1 scala source)
+2024.05.23 20:16:38 INFO  time: compiled root in 0.63s
+may 23, 2024 8:16:48 P. M. org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+WARNING: Unmatched cancel notification for request id 5248
+may 23, 2024 8:16:51 P. M. org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+WARNING: Unmatched cancel notification for request id 5263
+2024.05.23 20:16:56 INFO  compiling root (1 scala source)
+2024.05.23 20:16:57 INFO  time: compiled root in 1.11s
+2024.05.23 20:17:57 INFO  compiling root (1 scala source)
+2024.05.23 20:17:59 INFO  time: compiled root in 2.06s
+2024.05.23 20:18:05 INFO  compiling root (1 scala source)
+2024.05.23 20:18:13 INFO  time: compiled root in 7.21s
+2024.05.23 20:19:36 INFO  compiling root (1 scala source)
+2024.05.23 20:19:37 INFO  time: compiled root in 1.04s
+2024.05.23 20:19:55 INFO  compiling root (1 scala source)
+2024.05.23 20:19:57 INFO  time: compiled root in 1.92s
+2024.05.23 20:20:01 INFO  compiling root (1 scala source)
+2024.05.23 20:20:02 INFO  time: compiled root in 1.17s
+2024.05.23 20:20:06 INFO  compiling root (1 scala source)
+2024.05.23 20:20:06 INFO  time: compiled root in 0.74s
+2024.05.23 20:20:49 INFO  compiling root (1 scala source)
+2024.05.23 20:20:49 INFO  time: compiled root in 0.81s
+2024.05.23 20:21:08 INFO  compiling root (1 scala source)
+2024.05.23 20:21:08 INFO  time: compiled root in 0.71s
+may 23, 2024 8:21:36 P. M. org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+WARNING: Unmatched cancel notification for request id 6178
+2024.05.23 20:21:40 INFO  compiling root (1 scala source)
+may 23, 2024 8:21:43 P. M. org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+WARNING: Unmatched cancel notification for request id 6211
+2024.05.23 20:21:43 INFO  time: compiled root in 3.69s
+2024.05.23 20:21:45 INFO  compiling root (1 scala source)
+2024.05.23 20:21:46 INFO  time: compiled root in 1.29s
+2024.05.23 20:21:49 INFO  compiling root (1 scala source)
+2024.05.23 20:21:49 INFO  time: compiled root in 0.67s
+2024.05.23 20:21:55 INFO  compiling root (1 scala source)
+2024.05.23 20:21:55 INFO  time: compiled root in 0.76s
+may 23, 2024 8:22:40 P. M. org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+WARNING: Unmatched cancel notification for request id 6260
+may 23, 2024 8:22:40 P. M. org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+WARNING: Unmatched cancel notification for request id 6262
+2024.05.23 20:22:44 INFO  compiling root (1 scala source)
+2024.05.23 20:22:47 INFO  time: compiled root in 2.7s
+2024.05.23 20:22:47 INFO  time: code lens generation in 1.25s
+2024.05.23 20:22:49 INFO  compiling root (1 scala source)
+2024.05.23 20:22:51 INFO  time: compiled root in 1.81s
+may 23, 2024 8:23:47 P. M. org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+WARNING: Unmatched cancel notification for request id 6310
+may 23, 2024 8:23:47 P. M. org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+WARNING: Unmatched cancel notification for request id 6312
+2024.05.23 20:24:02 INFO  compiling root (1 scala source)
+2024.05.23 20:24:03 INFO  time: compiled root in 1.02s
+may 23, 2024 8:24:15 P. M. org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+WARNING: Unmatched cancel notification for request id 6437
+2024.05.23 20:28:22 INFO  compiling root (1 scala source)
+2024.05.23 20:28:25 INFO  time: compiled root in 3.12s
+may 23, 2024 8:29:35 P. M. org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+WARNING: Unmatched cancel notification for request id 6532
+2024.05.23 20:30:13 INFO  compiling root (1 scala source)
+2024.05.23 20:30:14 INFO  time: compiled root in 1.35s
+may 23, 2024 8:30:24 P. M. org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+WARNING: Unmatched cancel notification for request id 6810
+2024.05.23 20:30:29 INFO  compiling root (1 scala source)
+2024.05.23 20:30:31 INFO  time: compiled root in 1.55s
+2024.05.23 20:30:34 INFO  compiling root (1 scala source)
+2024.05.23 20:30:34 INFO  time: compiled root in 0.64s
+2024.05.23 20:30:39 INFO  compiling root (1 scala source)
+2024.05.23 20:30:41 INFO  time: compiled root in 1.73s
+2024.05.23 20:30:49 INFO  compiling root (1 scala source)
+2024.05.23 20:30:50 INFO  time: compiled root in 1.3s
+2024.05.23 20:31:01 INFO  compiling root (1 scala source)
+2024.05.23 20:31:01 INFO  time: compiled root in 0.86s
+2024.05.23 20:31:10 INFO  compiling root (1 scala source)
+2024.05.23 20:31:11 INFO  time: compiled root in 1.03s
+2024.05.23 20:31:16 INFO  compiling root (1 scala source)
+2024.05.23 20:31:16 INFO  time: compiled root in 0.85s
+2024.05.23 20:31:21 INFO  time: code lens generation in 2.35s
+2024.05.23 20:33:10 INFO  compiling root (1 scala source)
+2024.05.23 20:33:12 INFO  time: compiled root in 2.16s
+2024.05.23 20:33:37 INFO  compiling root (1 scala source)
+2024.05.23 20:33:37 INFO  time: compiled root in 0.85s
+may 23, 2024 8:33:48 P. M. org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+WARNING: Unmatched cancel notification for request id 7137
+2024.05.23 20:33:52 INFO  compiling root (1 scala source)
+2024.05.23 20:33:54 INFO  time: compiled root in 1.32s
+2024.05.23 20:35:57 INFO  time: code lens generation in 1.19s
+may 23, 2024 8:36:08 P. M. org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+WARNING: Unmatched cancel notification for request id 7198
+may 23, 2024 8:36:08 P. M. org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+WARNING: Unmatched cancel notification for request id 7201
+2024.05.23 20:36:09 INFO  time: code lens generation in 1.41s
+2024.05.23 20:36:12 INFO  compiling root (1 scala source)
+2024.05.23 20:36:13 INFO  time: compiled root in 1.74s
+2024.05.23 20:36:16 INFO  time: code lens generation in 1.27s
+2024.05.23 20:37:27 INFO  time: code lens generation in 1.09s
+may 23, 2024 8:37:56 P. M. org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+WARNING: Unmatched cancel notification for request id 7285
+2024.05.23 20:38:03 INFO  compiling root (1 scala source)
+2024.05.23 20:38:04 INFO  time: compiled root in 1.32s
+2024.05.23 20:38:17 INFO  compiling root (1 scala source)
+2024.05.23 20:38:17 INFO  time: compiled root in 0.91s
+2024.05.23 20:41:58 INFO  time: code lens generation in 1.15s
+2024.05.23 20:42:06 INFO  compiling root (1 scala source)
+2024.05.23 20:42:08 INFO  time: compiled root in 1.12s
+2024.05.23 20:42:28 INFO  compiling root (1 scala source)
+2024.05.23 20:42:29 INFO  time: compiled root in 1s
+2024.05.23 20:46:56 INFO  time: code lens generation in 5.28s
+2024.05.23 20:47:44 INFO  compiling root (1 scala source)
+2024.05.23 20:47:48 INFO  time: compiled root in 3.29s
+2024.05.23 20:48:04 INFO  compiling root (1 scala source)
+2024.05.23 20:48:05 INFO  time: compiled root in 1.35s
+2024.05.23 20:48:15 INFO  compiling root (1 scala source)
+2024.05.23 20:48:15 INFO  time: compiled root in 0.98s
+may 23, 2024 8:50:17 P. M. org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+WARNING: Unmatched cancel notification for request id 7818
+2024.05.23 20:52:13 INFO  compiling root (1 scala source)
+2024.05.23 20:52:13 INFO  time: compiled root in 0.9s
+may 23, 2024 8:53:15 P. M. org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+WARNING: Unmatched cancel notification for request id 7975
+2024.05.23 20:53:18 INFO  compiling root (1 scala source)
+2024.05.23 20:53:18 INFO  time: compiled root in 0.49s
+2024.05.23 20:53:28 INFO  compiling root (1 scala source)
+2024.05.23 20:53:28 INFO  time: compiled root in 0.72s
+2024.05.23 20:53:37 INFO  compiling root (1 scala source)
+2024.05.23 20:53:37 INFO  time: compiled root in 0.29s
+may 23, 2024 8:53:51 P. M. scala.meta.internal.pc.CompletionProvider expected$1
+WARNING: Range [8958, 8958 + -1) out of bounds for length 9341
+2024.05.23 20:53:57 INFO  compiling root (1 scala source)
+2024.05.23 20:53:57 INFO  time: compiled root in 0.36s
+2024.05.23 20:54:05 INFO  compiling root (1 scala source)
+2024.05.23 20:54:05 INFO  time: compiled root in 0.49s
+2024.05.23 20:54:16 INFO  compiling root (1 scala source)
+2024.05.23 20:54:16 INFO  time: compiled root in 0.37s
+2024.05.23 21:13:30 INFO  time: code lens generation in 1.37s
+may 23, 2024 9:15:10 P. M. org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+WARNING: Unmatched cancel notification for request id 8280
+may 23, 2024 9:15:17 P. M. org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+WARNING: Unmatched cancel notification for request id 8306
+2024.05.23 21:15:31 INFO  compiling root (1 scala source)
+2024.05.23 21:15:31 INFO  time: compiled root in 0.84s
+may 23, 2024 9:15:33 P. M. org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+WARNING: Unmatched cancel notification for request id 8370
+2024.05.23 21:15:37 INFO  compiling root (1 scala source)
+2024.05.23 21:15:37 INFO  time: compiled root in 0.94s
+2024.05.23 21:15:43 INFO  compiling root (1 scala source)
+2024.05.23 21:15:43 INFO  time: compiled root in 0.4s
+may 23, 2024 9:15:48 P. M. org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+WARNING: Unmatched cancel notification for request id 8440
+2024.05.23 21:16:02 ERROR Failed to tokenize input for semantic tokens for /Users/victoriamac/Desktop/Univalle/Cuarto Semestre/Programacion funcional y concurrente/proyectoFinal/GestioVuelos/src/main/scala/Itinerarios/package.scala
+scala.meta.tokenizers.TokenizeException: <input>:241: error: unclosed comment
+      /*def tiempoItinerarioPar2( itinerario: List[Vuelo] ): (Int) = 
+      ^
+	at scala.meta.internal.tokenizers.Reporter.incompleteInputError(Reporter.scala:27)
+	at scala.meta.internal.tokenizers.Reporter.incompleteInputError$(Reporter.scala:26)
+	at scala.meta.internal.tokenizers.Reporter$$anon$1.incompleteInputError(Reporter.scala:33)
+	at scala.meta.internal.tokenizers.Reporter.incompleteInputError(Reporter.scala:29)
+	at scala.meta.internal.tokenizers.Reporter.incompleteInputError$(Reporter.scala:29)
+	at scala.meta.internal.tokenizers.Reporter$$anon$1.incompleteInputError(Reporter.scala:33)
+	at scala.meta.internal.tokenizers.LegacyScanner.skipNestedComments(LegacyScanner.scala:55)
+	at scala.meta.internal.tokenizers.LegacyScanner.skipToCommentEnd(LegacyScanner.scala:74)
+	at scala.meta.internal.tokenizers.LegacyScanner.fetchToken(LegacyScanner.scala:316)
+	at scala.meta.internal.tokenizers.LegacyScanner.nextToken(LegacyScanner.scala:214)
+	at scala.meta.internal.tokenizers.LegacyScanner.foreach(LegacyScanner.scala:982)
+	at scala.meta.internal.tokenizers.ScalametaTokenizer.uncachedTokenize(ScalametaTokenizer.scala:23)
+	at scala.meta.internal.tokenizers.ScalametaTokenizer.$anonfun$tokenize$1(ScalametaTokenizer.scala:16)
+	at scala.collection.concurrent.TrieMap.getOrElseUpdate(TrieMap.scala:960)
+	at scala.meta.internal.tokenizers.ScalametaTokenizer.tokenize(ScalametaTokenizer.scala:16)
+	at scala.meta.internal.tokenizers.ScalametaTokenizer$$anon$2.apply(ScalametaTokenizer.scala:331)
+	at scala.meta.tokenizers.Api$XtensionTokenizeDialectInput.tokenize(Api.scala:25)
+	at scala.meta.tokenizers.Api$XtensionTokenizeInputLike.tokenize(Api.scala:14)
+	at scala.meta.internal.metals.SemanticTokensProvider$.getTokens(SemanticTokensProvider.scala:30)
+	at scala.meta.internal.metals.SemanticTokensProvider$.provide(SemanticTokensProvider.scala:89)
+	at scala.meta.internal.metals.Compilers.$anonfun$semanticTokens$3(Compilers.scala:514)
+	at scala.concurrent.impl.Promise$Transformation.run(Promise.scala:467)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1144)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:642)
+	at java.lang.Thread.run(Thread.java:1583)
+
+2024.05.23 21:16:05 INFO  compiling root (1 scala source)
+may 23, 2024 9:16:05 P. M. org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+WARNING: Unmatched cancel notification for request id 8514
+2024.05.23 21:16:06 ERROR Failed to tokenize input for semantic tokens for /Users/victoriamac/Desktop/Univalle/Cuarto Semestre/Programacion funcional y concurrente/proyectoFinal/GestioVuelos/src/main/scala/Itinerarios/package.scala
+scala.meta.tokenizers.TokenizeException: <input>:241: error: unclosed comment
+      /*def tiempoItinerarioPar2( itinerario: List[Vuelo] ): (Int) = 
+      ^
+	at scala.meta.internal.tokenizers.Reporter.incompleteInputError(Reporter.scala:27)
+	at scala.meta.internal.tokenizers.Reporter.incompleteInputError$(Reporter.scala:26)
+	at scala.meta.internal.tokenizers.Reporter$$anon$1.incompleteInputError(Reporter.scala:33)
+	at scala.meta.internal.tokenizers.Reporter.incompleteInputError(Reporter.scala:29)
+	at scala.meta.internal.tokenizers.Reporter.incompleteInputError$(Reporter.scala:29)
+	at scala.meta.internal.tokenizers.Reporter$$anon$1.incompleteInputError(Reporter.scala:33)
+	at scala.meta.internal.tokenizers.LegacyScanner.skipNestedComments(LegacyScanner.scala:55)
+	at scala.meta.internal.tokenizers.LegacyScanner.skipToCommentEnd(LegacyScanner.scala:74)
+	at scala.meta.internal.tokenizers.LegacyScanner.fetchToken(LegacyScanner.scala:316)
+	at scala.meta.internal.tokenizers.LegacyScanner.nextToken(LegacyScanner.scala:214)
+	at scala.meta.internal.tokenizers.LegacyScanner.foreach(LegacyScanner.scala:982)
+	at scala.meta.internal.tokenizers.ScalametaTokenizer.uncachedTokenize(ScalametaTokenizer.scala:23)
+	at scala.meta.internal.tokenizers.ScalametaTokenizer.$anonfun$tokenize$1(ScalametaTokenizer.scala:16)
+	at scala.collection.concurrent.TrieMap.getOrElseUpdate(TrieMap.scala:960)
+	at scala.meta.internal.tokenizers.ScalametaTokenizer.tokenize(ScalametaTokenizer.scala:16)
+	at scala.meta.internal.tokenizers.ScalametaTokenizer$$anon$2.apply(ScalametaTokenizer.scala:331)
+	at scala.meta.tokenizers.Api$XtensionTokenizeDialectInput.tokenize(Api.scala:25)
+	at scala.meta.tokenizers.Api$XtensionTokenizeInputLike.tokenize(Api.scala:14)
+	at scala.meta.internal.metals.SemanticTokensProvider$.getTokens(SemanticTokensProvider.scala:30)
+	at scala.meta.internal.metals.SemanticTokensProvider$.provide(SemanticTokensProvider.scala:89)
+	at scala.meta.internal.metals.Compilers.$anonfun$semanticTokens$3(Compilers.scala:514)
+	at scala.concurrent.impl.Promise$Transformation.run(Promise.scala:467)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1144)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:642)
+	at java.lang.Thread.run(Thread.java:1583)
+
+2024.05.23 21:16:05 INFO  time: compiled root in 0.83s
+2024.05.23 21:16:09 INFO  compiling root (1 scala source)
+2024.05.23 21:16:10 INFO  time: compiled root in 1.01s
+2024.05.23 21:16:12 INFO  time: code lens generation in 1.15s
+2024.05.23 21:16:16 INFO  compiling root (1 scala source)
+2024.05.23 21:16:18 INFO  time: compiled root in 1.82s
+may 23, 2024 9:16:20 P. M. org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+WARNING: Unmatched cancel notification for request id 8597
+may 23, 2024 9:16:24 P. M. org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+WARNING: Unmatched cancel notification for request id 8614
+2024.05.23 21:16:27 INFO  compiling root (1 scala source)
+2024.05.23 21:16:29 INFO  time: compiled root in 1.42s
+may 23, 2024 9:19:12 P. M. org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+WARNING: Unmatched cancel notification for request id 8655
+2024.05.23 21:47:36 INFO  time: code lens generation in 6.24s
+2024.05.23 21:49:23 INFO  time: code lens generation in 1.77s
+2024.05.23 21:58:03 INFO  compiling root (1 scala source)
+2024.05.23 21:58:06 INFO  time: compiled root in 2.6s
+2024.05.23 22:54:38 INFO  Shutting down server
+2024.05.23 22:54:38 INFO  shutting down Metals
+2024.05.23 22:54:41 INFO  Shut down connection with build server.
+2024.05.23 22:54:41 INFO  Shut down connection with build server.
+may 23, 2024 10:54:41 P. M. org.eclipse.lsp4j.jsonrpc.json.StreamMessageProducer fireStreamClosed
+INFO: The input stream was closed.
+java.nio.channels.ClosedByInterruptException
+	at java.base/java.nio.channels.spi.AbstractInterruptibleChannel.end(AbstractInterruptibleChannel.java:200)
+	at java.base/sun.nio.ch.SourceChannelImpl.endRead(SourceChannelImpl.java:268)
+	at java.base/sun.nio.ch.SourceChannelImpl.read(SourceChannelImpl.java:290)
+	at java.base/sun.nio.ch.ChannelInputStream.read(ChannelInputStream.java:71)
+	at java.base/sun.nio.ch.ChannelInputStream.read(ChannelInputStream.java:103)
+	at java.base/java.io.InputStream.read(InputStream.java:220)
+	at java.base/sun.nio.ch.ChannelInputStream.read(ChannelInputStream.java:82)
+	at org.eclipse.lsp4j.jsonrpc.json.StreamMessageProducer.listen(StreamMessageProducer.java:79)
+	at org.eclipse.lsp4j.jsonrpc.json.ConcurrentMessageProcessor.run(ConcurrentMessageProcessor.java:113)
+	at java.base/java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:572)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:317)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1144)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:642)
+	at java.base/java.lang.Thread.run(Thread.java:1583)
+
+may 23, 2024 10:54:41 P. M. org.eclipse.lsp4j.jsonrpc.json.StreamMessageProducer fireStreamClosed
+INFO: The input stream was closed.
+java.nio.channels.ClosedByInterruptException
+	at java.base/java.nio.channels.spi.AbstractInterruptibleChannel.end(AbstractInterruptibleChannel.java:200)
+	at java.base/sun.nio.ch.SourceChannelImpl.endRead(SourceChannelImpl.java:268)
+	at java.base/sun.nio.ch.SourceChannelImpl.read(SourceChannelImpl.java:290)
+	at java.base/sun.nio.ch.ChannelInputStream.read(ChannelInputStream.java:71)
+	at java.base/sun.nio.ch.ChannelInputStream.read(ChannelInputStream.java:103)
+	at java.base/java.io.InputStream.read(InputStream.java:220)
+	at java.base/sun.nio.ch.ChannelInputStream.read(ChannelInputStream.java:82)
+	at org.eclipse.lsp4j.jsonrpc.json.StreamMessageProducer.listen(StreamMessageProducer.java:79)
+	at org.eclipse.lsp4j.jsonrpc.json.ConcurrentMessageProcessor.run(ConcurrentMessageProcessor.java:113)
+	at java.base/java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:572)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:317)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1144)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:642)
+	at java.base/java.lang.Thread.run(Thread.java:1583)
+
+2024.05.25 11:34:47 INFO  Started: Metals version 1.3.1 in folders '/Users/victoriamac/Desktop/Univalle/Cuarto Semestre/Programacion funcional y concurrente/proyectoFinal/GestioVuelos' for client Visual Studio Code 1.89.1.
+SLF4J(W): Class path contains multiple SLF4J providers.
+SLF4J(W): Found provider [scribe.slf4j.ScribeServiceProvider@161763dc]
+SLF4J(W): Found provider [ch.qos.logback.classic.spi.LogbackServiceProvider@77d71b82]
+SLF4J(W): See https://www.slf4j.org/codes.html#multiple_bindings for an explanation.
+SLF4J(I): Actual provider is of type [scribe.slf4j.ScribeServiceProvider@161763dc]
+2024.05.25 11:34:49 WARN  Flyway upgrade recommended: H2 2.2.224 is newer than this version of Flyway and support has not been tested. The latest supported version of H2 is 2.2.220.
+2024.05.25 11:34:53 INFO  no build target found for /Users/victoriamac/Desktop/Univalle/Cuarto Semestre/Programacion funcional y concurrente/proyectoFinal/GestioVuelos/src/main/scala/Itinerarios/package.scala. Using presentation compiler with project's scala-library version: 3.3.3
+2024.05.25 11:34:53 INFO  no build target found for /Users/victoriamac/Desktop/Univalle/Cuarto Semestre/Programacion funcional y concurrente/proyectoFinal/GestioVuelos/src/main/scala/Itinerarios/package.scala. Using presentation compiler with project's scala-library version: 3.3.3
+2024.05.25 11:34:53 INFO  Attempting to connect to the build server...
+may 25, 2024 11:35:00 A. M. org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+WARNING: Unmatched cancel notification for request id 5
+2024.05.25 11:35:00 INFO  no build target found for /Users/victoriamac/Desktop/Univalle/Cuarto Semestre/Programacion funcional y concurrente/proyectoFinal/GestioVuelos/src/main/scala/Itinerarios/package.scala. Using presentation compiler with project's scala-library version: 3.3.3
+may 25, 2024 11:35:00 A. M. org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+WARNING: Unmatched cancel notification for request id 12
+may 25, 2024 11:35:03 A. M. org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+WARNING: Unmatched cancel notification for request id 15
+may 25, 2024 11:35:03 A. M. org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+WARNING: Unmatched cancel notification for request id 16
+2024.05.25 11:35:03 INFO  no build target found for /Users/victoriamac/Desktop/Univalle/Cuarto Semestre/Programacion funcional y concurrente/proyectoFinal/GestioVuelos/src/main/scala/Itinerarios/package.scala. Using presentation compiler with project's scala-library version: 3.3.3
+2024.05.25 11:35:05 INFO  no build target found for /Users/victoriamac/Desktop/Univalle/Cuarto Semestre/Programacion funcional y concurrente/proyectoFinal/GestioVuelos/src/main/scala/Itinerarios/package.scala. Using presentation compiler with project's scala-library version: 3.3.3
+2024.05.25 11:35:08 INFO  no build target found for /Users/victoriamac/Desktop/Univalle/Cuarto Semestre/Programacion funcional y concurrente/proyectoFinal/GestioVuelos/src/main/scala/Itinerarios/package.scala. Using presentation compiler with project's scala-library version: 3.3.3
+2024.05.25 11:35:09 WARN  no build target for: /Users/victoriamac/Desktop/Univalle/Cuarto Semestre/Programacion funcional y concurrente/proyectoFinal/GestioVuelos/src/main/scala/Itinerarios/package.scala
+2024.05.25 11:35:09 INFO  no build target found for /Users/victoriamac/Desktop/Univalle/Cuarto Semestre/Programacion funcional y concurrente/proyectoFinal/GestioVuelos/src/main/scala/Itinerarios/package.scala. Using presentation compiler with project's scala-library version: 3.3.3
+2024.05.25 11:35:12 INFO  tracing is disabled for protocol BSP, to enable tracing of incoming and outgoing JSON messages create an empty file at /Users/victoriamac/Desktop/Univalle/Cuarto Semestre/Programacion funcional y concurrente/proyectoFinal/GestioVuelos/.metals/bsp.trace.json or /Users/victoriamac/Library/Caches/org.scalameta.metals/bsp.trace.json
+2024.05.25 11:35:12 INFO  no build target found for /Users/victoriamac/Desktop/Univalle/Cuarto Semestre/Programacion funcional y concurrente/proyectoFinal/GestioVuelos/src/main/scala/Itinerarios/package.scala. Using presentation compiler with project's scala-library version: 3.3.3
+2024.05.25 11:35:12 INFO  no build target found for /Users/victoriamac/Desktop/Univalle/Cuarto Semestre/Programacion funcional y concurrente/proyectoFinal/GestioVuelos/src/main/scala/Itinerarios/package.scala. Using presentation compiler with project's scala-library version: 3.3.3
+2024.05.25 11:35:12 INFO  no build target found for /Users/victoriamac/Desktop/Univalle/Cuarto Semestre/Programacion funcional y concurrente/proyectoFinal/GestioVuelos/src/main/scala/Itinerarios/package.scala. Using presentation compiler with project's scala-library version: 3.3.3
+2024.05.25 11:35:13 INFO  Attempting to connect to the build server...
+2024.05.25 11:35:13 INFO  tracing is disabled for protocol BSP, to enable tracing of incoming and outgoing JSON messages create an empty file at /Users/victoriamac/Desktop/Univalle/Cuarto Semestre/Programacion funcional y concurrente/proyectoFinal/GestioVuelos/project/.metals/bsp.trace.json or /Users/victoriamac/Library/Caches/org.scalameta.metals/bsp.trace.json
+2024.05.25 11:35:13 INFO  time: Connected to build server in 20s
+2024.05.25 11:35:13 INFO  Connected to Build server: Bloop v1.5.17
+2024.05.25 11:35:14 INFO  time: Imported build in 0.55s
+2024.05.25 11:35:17 INFO  no build target found for /Users/victoriamac/Desktop/Univalle/Cuarto Semestre/Programacion funcional y concurrente/proyectoFinal/GestioVuelos/src/main/scala/Itinerarios/package.scala. Using presentation compiler with project's scala-library version: 2.13.12
+may 25, 2024 11:35:39 A. M. org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+WARNING: Unmatched cancel notification for request id 80
+2024.05.25 11:35:39 INFO  time: indexed workspace in 25s
+2024.05.25 11:35:41 INFO  compiling root (1 scala source)
+2024.05.25 11:35:51 INFO  time: compiled root in 9.26s
+2024.05.25 11:35:51 INFO  compiling root (1 scala source)
+2024.05.25 11:35:54 INFO  time: code lens generation in 2.88s
+2024.05.25 11:35:54 INFO  time: code lens generation in 2.89s
+2024.05.25 11:35:54 INFO  time: code lens generation in 2.94s
+2024.05.25 11:35:54 INFO  time: code lens generation in 2.96s
+2024.05.25 11:35:54 INFO  time: code lens generation in 2.97s
+2024.05.25 11:35:54 INFO  time: code lens generation in 2.98s
+2024.05.25 11:35:56 INFO  time: compiled root in 5.36s
+2024.05.25 11:36:40 INFO  compiling root (1 scala source)
+2024.05.25 11:36:42 INFO  time: compiled root in 1.79s
+2024.05.25 11:36:52 INFO  compiling root (1 scala source)
+2024.05.25 11:36:53 INFO  time: compiled root in 1.01s
+may 25, 2024 11:36:59 A. M. org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+WARNING: Unmatched cancel notification for request id 295
+2024.05.25 11:37:14 INFO  compiling root (1 scala source)
+2024.05.25 11:37:16 INFO  time: compiled root in 1.26s
+2024.05.25 11:37:19 INFO  compiling root (1 scala source)
+2024.05.25 11:37:20 INFO  time: compiled root in 1.34s
+2024.05.25 11:38:29 INFO  compiling root (1 scala source)
+2024.05.25 11:38:32 INFO  time: compiled root in 2.67s
+2024.05.25 11:38:57 INFO  compiling root (1 scala source)
+2024.05.25 11:38:57 INFO  time: compiled root in 0.57s
+2024.05.25 11:39:32 INFO  compiling root (1 scala source)
+2024.05.25 11:39:32 INFO  time: compiled root in 0.7s
+2024.05.25 11:39:48 INFO  compiling root (1 scala source)
+2024.05.25 11:39:50 INFO  time: compiled root in 1.25s
+may 25, 2024 11:39:52 A. M. org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+WARNING: Unmatched cancel notification for request id 687
+2024.05.25 11:39:54 INFO  compiling root (1 scala source)
+2024.05.25 11:39:55 INFO  time: compiled root in 1.14s
+2024.05.25 11:39:59 INFO  compiling root (1 scala source)
+2024.05.25 11:39:59 INFO  time: compiled root in 0.67s
+2024.05.25 11:40:14 INFO  compiling root (1 scala source)
+2024.05.25 11:40:14 INFO  time: compiled root in 0.6s
+may 25, 2024 11:40:28 A. M. org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+WARNING: Unmatched cancel notification for request id 885
+2024.05.25 11:40:31 INFO  compiling root (1 scala source)
+2024.05.25 11:40:31 INFO  time: compiled root in 0.49s
+2024.05.25 11:40:41 INFO  compiling root (1 scala source)
+2024.05.25 11:40:41 INFO  time: compiled root in 0.69s
+2024.05.25 11:40:49 INFO  compiling root (1 scala source)
+2024.05.25 11:40:49 INFO  time: compiled root in 0.53s
+2024.05.25 11:41:09 INFO  compiling root (1 scala source)
+2024.05.25 11:41:09 INFO  time: compiled root in 0.53s
+2024.05.25 11:41:19 INFO  compiling root (1 scala source)
+2024.05.25 11:41:19 INFO  time: compiled root in 0.69s
+2024.05.25 11:45:09 INFO  compiling root (3 scala sources)
+2024.05.25 11:45:09 INFO  time: compiled root in 0.46s
+2024.05.25 11:45:26 INFO  compiling root (3 scala sources)
+2024.05.25 11:45:26 INFO  time: compiled root in 0.59s
+2024.05.25 11:45:38 INFO  compiling root (3 scala sources)
+2024.05.25 11:45:39 INFO  time: compiled root in 1.12s
+2024.05.25 11:46:26 INFO  compiling root (3 scala sources)
+2024.05.25 11:46:28 INFO  time: compiled root in 1.89s
+2024.05.25 11:46:49 INFO  compiling root (3 scala sources)
+may 25, 2024 11:46:55 A. M. org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+WARNING: Unmatched cancel notification for request id 1263
+may 25, 2024 11:46:55 A. M. org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+WARNING: Unmatched cancel notification for request id 1268
+may 25, 2024 11:46:55 A. M. org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+WARNING: Unmatched cancel notification for request id 1265
+may 25, 2024 11:46:55 A. M. org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+WARNING: Unmatched cancel notification for request id 1267
+2024.05.25 11:46:56 INFO  time: compiled root in 6.18s
+may 25, 2024 11:46:57 A. M. org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+WARNING: Unmatched cancel notification for request id 1264
+may 25, 2024 11:46:58 A. M. org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+WARNING: Unmatched cancel notification for request id 1276
+may 25, 2024 11:46:58 A. M. org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+WARNING: Unmatched cancel notification for request id 1272
+may 25, 2024 11:46:58 A. M. org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+WARNING: Unmatched cancel notification for request id 1278
+may 25, 2024 11:46:58 A. M. org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+WARNING: Unmatched cancel notification for request id 1280
+may 25, 2024 11:46:58 A. M. org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+WARNING: Unmatched cancel notification for request id 1284
+may 25, 2024 11:46:58 A. M. org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+WARNING: Unmatched cancel notification for request id 1283
+2024.05.25 11:46:58 INFO  compiling root (3 scala sources)
+2024.05.25 11:47:02 INFO  time: compiled root in 3.99s
+may 25, 2024 11:47:02 A. M. scala.meta.internal.pc.CompilerAccess retryWithCleanCompiler
+INFO: compiler crashed due to an error in the Scala compiler, retrying with new compiler instance.
+2024.05.25 11:47:02 INFO  compiling root (3 scala sources)
+2024.05.25 11:47:05 INFO  time: compiled root in 2.41s
+may 25, 2024 11:47:15 A. M. org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+WARNING: Unmatched cancel notification for request id 1320
+may 25, 2024 11:47:15 A. M. org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+WARNING: Unmatched cancel notification for request id 1317
+may 25, 2024 11:47:15 A. M. org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+WARNING: Unmatched cancel notification for request id 1327
+2024.05.25 11:47:15 INFO  compiling root (3 scala sources)
+may 25, 2024 11:47:16 A. M. org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+WARNING: Unmatched cancel notification for request id 1328
+2024.05.25 11:47:18 INFO  time: compiled root in 2.39s
+2024.05.25 11:47:25 INFO  compiling root (3 scala sources)
+2024.05.25 11:47:27 INFO  time: compiled root in 2.01s
+2024.05.25 11:47:51 INFO  compiling root (3 scala sources)
+2024.05.25 11:47:52 INFO  time: compiled root in 1.17s
+may 25, 2024 11:48:10 A. M. org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+WARNING: Unmatched cancel notification for request id 1480
+may 25, 2024 11:48:23 A. M. org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+WARNING: Unmatched cancel notification for request id 1521
+may 25, 2024 11:48:23 A. M. org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+WARNING: Unmatched cancel notification for request id 1520
+2024.05.25 11:48:26 INFO  compiling root (3 scala sources)
+2024.05.25 11:48:26 INFO  time: compiled root in 0.66s
+2024.05.25 11:48:39 INFO  compiling root (3 scala sources)
+2024.05.25 11:48:39 INFO  time: compiled root in 0.24s
+may 25, 2024 11:49:22 A. M. org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+WARNING: Unmatched cancel notification for request id 1657
+may 25, 2024 11:49:22 A. M. org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+WARNING: Unmatched cancel notification for request id 1658
+may 25, 2024 11:49:24 A. M. org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+WARNING: Unmatched cancel notification for request id 1671
+may 25, 2024 11:49:26 A. M. org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+WARNING: Unmatched cancel notification for request id 1684
+2024.05.25 11:49:27 INFO  compiling root (3 scala sources)
+2024.05.25 11:49:27 INFO  time: compiled root in 0.56s
+2024.05.25 11:49:37 INFO  compiling root (3 scala sources)
+2024.05.25 11:49:37 INFO  time: compiled root in 0.27s
+2024.05.25 11:49:40 INFO  compiling root (3 scala sources)
+2024.05.25 11:49:40 INFO  time: compiled root in 0.26s
+may 25, 2024 11:49:47 A. M. org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+WARNING: Unmatched cancel notification for request id 1772
+2024.05.25 11:49:48 INFO  compiling root (3 scala sources)
+2024.05.25 11:49:48 INFO  time: compiled root in 0.12s
+may 25, 2024 11:49:49 A. M. org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+WARNING: Unmatched cancel notification for request id 1790
+may 25, 2024 11:49:53 A. M. org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+WARNING: Unmatched cancel notification for request id 1821
+2024.05.25 11:49:55 INFO  compiling root (3 scala sources)
+2024.05.25 11:49:55 INFO  time: compiled root in 0.15s
+2024.05.25 11:50:12 INFO  compiling root (3 scala sources)
+2024.05.25 11:50:12 INFO  time: compiled root in 0.92s
+2024.05.25 11:50:48 INFO  compiling root (4 scala sources)
+2024.05.25 11:50:48 INFO  time: compiled root in 0.4s
+2024.05.25 11:51:06 INFO  compiling root (4 scala sources)
+2024.05.25 11:51:06 INFO  time: compiled root in 0.37s
+2024.05.25 11:51:18 INFO  compiling root (4 scala sources)
+2024.05.25 11:51:18 INFO  time: compiled root in 0.99s
+2024.05.25 11:51:27 INFO  compiling root (4 scala sources)
+2024.05.25 11:51:27 INFO  time: compiled root in 0.72s
+2024.05.25 11:51:32 INFO  compiling root (5 scala sources)
+2024.05.25 11:51:32 INFO  time: compiled root in 0.13s
+2024.05.25 11:51:55 INFO  compiling root (5 scala sources)
+2024.05.25 11:51:57 INFO  time: compiled root in 1.45s
+2024.05.25 11:52:06 INFO  compiling root (5 scala sources)
+2024.05.25 11:52:12 INFO  time: compiled root in 5.28s
+may 25, 2024 11:52:28 A. M. org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+WARNING: Unmatched cancel notification for request id 2013
+may 25, 2024 11:52:28 A. M. org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+WARNING: Unmatched cancel notification for request id 2015
+2024.05.25 11:52:32 INFO  compiling root (5 scala sources)
+2024.05.25 11:52:35 INFO  time: compiled root in 3.11s
+may 25, 2024 11:53:21 A. M. org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+WARNING: Unmatched cancel notification for request id 2079
+2024.05.25 11:53:42 INFO  time: code lens generation in 16s
+2024.05.25 11:53:42 INFO  time: code lens generation in 15s
+2024.05.25 11:54:10 INFO  running '/Users/victoriamac/Library/Application Support/Coursier/bin/sbt -Dbloop.export-jar-classifiers=sources bloopInstall'
+2024.05.25 11:54:17 INFO  [info] welcome to sbt 1.10.0 (Oracle Corporation Java 21.0.2)
+2024.05.25 11:54:19 INFO  [info] loading settings for project gestiovuelos-build-build from metals.sbt ...
+2024.05.25 11:54:26 INFO  [info] loading project definition from /Users/victoriamac/Desktop/Univalle/Cuarto Semestre/Programacion funcional y concurrente/proyectoFinal/GestioVuelos/project/project
+2024.05.25 11:54:29 INFO  skipping build import with status 'Started'
+2024.05.25 11:54:30 INFO  [info] loading settings for project gestiovuelos-build from metals.sbt ...
+2024.05.25 11:54:30 INFO  [info] loading project definition from /Users/victoriamac/Desktop/Univalle/Cuarto Semestre/Programacion funcional y concurrente/proyectoFinal/GestioVuelos/project
+2024.05.25 11:54:42 INFO  [success] Generated .bloop/gestiovuelos-build.json
+2024.05.25 11:54:42 INFO  [success] Total time: 12 s, completed 25/05/2024, 11:54:43 a. m.
+2024.05.25 11:54:52 INFO  [info] loading settings for project root from build.sbt ...
+2024.05.25 11:54:52 INFO  [info] set current project to GestioVuelos (in build file:/Users/victoriamac/Desktop/Univalle/Cuarto%20Semestre/Programacion%20funcional%20y%20concurrente/proyectoFinal/GestioVuelos/)
+2024.05.25 11:54:53 INFO  [success] Generated .bloop/root.json
+2024.05.25 11:54:53 INFO  [success] Generated .bloop/root-test.json
+2024.05.25 11:54:53 INFO  [success] Total time: 1 s, completed 25/05/2024, 11:54:53 a. m.
+2024.05.25 11:54:53 INFO  time: ran 'sbt bloopInstall' in 43s
+2024.05.25 11:54:53 INFO  Disconnecting from Bloop session...
+2024.05.25 11:54:54 INFO  Shut down connection with build server.
+2024.05.25 11:54:54 INFO  Shut down connection with build server.
+2024.05.25 11:54:54 INFO  Attempting to connect to the build server...
+2024.05.25 11:55:00 INFO  tracing is disabled for protocol BSP, to enable tracing of incoming and outgoing JSON messages create an empty file at /Users/victoriamac/Desktop/Univalle/Cuarto Semestre/Programacion funcional y concurrente/proyectoFinal/GestioVuelos/.metals/bsp.trace.json or /Users/victoriamac/Library/Caches/org.scalameta.metals/bsp.trace.json
+2024.05.25 11:55:00 INFO  Attempting to connect to the build server...
+2024.05.25 11:55:00 INFO  tracing is disabled for protocol BSP, to enable tracing of incoming and outgoing JSON messages create an empty file at /Users/victoriamac/Desktop/Univalle/Cuarto Semestre/Programacion funcional y concurrente/proyectoFinal/GestioVuelos/project/.metals/bsp.trace.json or /Users/victoriamac/Library/Caches/org.scalameta.metals/bsp.trace.json
+2024.05.25 11:55:00 INFO  time: Connected to build server in 6.04s
+2024.05.25 11:55:00 INFO  Connected to Build server: Bloop v1.5.17
+2024.05.25 11:55:10 INFO  time: code lens generation in 1.88s
+2024.05.25 11:55:14 INFO  time: indexed workspace in 13s
+2024.05.25 11:55:14 INFO  compiling root (5 scala sources)
+2024.05.25 11:55:29 INFO  Deduplicating compilation of root from bsp client 'Metals 1.3.1' (since 29.082s)
+2024.05.25 11:55:29 INFO  compiling root (5 scala sources)
+2024.05.25 11:55:30 INFO  time: compiled root in 1.12s
+2024.05.25 11:55:32 INFO  time: code lens generation in 1.48s
+2024.05.25 11:57:10 INFO  time: code lens generation in 1.54s
+2024.05.25 11:57:12 INFO  time: code lens generation in 1.59s
+2024.05.25 11:57:14 INFO  compiling root (5 scala sources)
+2024.05.25 11:57:19 INFO  time: compiled root in 4.52s
+2024.05.25 11:57:28 INFO  compiling root (5 scala sources)
+2024.05.25 11:57:32 INFO  time: compiled root in 3.27s
+2024.05.25 11:57:40 INFO  compiling root (5 scala sources)
+2024.05.25 11:57:42 INFO  time: compiled root in 1.41s
+may 25, 2024 11:57:49 A. M. org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+WARNING: Unmatched cancel notification for request id 2491
+2024.05.25 11:57:50 INFO  compiling root (5 scala sources)
+may 25, 2024 11:57:51 A. M. org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+WARNING: Unmatched cancel notification for request id 2498
+2024.05.25 11:57:53 INFO  time: compiled root in 2.85s
+2024.05.25 11:58:06 INFO  compiling root (5 scala sources)
+2024.05.25 11:58:08 INFO  time: compiled root in 1.27s
+may 25, 2024 11:58:15 A. M. org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+WARNING: Unmatched cancel notification for request id 2602
+2024.05.25 11:58:20 INFO  compiling root (5 scala sources)
+2024.05.25 11:58:23 INFO  time: compiled root in 2.63s
+2024.05.25 11:58:43 INFO  compiling root (5 scala sources)
+2024.05.25 11:58:45 INFO  time: compiled root in 2.06s
+may 25, 2024 11:58:47 A. M. org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+WARNING: Unmatched cancel notification for request id 2799
+2024.05.25 11:58:55 INFO  compiling root (5 scala sources)
+2024.05.25 11:58:57 INFO  time: compiled root in 1.89s
+2024.05.25 11:59:01 ERROR Failed to tokenize input for semantic tokens for /Users/victoriamac/Desktop/Univalle/Cuarto Semestre/Programacion funcional y concurrente/proyectoFinal/GestioVuelos/src/main/scala/ItinerariosPar/package.scala
+scala.meta.tokenizers.TokenizeException: <input>:68: error: unclosed comment
+  /*
+  ^
+	at scala.meta.internal.tokenizers.Reporter.incompleteInputError(Reporter.scala:27)
+	at scala.meta.internal.tokenizers.Reporter.incompleteInputError$(Reporter.scala:26)
+	at scala.meta.internal.tokenizers.Reporter$$anon$1.incompleteInputError(Reporter.scala:33)
+	at scala.meta.internal.tokenizers.Reporter.incompleteInputError(Reporter.scala:29)
+	at scala.meta.internal.tokenizers.Reporter.incompleteInputError$(Reporter.scala:29)
+	at scala.meta.internal.tokenizers.Reporter$$anon$1.incompleteInputError(Reporter.scala:33)
+	at scala.meta.internal.tokenizers.LegacyScanner.skipNestedComments(LegacyScanner.scala:55)
+	at scala.meta.internal.tokenizers.LegacyScanner.skipToCommentEnd(LegacyScanner.scala:74)
+	at scala.meta.internal.tokenizers.LegacyScanner.fetchToken(LegacyScanner.scala:316)
+	at scala.meta.internal.tokenizers.LegacyScanner.nextToken(LegacyScanner.scala:214)
+	at scala.meta.internal.tokenizers.LegacyScanner.foreach(LegacyScanner.scala:982)
+	at scala.meta.internal.tokenizers.ScalametaTokenizer.uncachedTokenize(ScalametaTokenizer.scala:23)
+	at scala.meta.internal.tokenizers.ScalametaTokenizer.$anonfun$tokenize$1(ScalametaTokenizer.scala:16)
+	at scala.collection.concurrent.TrieMap.getOrElseUpdate(TrieMap.scala:960)
+	at scala.meta.internal.tokenizers.ScalametaTokenizer.tokenize(ScalametaTokenizer.scala:16)
+	at scala.meta.internal.tokenizers.ScalametaTokenizer$$anon$2.apply(ScalametaTokenizer.scala:331)
+	at scala.meta.tokenizers.Api$XtensionTokenizeDialectInput.tokenize(Api.scala:25)
+	at scala.meta.tokenizers.Api$XtensionTokenizeInputLike.tokenize(Api.scala:14)
+	at scala.meta.internal.metals.SemanticTokensProvider$.getTokens(SemanticTokensProvider.scala:30)
+	at scala.meta.internal.metals.SemanticTokensProvider$.provide(SemanticTokensProvider.scala:89)
+	at scala.meta.internal.metals.Compilers.$anonfun$semanticTokens$3(Compilers.scala:514)
+	at scala.concurrent.impl.Promise$Transformation.run(Promise.scala:467)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1144)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:642)
+	at java.lang.Thread.run(Thread.java:1583)
+
+2024.05.25 11:59:02 ERROR Failed to tokenize input for semantic tokens for /Users/victoriamac/Desktop/Univalle/Cuarto Semestre/Programacion funcional y concurrente/proyectoFinal/GestioVuelos/src/main/scala/ItinerariosPar/package.scala
+scala.meta.tokenizers.TokenizeException: <input>:68: error: unclosed comment
+  /*nOT
+  ^
+	at scala.meta.internal.tokenizers.Reporter.incompleteInputError(Reporter.scala:27)
+	at scala.meta.internal.tokenizers.Reporter.incompleteInputError$(Reporter.scala:26)
+	at scala.meta.internal.tokenizers.Reporter$$anon$1.incompleteInputError(Reporter.scala:33)
+	at scala.meta.internal.tokenizers.Reporter.incompleteInputError(Reporter.scala:29)
+	at scala.meta.internal.tokenizers.Reporter.incompleteInputError$(Reporter.scala:29)
+	at scala.meta.internal.tokenizers.Reporter$$anon$1.incompleteInputError(Reporter.scala:33)
+	at scala.meta.internal.tokenizers.LegacyScanner.skipNestedComments(LegacyScanner.scala:55)
+	at scala.meta.internal.tokenizers.LegacyScanner.skipToCommentEnd(LegacyScanner.scala:74)
+	at scala.meta.internal.tokenizers.LegacyScanner.fetchToken(LegacyScanner.scala:316)
+	at scala.meta.internal.tokenizers.LegacyScanner.nextToken(LegacyScanner.scala:214)
+	at scala.meta.internal.tokenizers.LegacyScanner.foreach(LegacyScanner.scala:982)
+	at scala.meta.internal.tokenizers.ScalametaTokenizer.uncachedTokenize(ScalametaTokenizer.scala:23)
+	at scala.meta.internal.tokenizers.ScalametaTokenizer.$anonfun$tokenize$1(ScalametaTokenizer.scala:16)
+	at scala.collection.concurrent.TrieMap.getOrElseUpdate(TrieMap.scala:960)
+	at scala.meta.internal.tokenizers.ScalametaTokenizer.tokenize(ScalametaTokenizer.scala:16)
+	at scala.meta.internal.tokenizers.ScalametaTokenizer$$anon$2.apply(ScalametaTokenizer.scala:331)
+	at scala.meta.tokenizers.Api$XtensionTokenizeDialectInput.tokenize(Api.scala:25)
+	at scala.meta.tokenizers.Api$XtensionTokenizeInputLike.tokenize(Api.scala:14)
+	at scala.meta.internal.metals.SemanticTokensProvider$.getTokens(SemanticTokensProvider.scala:30)
+	at scala.meta.internal.metals.SemanticTokensProvider$.provide(SemanticTokensProvider.scala:89)
+	at scala.meta.internal.metals.Compilers.$anonfun$semanticTokens$3(Compilers.scala:514)
+	at scala.concurrent.impl.Promise$Transformation.run(Promise.scala:467)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1144)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:642)
+	at java.lang.Thread.run(Thread.java:1583)
+
+2024.05.25 11:59:02 ERROR Failed to tokenize input for semantic tokens for /Users/victoriamac/Desktop/Univalle/Cuarto Semestre/Programacion funcional y concurrente/proyectoFinal/GestioVuelos/src/main/scala/ItinerariosPar/package.scala
+scala.meta.tokenizers.TokenizeException: <input>:68: error: unclosed comment
+  /*nOTA
+  ^
+	at scala.meta.internal.tokenizers.Reporter.incompleteInputError(Reporter.scala:27)
+	at scala.meta.internal.tokenizers.Reporter.incompleteInputError$(Reporter.scala:26)
+	at scala.meta.internal.tokenizers.Reporter$$anon$1.incompleteInputError(Reporter.scala:33)
+	at scala.meta.internal.tokenizers.Reporter.incompleteInputError(Reporter.scala:29)
+	at scala.meta.internal.tokenizers.Reporter.incompleteInputError$(Reporter.scala:29)
+	at scala.meta.internal.tokenizers.Reporter$$anon$1.incompleteInputError(Reporter.scala:33)
+	at scala.meta.internal.tokenizers.LegacyScanner.skipNestedComments(LegacyScanner.scala:55)
+	at scala.meta.internal.tokenizers.LegacyScanner.skipToCommentEnd(LegacyScanner.scala:74)
+	at scala.meta.internal.tokenizers.LegacyScanner.fetchToken(LegacyScanner.scala:316)
+	at scala.meta.internal.tokenizers.LegacyScanner.nextToken(LegacyScanner.scala:214)
+	at scala.meta.internal.tokenizers.LegacyScanner.foreach(LegacyScanner.scala:982)
+	at scala.meta.internal.tokenizers.ScalametaTokenizer.uncachedTokenize(ScalametaTokenizer.scala:23)
+	at scala.meta.internal.tokenizers.ScalametaTokenizer.$anonfun$tokenize$1(ScalametaTokenizer.scala:16)
+	at scala.collection.concurrent.TrieMap.getOrElseUpdate(TrieMap.scala:960)
+	at scala.meta.internal.tokenizers.ScalametaTokenizer.tokenize(ScalametaTokenizer.scala:16)
+	at scala.meta.internal.tokenizers.ScalametaTokenizer$$anon$2.apply(ScalametaTokenizer.scala:331)
+	at scala.meta.tokenizers.Api$XtensionTokenizeDialectInput.tokenize(Api.scala:25)
+	at scala.meta.tokenizers.Api$XtensionTokenizeInputLike.tokenize(Api.scala:14)
+	at scala.meta.internal.metals.SemanticTokensProvider$.getTokens(SemanticTokensProvider.scala:30)
+	at scala.meta.internal.metals.SemanticTokensProvider$.provide(SemanticTokensProvider.scala:89)
+	at scala.meta.internal.metals.Compilers.$anonfun$semanticTokens$3(Compilers.scala:514)
+	at scala.concurrent.impl.Promise$Transformation.run(Promise.scala:467)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1144)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:642)
+	at java.lang.Thread.run(Thread.java:1583)
+
+2024.05.25 11:59:02 ERROR Failed to tokenize input for semantic tokens for /Users/victoriamac/Desktop/Univalle/Cuarto Semestre/Programacion funcional y concurrente/proyectoFinal/GestioVuelos/src/main/scala/ItinerariosPar/package.scala
+scala.meta.tokenizers.TokenizeException: <input>:68: error: unclosed comment
+  /*n
+  ^
+	at scala.meta.internal.tokenizers.Reporter.incompleteInputError(Reporter.scala:27)
+	at scala.meta.internal.tokenizers.Reporter.incompleteInputError$(Reporter.scala:26)
+	at scala.meta.internal.tokenizers.Reporter$$anon$1.incompleteInputError(Reporter.scala:33)
+	at scala.meta.internal.tokenizers.Reporter.incompleteInputError(Reporter.scala:29)
+	at scala.meta.internal.tokenizers.Reporter.incompleteInputError$(Reporter.scala:29)
+	at scala.meta.internal.tokenizers.Reporter$$anon$1.incompleteInputError(Reporter.scala:33)
+	at scala.meta.internal.tokenizers.LegacyScanner.skipNestedComments(LegacyScanner.scala:55)
+	at scala.meta.internal.tokenizers.LegacyScanner.skipToCommentEnd(LegacyScanner.scala:74)
+	at scala.meta.internal.tokenizers.LegacyScanner.fetchToken(LegacyScanner.scala:316)
+	at scala.meta.internal.tokenizers.LegacyScanner.nextToken(LegacyScanner.scala:214)
+	at scala.meta.internal.tokenizers.LegacyScanner.foreach(LegacyScanner.scala:982)
+	at scala.meta.internal.tokenizers.ScalametaTokenizer.uncachedTokenize(ScalametaTokenizer.scala:23)
+	at scala.meta.internal.tokenizers.ScalametaTokenizer.$anonfun$tokenize$1(ScalametaTokenizer.scala:16)
+	at scala.collection.concurrent.TrieMap.getOrElseUpdate(TrieMap.scala:960)
+	at scala.meta.internal.tokenizers.ScalametaTokenizer.tokenize(ScalametaTokenizer.scala:16)
+	at scala.meta.internal.tokenizers.ScalametaTokenizer$$anon$2.apply(ScalametaTokenizer.scala:331)
+	at scala.meta.tokenizers.Api$XtensionTokenizeDialectInput.tokenize(Api.scala:25)
+	at scala.meta.tokenizers.Api$XtensionTokenizeInputLike.tokenize(Api.scala:14)
+	at scala.meta.internal.metals.SemanticTokensProvider$.getTokens(SemanticTokensProvider.scala:30)
+	at scala.meta.internal.metals.SemanticTokensProvider$.provide(SemanticTokensProvider.scala:89)
+	at scala.meta.internal.metals.Compilers.$anonfun$semanticTokens$3(Compilers.scala:514)
+	at scala.concurrent.impl.Promise$Transformation.run(Promise.scala:467)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1144)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:642)
+	at java.lang.Thread.run(Thread.java:1583)
+
+2024.05.25 11:59:03 ERROR Failed to tokenize input for semantic tokens for /Users/victoriamac/Desktop/Univalle/Cuarto Semestre/Programacion funcional y concurrente/proyectoFinal/GestioVuelos/src/main/scala/ItinerariosPar/package.scala
+scala.meta.tokenizers.TokenizeException: <input>:68: error: unclosed comment
+  /*
+  ^
+	at scala.meta.internal.tokenizers.Reporter.incompleteInputError(Reporter.scala:27)
+	at scala.meta.internal.tokenizers.Reporter.incompleteInputError$(Reporter.scala:26)
+	at scala.meta.internal.tokenizers.Reporter$$anon$1.incompleteInputError(Reporter.scala:33)
+	at scala.meta.internal.tokenizers.Reporter.incompleteInputError(Reporter.scala:29)
+	at scala.meta.internal.tokenizers.Reporter.incompleteInputError$(Reporter.scala:29)
+	at scala.meta.internal.tokenizers.Reporter$$anon$1.incompleteInputError(Reporter.scala:33)
+	at scala.meta.internal.tokenizers.LegacyScanner.skipNestedComments(LegacyScanner.scala:55)
+	at scala.meta.internal.tokenizers.LegacyScanner.skipToCommentEnd(LegacyScanner.scala:74)
+	at scala.meta.internal.tokenizers.LegacyScanner.fetchToken(LegacyScanner.scala:316)
+	at scala.meta.internal.tokenizers.LegacyScanner.nextToken(LegacyScanner.scala:214)
+	at scala.meta.internal.tokenizers.LegacyScanner.foreach(LegacyScanner.scala:982)
+	at scala.meta.internal.tokenizers.ScalametaTokenizer.uncachedTokenize(ScalametaTokenizer.scala:23)
+	at scala.meta.internal.tokenizers.ScalametaTokenizer.$anonfun$tokenize$1(ScalametaTokenizer.scala:16)
+	at scala.collection.concurrent.TrieMap.getOrElseUpdate(TrieMap.scala:960)
+	at scala.meta.internal.tokenizers.ScalametaTokenizer.tokenize(ScalametaTokenizer.scala:16)
+	at scala.meta.internal.tokenizers.ScalametaTokenizer$$anon$2.apply(ScalametaTokenizer.scala:331)
+	at scala.meta.tokenizers.Api$XtensionTokenizeDialectInput.tokenize(Api.scala:25)
+	at scala.meta.tokenizers.Api$XtensionTokenizeInputLike.tokenize(Api.scala:14)
+	at scala.meta.internal.metals.SemanticTokensProvider$.getTokens(SemanticTokensProvider.scala:30)
+	at scala.meta.internal.metals.SemanticTokensProvider$.provide(SemanticTokensProvider.scala:89)
+	at scala.meta.internal.metals.Compilers.$anonfun$semanticTokens$3(Compilers.scala:514)
+	at scala.concurrent.impl.Promise$Transformation.run(Promise.scala:467)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1144)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:642)
+	at java.lang.Thread.run(Thread.java:1583)
+
+2024.05.25 11:59:04 ERROR Failed to tokenize input for semantic tokens for /Users/victoriamac/Desktop/Univalle/Cuarto Semestre/Programacion funcional y concurrente/proyectoFinal/GestioVuelos/src/main/scala/ItinerariosPar/package.scala
+scala.meta.tokenizers.TokenizeException: <input>:68: error: unclosed comment
+  /*NOTA
+  ^
+	at scala.meta.internal.tokenizers.Reporter.incompleteInputError(Reporter.scala:27)
+	at scala.meta.internal.tokenizers.Reporter.incompleteInputError$(Reporter.scala:26)
+	at scala.meta.internal.tokenizers.Reporter$$anon$1.incompleteInputError(Reporter.scala:33)
+	at scala.meta.internal.tokenizers.Reporter.incompleteInputError(Reporter.scala:29)
+	at scala.meta.internal.tokenizers.Reporter.incompleteInputError$(Reporter.scala:29)
+	at scala.meta.internal.tokenizers.Reporter$$anon$1.incompleteInputError(Reporter.scala:33)
+	at scala.meta.internal.tokenizers.LegacyScanner.skipNestedComments(LegacyScanner.scala:55)
+	at scala.meta.internal.tokenizers.LegacyScanner.skipToCommentEnd(LegacyScanner.scala:74)
+	at scala.meta.internal.tokenizers.LegacyScanner.fetchToken(LegacyScanner.scala:316)
+	at scala.meta.internal.tokenizers.LegacyScanner.nextToken(LegacyScanner.scala:214)
+	at scala.meta.internal.tokenizers.LegacyScanner.foreach(LegacyScanner.scala:982)
+	at scala.meta.internal.tokenizers.ScalametaTokenizer.uncachedTokenize(ScalametaTokenizer.scala:23)
+	at scala.meta.internal.tokenizers.ScalametaTokenizer.$anonfun$tokenize$1(ScalametaTokenizer.scala:16)
+	at scala.collection.concurrent.TrieMap.getOrElseUpdate(TrieMap.scala:960)
+	at scala.meta.internal.tokenizers.ScalametaTokenizer.tokenize(ScalametaTokenizer.scala:16)
+	at scala.meta.internal.tokenizers.ScalametaTokenizer$$anon$2.apply(ScalametaTokenizer.scala:331)
+	at scala.meta.tokenizers.Api$XtensionTokenizeDialectInput.tokenize(Api.scala:25)
+	at scala.meta.tokenizers.Api$XtensionTokenizeInputLike.tokenize(Api.scala:14)
+	at scala.meta.internal.metals.SemanticTokensProvider$.getTokens(SemanticTokensProvider.scala:30)
+	at scala.meta.internal.metals.SemanticTokensProvider$.provide(SemanticTokensProvider.scala:89)
+	at scala.meta.internal.metals.Compilers.$anonfun$semanticTokens$3(Compilers.scala:514)
+	at scala.concurrent.impl.Promise$Transformation.run(Promise.scala:467)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1144)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:642)
+	at java.lang.Thread.run(Thread.java:1583)
+
+2024.05.25 11:59:04 ERROR Failed to tokenize input for semantic tokens for /Users/victoriamac/Desktop/Univalle/Cuarto Semestre/Programacion funcional y concurrente/proyectoFinal/GestioVuelos/src/main/scala/ItinerariosPar/package.scala
+scala.meta.tokenizers.TokenizeException: <input>:68: error: unclosed comment
+  /*NOTA
+  ^
+	at scala.meta.internal.tokenizers.Reporter.incompleteInputError(Reporter.scala:27)
+	at scala.meta.internal.tokenizers.Reporter.incompleteInputError$(Reporter.scala:26)
+	at scala.meta.internal.tokenizers.Reporter$$anon$1.incompleteInputError(Reporter.scala:33)
+	at scala.meta.internal.tokenizers.Reporter.incompleteInputError(Reporter.scala:29)
+	at scala.meta.internal.tokenizers.Reporter.incompleteInputError$(Reporter.scala:29)
+	at scala.meta.internal.tokenizers.Reporter$$anon$1.incompleteInputError(Reporter.scala:33)
+	at scala.meta.internal.tokenizers.LegacyScanner.skipNestedComments(LegacyScanner.scala:55)
+	at scala.meta.internal.tokenizers.LegacyScanner.skipToCommentEnd(LegacyScanner.scala:74)
+	at scala.meta.internal.tokenizers.LegacyScanner.fetchToken(LegacyScanner.scala:316)
+	at scala.meta.internal.tokenizers.LegacyScanner.nextToken(LegacyScanner.scala:214)
+	at scala.meta.internal.tokenizers.LegacyScanner.foreach(LegacyScanner.scala:982)
+	at scala.meta.internal.tokenizers.ScalametaTokenizer.uncachedTokenize(ScalametaTokenizer.scala:23)
+	at scala.meta.internal.tokenizers.ScalametaTokenizer.$anonfun$tokenize$1(ScalametaTokenizer.scala:16)
+	at scala.collection.concurrent.TrieMap.getOrElseUpdate(TrieMap.scala:960)
+	at scala.meta.internal.tokenizers.ScalametaTokenizer.tokenize(ScalametaTokenizer.scala:16)
+	at scala.meta.internal.tokenizers.ScalametaTokenizer$$anon$2.apply(ScalametaTokenizer.scala:331)
+	at scala.meta.tokenizers.Api$XtensionTokenizeDialectInput.tokenize(Api.scala:25)
+	at scala.meta.tokenizers.Api$XtensionTokenizeInputLike.tokenize(Api.scala:14)
+	at scala.meta.internal.metals.SemanticTokensProvider$.getTokens(SemanticTokensProvider.scala:30)
+	at scala.meta.internal.metals.SemanticTokensProvider$.provide(SemanticTokensProvider.scala:89)
+	at scala.meta.internal.metals.Compilers.$anonfun$semanticTokens$3(Compilers.scala:514)
+	at scala.concurrent.impl.Promise$Transformation.run(Promise.scala:467)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1144)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:642)
+	at java.lang.Thread.run(Thread.java:1583)
+
+2024.05.25 11:59:05 ERROR Failed to tokenize input for semantic tokens for /Users/victoriamac/Desktop/Univalle/Cuarto Semestre/Programacion funcional y concurrente/proyectoFinal/GestioVuelos/src/main/scala/ItinerariosPar/package.scala
+scala.meta.tokenizers.TokenizeException: <input>:68: error: unclosed comment
+  /*NOTA: 
+  ^
+	at scala.meta.internal.tokenizers.Reporter.incompleteInputError(Reporter.scala:27)
+	at scala.meta.internal.tokenizers.Reporter.incompleteInputError$(Reporter.scala:26)
+	at scala.meta.internal.tokenizers.Reporter$$anon$1.incompleteInputError(Reporter.scala:33)
+	at scala.meta.internal.tokenizers.Reporter.incompleteInputError(Reporter.scala:29)
+	at scala.meta.internal.tokenizers.Reporter.incompleteInputError$(Reporter.scala:29)
+	at scala.meta.internal.tokenizers.Reporter$$anon$1.incompleteInputError(Reporter.scala:33)
+	at scala.meta.internal.tokenizers.LegacyScanner.skipNestedComments(LegacyScanner.scala:55)
+	at scala.meta.internal.tokenizers.LegacyScanner.skipToCommentEnd(LegacyScanner.scala:74)
+	at scala.meta.internal.tokenizers.LegacyScanner.fetchToken(LegacyScanner.scala:316)
+	at scala.meta.internal.tokenizers.LegacyScanner.nextToken(LegacyScanner.scala:214)
+	at scala.meta.internal.tokenizers.LegacyScanner.foreach(LegacyScanner.scala:982)
+	at scala.meta.internal.tokenizers.ScalametaTokenizer.uncachedTokenize(ScalametaTokenizer.scala:23)
+	at scala.meta.internal.tokenizers.ScalametaTokenizer.$anonfun$tokenize$1(ScalametaTokenizer.scala:16)
+	at scala.collection.concurrent.TrieMap.getOrElseUpdate(TrieMap.scala:960)
+	at scala.meta.internal.tokenizers.ScalametaTokenizer.tokenize(ScalametaTokenizer.scala:16)
+	at scala.meta.internal.tokenizers.ScalametaTokenizer$$anon$2.apply(ScalametaTokenizer.scala:331)
+	at scala.meta.tokenizers.Api$XtensionTokenizeDialectInput.tokenize(Api.scala:25)
+	at scala.meta.tokenizers.Api$XtensionTokenizeInputLike.tokenize(Api.scala:14)
+	at scala.meta.internal.metals.SemanticTokensProvider$.getTokens(SemanticTokensProvider.scala:30)
+	at scala.meta.internal.metals.SemanticTokensProvider$.provide(SemanticTokensProvider.scala:89)
+	at scala.meta.internal.metals.Compilers.$anonfun$semanticTokens$3(Compilers.scala:514)
+	at scala.concurrent.impl.Promise$Transformation.run(Promise.scala:467)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1144)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:642)
+	at java.lang.Thread.run(Thread.java:1583)
+
+2024.05.25 11:59:05 ERROR Failed to tokenize input for semantic tokens for /Users/victoriamac/Desktop/Univalle/Cuarto Semestre/Programacion funcional y concurrente/proyectoFinal/GestioVuelos/src/main/scala/ItinerariosPar/package.scala
+scala.meta.tokenizers.TokenizeException: <input>:68: error: unclosed comment
+  /*NOTA: 
+  ^
+	at scala.meta.internal.tokenizers.Reporter.incompleteInputError(Reporter.scala:27)
+	at scala.meta.internal.tokenizers.Reporter.incompleteInputError$(Reporter.scala:26)
+	at scala.meta.internal.tokenizers.Reporter$$anon$1.incompleteInputError(Reporter.scala:33)
+	at scala.meta.internal.tokenizers.Reporter.incompleteInputError(Reporter.scala:29)
+	at scala.meta.internal.tokenizers.Reporter.incompleteInputError$(Reporter.scala:29)
+	at scala.meta.internal.tokenizers.Reporter$$anon$1.incompleteInputError(Reporter.scala:33)
+	at scala.meta.internal.tokenizers.LegacyScanner.skipNestedComments(LegacyScanner.scala:55)
+	at scala.meta.internal.tokenizers.LegacyScanner.skipToCommentEnd(LegacyScanner.scala:74)
+	at scala.meta.internal.tokenizers.LegacyScanner.fetchToken(LegacyScanner.scala:316)
+	at scala.meta.internal.tokenizers.LegacyScanner.nextToken(LegacyScanner.scala:214)
+	at scala.meta.internal.tokenizers.LegacyScanner.foreach(LegacyScanner.scala:982)
+	at scala.meta.internal.tokenizers.ScalametaTokenizer.uncachedTokenize(ScalametaTokenizer.scala:23)
+	at scala.meta.internal.tokenizers.ScalametaTokenizer.$anonfun$tokenize$1(ScalametaTokenizer.scala:16)
+	at scala.collection.concurrent.TrieMap.getOrElseUpdate(TrieMap.scala:960)
+	at scala.meta.internal.tokenizers.ScalametaTokenizer.tokenize(ScalametaTokenizer.scala:16)
+	at scala.meta.internal.tokenizers.ScalametaTokenizer$$anon$2.apply(ScalametaTokenizer.scala:331)
+	at scala.meta.tokenizers.Api$XtensionTokenizeDialectInput.tokenize(Api.scala:25)
+	at scala.meta.tokenizers.Api$XtensionTokenizeInputLike.tokenize(Api.scala:14)
+	at scala.meta.internal.metals.SemanticTokensProvider$.getTokens(SemanticTokensProvider.scala:30)
+	at scala.meta.internal.metals.SemanticTokensProvider$.provide(SemanticTokensProvider.scala:89)
+	at scala.meta.internal.metals.Compilers.$anonfun$semanticTokens$3(Compilers.scala:514)
+	at scala.concurrent.impl.Promise$Transformation.run(Promise.scala:467)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1144)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:642)
+	at java.lang.Thread.run(Thread.java:1583)
+
+2024.05.25 11:59:05 ERROR Failed to tokenize input for semantic tokens for /Users/victoriamac/Desktop/Univalle/Cuarto Semestre/Programacion funcional y concurrente/proyectoFinal/GestioVuelos/src/main/scala/ItinerariosPar/package.scala
+scala.meta.tokenizers.TokenizeException: <input>:68: error: unclosed comment
+  /*NOTA: 
+  ^
+	at scala.meta.internal.tokenizers.Reporter.incompleteInputError(Reporter.scala:27)
+	at scala.meta.internal.tokenizers.Reporter.incompleteInputError$(Reporter.scala:26)
+	at scala.meta.internal.tokenizers.Reporter$$anon$1.incompleteInputError(Reporter.scala:33)
+	at scala.meta.internal.tokenizers.Reporter.incompleteInputError(Reporter.scala:29)
+	at scala.meta.internal.tokenizers.Reporter.incompleteInputError$(Reporter.scala:29)
+	at scala.meta.internal.tokenizers.Reporter$$anon$1.incompleteInputError(Reporter.scala:33)
+	at scala.meta.internal.tokenizers.LegacyScanner.skipNestedComments(LegacyScanner.scala:55)
+	at scala.meta.internal.tokenizers.LegacyScanner.skipToCommentEnd(LegacyScanner.scala:74)
+	at scala.meta.internal.tokenizers.LegacyScanner.fetchToken(LegacyScanner.scala:316)
+	at scala.meta.internal.tokenizers.LegacyScanner.nextToken(LegacyScanner.scala:214)
+	at scala.meta.internal.tokenizers.LegacyScanner.foreach(LegacyScanner.scala:982)
+	at scala.meta.internal.tokenizers.ScalametaTokenizer.uncachedTokenize(ScalametaTokenizer.scala:23)
+	at scala.meta.internal.tokenizers.ScalametaTokenizer.$anonfun$tokenize$1(ScalametaTokenizer.scala:16)
+	at scala.collection.concurrent.TrieMap.getOrElseUpdate(TrieMap.scala:960)
+	at scala.meta.internal.tokenizers.ScalametaTokenizer.tokenize(ScalametaTokenizer.scala:16)
+	at scala.meta.internal.tokenizers.ScalametaTokenizer$$anon$2.apply(ScalametaTokenizer.scala:331)
+	at scala.meta.tokenizers.Api$XtensionTokenizeDialectInput.tokenize(Api.scala:25)
+	at scala.meta.tokenizers.Api$XtensionTokenizeInputLike.tokenize(Api.scala:14)
+	at scala.meta.internal.metals.SemanticTokensProvider$.getTokens(SemanticTokensProvider.scala:30)
+	at scala.meta.internal.metals.SemanticTokensProvider$.provide(SemanticTokensProvider.scala:89)
+	at scala.meta.internal.metals.Compilers.$anonfun$semanticTokens$3(Compilers.scala:514)
+	at scala.concurrent.impl.Promise$Transformation.run(Promise.scala:467)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1144)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:642)
+	at java.lang.Thread.run(Thread.java:1583)
+
+2024.05.25 11:59:06 ERROR Failed to tokenize input for semantic tokens for /Users/victoriamac/Desktop/Univalle/Cuarto Semestre/Programacion funcional y concurrente/proyectoFinal/GestioVuelos/src/main/scala/ItinerariosPar/package.scala
+scala.meta.tokenizers.TokenizeException: <input>:68: error: unclosed comment
+  /*NOTA: 
+  ^
+	at scala.meta.internal.tokenizers.Reporter.incompleteInputError(Reporter.scala:27)
+	at scala.meta.internal.tokenizers.Reporter.incompleteInputError$(Reporter.scala:26)
+	at scala.meta.internal.tokenizers.Reporter$$anon$1.incompleteInputError(Reporter.scala:33)
+	at scala.meta.internal.tokenizers.Reporter.incompleteInputError(Reporter.scala:29)
+	at scala.meta.internal.tokenizers.Reporter.incompleteInputError$(Reporter.scala:29)
+	at scala.meta.internal.tokenizers.Reporter$$anon$1.incompleteInputError(Reporter.scala:33)
+	at scala.meta.internal.tokenizers.LegacyScanner.skipNestedComments(LegacyScanner.scala:55)
+	at scala.meta.internal.tokenizers.LegacyScanner.skipToCommentEnd(LegacyScanner.scala:74)
+	at scala.meta.internal.tokenizers.LegacyScanner.fetchToken(LegacyScanner.scala:316)
+	at scala.meta.internal.tokenizers.LegacyScanner.nextToken(LegacyScanner.scala:214)
+	at scala.meta.internal.tokenizers.LegacyScanner.foreach(LegacyScanner.scala:982)
+	at scala.meta.internal.tokenizers.ScalametaTokenizer.uncachedTokenize(ScalametaTokenizer.scala:23)
+	at scala.meta.internal.tokenizers.ScalametaTokenizer.$anonfun$tokenize$1(ScalametaTokenizer.scala:16)
+	at scala.collection.concurrent.TrieMap.getOrElseUpdate(TrieMap.scala:960)
+	at scala.meta.internal.tokenizers.ScalametaTokenizer.tokenize(ScalametaTokenizer.scala:16)
+	at scala.meta.internal.tokenizers.ScalametaTokenizer$$anon$2.apply(ScalametaTokenizer.scala:331)
+	at scala.meta.tokenizers.Api$XtensionTokenizeDialectInput.tokenize(Api.scala:25)
+	at scala.meta.tokenizers.Api$XtensionTokenizeInputLike.tokenize(Api.scala:14)
+	at scala.meta.internal.metals.SemanticTokensProvider$.getTokens(SemanticTokensProvider.scala:30)
+	at scala.meta.internal.metals.SemanticTokensProvider$.provide(SemanticTokensProvider.scala:89)
+	at scala.meta.internal.metals.Compilers.$anonfun$semanticTokens$3(Compilers.scala:514)
+	at scala.concurrent.impl.Promise$Transformation.run(Promise.scala:467)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1144)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:642)
+	at java.lang.Thread.run(Thread.java:1583)
+
+2024.05.25 11:59:08 ERROR Failed to tokenize input for semantic tokens for /Users/victoriamac/Desktop/Univalle/Cuarto Semestre/Programacion funcional y concurrente/proyectoFinal/GestioVuelos/src/main/scala/ItinerariosPar/package.scala
+scala.meta.tokenizers.TokenizeException: <input>:68: error: unclosed comment
+  /*NOTA: 
+  ^
+	at scala.meta.internal.tokenizers.Reporter.incompleteInputError(Reporter.scala:27)
+	at scala.meta.internal.tokenizers.Reporter.incompleteInputError$(Reporter.scala:26)
+	at scala.meta.internal.tokenizers.Reporter$$anon$1.incompleteInputError(Reporter.scala:33)
+	at scala.meta.internal.tokenizers.Reporter.incompleteInputError(Reporter.scala:29)
+	at scala.meta.internal.tokenizers.Reporter.incompleteInputError$(Reporter.scala:29)
+	at scala.meta.internal.tokenizers.Reporter$$anon$1.incompleteInputError(Reporter.scala:33)
+	at scala.meta.internal.tokenizers.LegacyScanner.skipNestedComments(LegacyScanner.scala:55)
+	at scala.meta.internal.tokenizers.LegacyScanner.skipToCommentEnd(LegacyScanner.scala:74)
+	at scala.meta.internal.tokenizers.LegacyScanner.fetchToken(LegacyScanner.scala:316)
+	at scala.meta.internal.tokenizers.LegacyScanner.nextToken(LegacyScanner.scala:214)
+	at scala.meta.internal.tokenizers.LegacyScanner.foreach(LegacyScanner.scala:982)
+	at scala.meta.internal.tokenizers.ScalametaTokenizer.uncachedTokenize(ScalametaTokenizer.scala:23)
+	at scala.meta.internal.tokenizers.ScalametaTokenizer.$anonfun$tokenize$1(ScalametaTokenizer.scala:16)
+	at scala.collection.concurrent.TrieMap.getOrElseUpdate(TrieMap.scala:960)
+	at scala.meta.internal.tokenizers.ScalametaTokenizer.tokenize(ScalametaTokenizer.scala:16)
+	at scala.meta.internal.tokenizers.ScalametaTokenizer$$anon$2.apply(ScalametaTokenizer.scala:331)
+	at scala.meta.tokenizers.Api$XtensionTokenizeDialectInput.tokenize(Api.scala:25)
+	at scala.meta.tokenizers.Api$XtensionTokenizeInputLike.tokenize(Api.scala:14)
+	at scala.meta.internal.metals.SemanticTokensProvider$.getTokens(SemanticTokensProvider.scala:30)
+	at scala.meta.internal.metals.SemanticTokensProvider$.provide(SemanticTokensProvider.scala:89)
+	at scala.meta.internal.metals.Compilers.$anonfun$semanticTokens$3(Compilers.scala:514)
+	at scala.concurrent.impl.Promise$Transformation.run(Promise.scala:467)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1144)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:642)
+	at java.lang.Thread.run(Thread.java:1583)
+
+2024.05.25 11:59:11 INFO  compiling root (5 scala sources)
+2024.05.25 11:59:11 INFO  time: compiled root in 0.59s
+2024.05.25 11:59:11 ERROR Failed to tokenize input for semantic tokens for /Users/victoriamac/Desktop/Univalle/Cuarto Semestre/Programacion funcional y concurrente/proyectoFinal/GestioVuelos/src/main/scala/ItinerariosPar/package.scala
+scala.meta.tokenizers.TokenizeException: <input>:68: error: unclosed comment
+  /*NOTA: 
+  ^
+	at scala.meta.internal.tokenizers.Reporter.incompleteInputError(Reporter.scala:27)
+	at scala.meta.internal.tokenizers.Reporter.incompleteInputError$(Reporter.scala:26)
+	at scala.meta.internal.tokenizers.Reporter$$anon$1.incompleteInputError(Reporter.scala:33)
+	at scala.meta.internal.tokenizers.Reporter.incompleteInputError(Reporter.scala:29)
+	at scala.meta.internal.tokenizers.Reporter.incompleteInputError$(Reporter.scala:29)
+	at scala.meta.internal.tokenizers.Reporter$$anon$1.incompleteInputError(Reporter.scala:33)
+	at scala.meta.internal.tokenizers.LegacyScanner.skipNestedComments(LegacyScanner.scala:55)
+	at scala.meta.internal.tokenizers.LegacyScanner.skipToCommentEnd(LegacyScanner.scala:74)
+	at scala.meta.internal.tokenizers.LegacyScanner.fetchToken(LegacyScanner.scala:316)
+	at scala.meta.internal.tokenizers.LegacyScanner.nextToken(LegacyScanner.scala:214)
+	at scala.meta.internal.tokenizers.LegacyScanner.foreach(LegacyScanner.scala:982)
+	at scala.meta.internal.tokenizers.ScalametaTokenizer.uncachedTokenize(ScalametaTokenizer.scala:23)
+	at scala.meta.internal.tokenizers.ScalametaTokenizer.$anonfun$tokenize$1(ScalametaTokenizer.scala:16)
+	at scala.collection.concurrent.TrieMap.getOrElseUpdate(TrieMap.scala:960)
+	at scala.meta.internal.tokenizers.ScalametaTokenizer.tokenize(ScalametaTokenizer.scala:16)
+	at scala.meta.internal.tokenizers.ScalametaTokenizer$$anon$2.apply(ScalametaTokenizer.scala:331)
+	at scala.meta.tokenizers.Api$XtensionTokenizeDialectInput.tokenize(Api.scala:25)
+	at scala.meta.tokenizers.Api$XtensionTokenizeInputLike.tokenize(Api.scala:14)
+	at scala.meta.internal.metals.SemanticTokensProvider$.getTokens(SemanticTokensProvider.scala:30)
+	at scala.meta.internal.metals.SemanticTokensProvider$.provide(SemanticTokensProvider.scala:89)
+	at scala.meta.internal.metals.Compilers.$anonfun$semanticTokens$3(Compilers.scala:514)
+	at scala.concurrent.impl.Promise$Transformation.run(Promise.scala:467)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1144)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:642)
+	at java.lang.Thread.run(Thread.java:1583)
+
+2024.05.25 11:59:15 ERROR Failed to tokenize input for semantic tokens for /Users/victoriamac/Desktop/Univalle/Cuarto Semestre/Programacion funcional y concurrente/proyectoFinal/GestioVuelos/src/main/scala/ItinerariosPar/package.scala
+scala.meta.tokenizers.TokenizeException: <input>:70: error: unclosed comment
+    /*
+    ^
+	at scala.meta.internal.tokenizers.Reporter.incompleteInputError(Reporter.scala:27)
+	at scala.meta.internal.tokenizers.Reporter.incompleteInputError$(Reporter.scala:26)
+	at scala.meta.internal.tokenizers.Reporter$$anon$1.incompleteInputError(Reporter.scala:33)
+	at scala.meta.internal.tokenizers.Reporter.incompleteInputError(Reporter.scala:29)
+	at scala.meta.internal.tokenizers.Reporter.incompleteInputError$(Reporter.scala:29)
+	at scala.meta.internal.tokenizers.Reporter$$anon$1.incompleteInputError(Reporter.scala:33)
+	at scala.meta.internal.tokenizers.LegacyScanner.skipNestedComments(LegacyScanner.scala:55)
+	at scala.meta.internal.tokenizers.LegacyScanner.skipToCommentEnd(LegacyScanner.scala:74)
+	at scala.meta.internal.tokenizers.LegacyScanner.fetchToken(LegacyScanner.scala:316)
+	at scala.meta.internal.tokenizers.LegacyScanner.nextToken(LegacyScanner.scala:214)
+	at scala.meta.internal.tokenizers.LegacyScanner.foreach(LegacyScanner.scala:982)
+	at scala.meta.internal.tokenizers.ScalametaTokenizer.uncachedTokenize(ScalametaTokenizer.scala:23)
+	at scala.meta.internal.tokenizers.ScalametaTokenizer.$anonfun$tokenize$1(ScalametaTokenizer.scala:16)
+	at scala.collection.concurrent.TrieMap.getOrElseUpdate(TrieMap.scala:960)
+	at scala.meta.internal.tokenizers.ScalametaTokenizer.tokenize(ScalametaTokenizer.scala:16)
+	at scala.meta.internal.tokenizers.ScalametaTokenizer$$anon$2.apply(ScalametaTokenizer.scala:331)
+	at scala.meta.tokenizers.Api$XtensionTokenizeDialectInput.tokenize(Api.scala:25)
+	at scala.meta.tokenizers.Api$XtensionTokenizeInputLike.tokenize(Api.scala:14)
+	at scala.meta.internal.metals.SemanticTokensProvider$.getTokens(SemanticTokensProvider.scala:30)
+	at scala.meta.internal.metals.SemanticTokensProvider$.provide(SemanticTokensProvider.scala:89)
+	at scala.meta.internal.metals.Compilers.$anonfun$semanticTokens$3(Compilers.scala:514)
+	at scala.concurrent.impl.Promise$Transformation.run(Promise.scala:467)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1144)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:642)
+	at java.lang.Thread.run(Thread.java:1583)
+
+2024.05.25 11:59:16 ERROR Failed to tokenize input for semantic tokens for /Users/victoriamac/Desktop/Univalle/Cuarto Semestre/Programacion funcional y concurrente/proyectoFinal/GestioVuelos/src/main/scala/ItinerariosPar/package.scala
+scala.meta.tokenizers.TokenizeException: <input>:70: error: unclosed comment
+    /*
+    ^
+	at scala.meta.internal.tokenizers.Reporter.incompleteInputError(Reporter.scala:27)
+	at scala.meta.internal.tokenizers.Reporter.incompleteInputError$(Reporter.scala:26)
+	at scala.meta.internal.tokenizers.Reporter$$anon$1.incompleteInputError(Reporter.scala:33)
+	at scala.meta.internal.tokenizers.Reporter.incompleteInputError(Reporter.scala:29)
+	at scala.meta.internal.tokenizers.Reporter.incompleteInputError$(Reporter.scala:29)
+	at scala.meta.internal.tokenizers.Reporter$$anon$1.incompleteInputError(Reporter.scala:33)
+	at scala.meta.internal.tokenizers.LegacyScanner.skipNestedComments(LegacyScanner.scala:55)
+	at scala.meta.internal.tokenizers.LegacyScanner.skipToCommentEnd(LegacyScanner.scala:74)
+	at scala.meta.internal.tokenizers.LegacyScanner.fetchToken(LegacyScanner.scala:316)
+	at scala.meta.internal.tokenizers.LegacyScanner.nextToken(LegacyScanner.scala:214)
+	at scala.meta.internal.tokenizers.LegacyScanner.foreach(LegacyScanner.scala:982)
+	at scala.meta.internal.tokenizers.ScalametaTokenizer.uncachedTokenize(ScalametaTokenizer.scala:23)
+	at scala.meta.internal.tokenizers.ScalametaTokenizer.$anonfun$tokenize$1(ScalametaTokenizer.scala:16)
+	at scala.collection.concurrent.TrieMap.getOrElseUpdate(TrieMap.scala:960)
+	at scala.meta.internal.tokenizers.ScalametaTokenizer.tokenize(ScalametaTokenizer.scala:16)
+	at scala.meta.internal.tokenizers.ScalametaTokenizer$$anon$2.apply(ScalametaTokenizer.scala:331)
+	at scala.meta.tokenizers.Api$XtensionTokenizeDialectInput.tokenize(Api.scala:25)
+	at scala.meta.tokenizers.Api$XtensionTokenizeInputLike.tokenize(Api.scala:14)
+	at scala.meta.internal.metals.SemanticTokensProvider$.getTokens(SemanticTokensProvider.scala:30)
+	at scala.meta.internal.metals.SemanticTokensProvider$.provide(SemanticTokensProvider.scala:89)
+	at scala.meta.internal.metals.Compilers.$anonfun$semanticTokens$3(Compilers.scala:514)
+	at scala.concurrent.impl.Promise$Transformation.run(Promise.scala:467)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1144)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:642)
+	at java.lang.Thread.run(Thread.java:1583)
+
+2024.05.25 11:59:16 ERROR Failed to tokenize input for semantic tokens for /Users/victoriamac/Desktop/Univalle/Cuarto Semestre/Programacion funcional y concurrente/proyectoFinal/GestioVuelos/src/main/scala/ItinerariosPar/package.scala
+scala.meta.tokenizers.TokenizeException: <input>:70: error: unclosed comment
+    /*
+    ^
+	at scala.meta.internal.tokenizers.Reporter.incompleteInputError(Reporter.scala:27)
+	at scala.meta.internal.tokenizers.Reporter.incompleteInputError$(Reporter.scala:26)
+	at scala.meta.internal.tokenizers.Reporter$$anon$1.incompleteInputError(Reporter.scala:33)
+	at scala.meta.internal.tokenizers.Reporter.incompleteInputError(Reporter.scala:29)
+	at scala.meta.internal.tokenizers.Reporter.incompleteInputError$(Reporter.scala:29)
+	at scala.meta.internal.tokenizers.Reporter$$anon$1.incompleteInputError(Reporter.scala:33)
+	at scala.meta.internal.tokenizers.LegacyScanner.skipNestedComments(LegacyScanner.scala:55)
+	at scala.meta.internal.tokenizers.LegacyScanner.skipToCommentEnd(LegacyScanner.scala:74)
+	at scala.meta.internal.tokenizers.LegacyScanner.fetchToken(LegacyScanner.scala:316)
+	at scala.meta.internal.tokenizers.LegacyScanner.nextToken(LegacyScanner.scala:214)
+	at scala.meta.internal.tokenizers.LegacyScanner.foreach(LegacyScanner.scala:982)
+	at scala.meta.internal.tokenizers.ScalametaTokenizer.uncachedTokenize(ScalametaTokenizer.scala:23)
+	at scala.meta.internal.tokenizers.ScalametaTokenizer.$anonfun$tokenize$1(ScalametaTokenizer.scala:16)
+	at scala.collection.concurrent.TrieMap.getOrElseUpdate(TrieMap.scala:960)
+	at scala.meta.internal.tokenizers.ScalametaTokenizer.tokenize(ScalametaTokenizer.scala:16)
+	at scala.meta.internal.tokenizers.ScalametaTokenizer$$anon$2.apply(ScalametaTokenizer.scala:331)
+	at scala.meta.tokenizers.Api$XtensionTokenizeDialectInput.tokenize(Api.scala:25)
+	at scala.meta.tokenizers.Api$XtensionTokenizeInputLike.tokenize(Api.scala:14)
+	at scala.meta.internal.metals.SemanticTokensProvider$.getTokens(SemanticTokensProvider.scala:30)
+	at scala.meta.internal.metals.SemanticTokensProvider$.provide(SemanticTokensProvider.scala:89)
+	at scala.meta.internal.metals.Compilers.$anonfun$semanticTokens$3(Compilers.scala:514)
+	at scala.concurrent.impl.Promise$Transformation.run(Promise.scala:467)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1144)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:642)
+	at java.lang.Thread.run(Thread.java:1583)
+
+2024.05.25 11:59:17 ERROR Failed to tokenize input for semantic tokens for /Users/victoriamac/Desktop/Univalle/Cuarto Semestre/Programacion funcional y concurrente/proyectoFinal/GestioVuelos/src/main/scala/ItinerariosPar/package.scala
+scala.meta.tokenizers.TokenizeException: <input>:70: error: unclosed comment
+    /*
+    ^
+	at scala.meta.internal.tokenizers.Reporter.incompleteInputError(Reporter.scala:27)
+	at scala.meta.internal.tokenizers.Reporter.incompleteInputError$(Reporter.scala:26)
+	at scala.meta.internal.tokenizers.Reporter$$anon$1.incompleteInputError(Reporter.scala:33)
+	at scala.meta.internal.tokenizers.Reporter.incompleteInputError(Reporter.scala:29)
+	at scala.meta.internal.tokenizers.Reporter.incompleteInputError$(Reporter.scala:29)
+	at scala.meta.internal.tokenizers.Reporter$$anon$1.incompleteInputError(Reporter.scala:33)
+	at scala.meta.internal.tokenizers.LegacyScanner.skipNestedComments(LegacyScanner.scala:55)
+	at scala.meta.internal.tokenizers.LegacyScanner.skipToCommentEnd(LegacyScanner.scala:74)
+	at scala.meta.internal.tokenizers.LegacyScanner.fetchToken(LegacyScanner.scala:316)
+	at scala.meta.internal.tokenizers.LegacyScanner.nextToken(LegacyScanner.scala:214)
+	at scala.meta.internal.tokenizers.LegacyScanner.foreach(LegacyScanner.scala:982)
+	at scala.meta.internal.tokenizers.ScalametaTokenizer.uncachedTokenize(ScalametaTokenizer.scala:23)
+	at scala.meta.internal.tokenizers.ScalametaTokenizer.$anonfun$tokenize$1(ScalametaTokenizer.scala:16)
+	at scala.collection.concurrent.TrieMap.getOrElseUpdate(TrieMap.scala:960)
+	at scala.meta.internal.tokenizers.ScalametaTokenizer.tokenize(ScalametaTokenizer.scala:16)
+	at scala.meta.internal.tokenizers.ScalametaTokenizer$$anon$2.apply(ScalametaTokenizer.scala:331)
+	at scala.meta.tokenizers.Api$XtensionTokenizeDialectInput.tokenize(Api.scala:25)
+	at scala.meta.tokenizers.Api$XtensionTokenizeInputLike.tokenize(Api.scala:14)
+	at scala.meta.internal.metals.SemanticTokensProvider$.getTokens(SemanticTokensProvider.scala:30)
+	at scala.meta.internal.metals.SemanticTokensProvider$.provide(SemanticTokensProvider.scala:89)
+	at scala.meta.internal.metals.Compilers.$anonfun$semanticTokens$3(Compilers.scala:514)
+	at scala.concurrent.impl.Promise$Transformation.run(Promise.scala:467)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1144)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:642)
+	at java.lang.Thread.run(Thread.java:1583)
+
+2024.05.25 11:59:17 ERROR Failed to tokenize input for semantic tokens for /Users/victoriamac/Desktop/Univalle/Cuarto Semestre/Programacion funcional y concurrente/proyectoFinal/GestioVuelos/src/main/scala/ItinerariosPar/package.scala
+scala.meta.tokenizers.TokenizeException: <input>:68: error: unclosed comment
+  /*NOTA: 
+  ^
+	at scala.meta.internal.tokenizers.Reporter.incompleteInputError(Reporter.scala:27)
+	at scala.meta.internal.tokenizers.Reporter.incompleteInputError$(Reporter.scala:26)
+	at scala.meta.internal.tokenizers.Reporter$$anon$1.incompleteInputError(Reporter.scala:33)
+	at scala.meta.internal.tokenizers.Reporter.incompleteInputError(Reporter.scala:29)
+	at scala.meta.internal.tokenizers.Reporter.incompleteInputError$(Reporter.scala:29)
+	at scala.meta.internal.tokenizers.Reporter$$anon$1.incompleteInputError(Reporter.scala:33)
+	at scala.meta.internal.tokenizers.LegacyScanner.skipNestedComments(LegacyScanner.scala:55)
+	at scala.meta.internal.tokenizers.LegacyScanner.skipToCommentEnd(LegacyScanner.scala:74)
+	at scala.meta.internal.tokenizers.LegacyScanner.fetchToken(LegacyScanner.scala:316)
+	at scala.meta.internal.tokenizers.LegacyScanner.nextToken(LegacyScanner.scala:214)
+	at scala.meta.internal.tokenizers.LegacyScanner.foreach(LegacyScanner.scala:982)
+	at scala.meta.internal.tokenizers.ScalametaTokenizer.uncachedTokenize(ScalametaTokenizer.scala:23)
+	at scala.meta.internal.tokenizers.ScalametaTokenizer.$anonfun$tokenize$1(ScalametaTokenizer.scala:16)
+	at scala.collection.concurrent.TrieMap.getOrElseUpdate(TrieMap.scala:960)
+	at scala.meta.internal.tokenizers.ScalametaTokenizer.tokenize(ScalametaTokenizer.scala:16)
+	at scala.meta.internal.tokenizers.ScalametaTokenizer$$anon$2.apply(ScalametaTokenizer.scala:331)
+	at scala.meta.tokenizers.Api$XtensionTokenizeDialectInput.tokenize(Api.scala:25)
+	at scala.meta.tokenizers.Api$XtensionTokenizeInputLike.tokenize(Api.scala:14)
+	at scala.meta.internal.metals.SemanticTokensProvider$.getTokens(SemanticTokensProvider.scala:30)
+	at scala.meta.internal.metals.SemanticTokensProvider$.provide(SemanticTokensProvider.scala:89)
+	at scala.meta.internal.metals.Compilers.$anonfun$semanticTokens$3(Compilers.scala:514)
+	at scala.concurrent.impl.Promise$Transformation.run(Promise.scala:467)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1144)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:642)
+	at java.lang.Thread.run(Thread.java:1583)
+
+2024.05.25 11:59:19 ERROR Failed to tokenize input for semantic tokens for /Users/victoriamac/Desktop/Univalle/Cuarto Semestre/Programacion funcional y concurrente/proyectoFinal/GestioVuelos/src/main/scala/ItinerariosPar/package.scala
+scala.meta.tokenizers.TokenizeException: <input>:70: error: unclosed comment
+    /*
+    ^
+	at scala.meta.internal.tokenizers.Reporter.incompleteInputError(Reporter.scala:27)
+	at scala.meta.internal.tokenizers.Reporter.incompleteInputError$(Reporter.scala:26)
+	at scala.meta.internal.tokenizers.Reporter$$anon$1.incompleteInputError(Reporter.scala:33)
+	at scala.meta.internal.tokenizers.Reporter.incompleteInputError(Reporter.scala:29)
+	at scala.meta.internal.tokenizers.Reporter.incompleteInputError$(Reporter.scala:29)
+	at scala.meta.internal.tokenizers.Reporter$$anon$1.incompleteInputError(Reporter.scala:33)
+	at scala.meta.internal.tokenizers.LegacyScanner.skipNestedComments(LegacyScanner.scala:55)
+	at scala.meta.internal.tokenizers.LegacyScanner.skipToCommentEnd(LegacyScanner.scala:74)
+	at scala.meta.internal.tokenizers.LegacyScanner.fetchToken(LegacyScanner.scala:316)
+	at scala.meta.internal.tokenizers.LegacyScanner.nextToken(LegacyScanner.scala:214)
+	at scala.meta.internal.tokenizers.LegacyScanner.foreach(LegacyScanner.scala:982)
+	at scala.meta.internal.tokenizers.ScalametaTokenizer.uncachedTokenize(ScalametaTokenizer.scala:23)
+	at scala.meta.internal.tokenizers.ScalametaTokenizer.$anonfun$tokenize$1(ScalametaTokenizer.scala:16)
+	at scala.collection.concurrent.TrieMap.getOrElseUpdate(TrieMap.scala:960)
+	at scala.meta.internal.tokenizers.ScalametaTokenizer.tokenize(ScalametaTokenizer.scala:16)
+	at scala.meta.internal.tokenizers.ScalametaTokenizer$$anon$2.apply(ScalametaTokenizer.scala:331)
+	at scala.meta.tokenizers.Api$XtensionTokenizeDialectInput.tokenize(Api.scala:25)
+	at scala.meta.tokenizers.Api$XtensionTokenizeInputLike.tokenize(Api.scala:14)
+	at scala.meta.internal.metals.SemanticTokensProvider$.getTokens(SemanticTokensProvider.scala:30)
+	at scala.meta.internal.metals.SemanticTokensProvider$.provide(SemanticTokensProvider.scala:89)
+	at scala.meta.internal.metals.Compilers.$anonfun$semanticTokens$3(Compilers.scala:514)
+	at scala.concurrent.impl.Promise$Transformation.run(Promise.scala:467)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1144)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:642)
+	at java.lang.Thread.run(Thread.java:1583)
+
+2024.05.25 11:59:23 INFO  compiling root (5 scala sources)
+2024.05.25 11:59:23 INFO  time: compiled root in 0.42s
+2024.05.25 12:00:24 INFO  compiling root (5 scala sources)
+2024.05.25 12:00:26 INFO  time: compiled root in 2.14s
+2024.05.25 12:00:39 INFO  compiling root (5 scala sources)
+2024.05.25 12:00:39 INFO  time: compiled root in 0.85s
+2024.05.25 12:00:49 INFO  compiling root (5 scala sources)
+2024.05.25 12:00:50 INFO  time: compiled root in 1s
+2024.05.25 12:00:57 INFO  compiling root (5 scala sources)
+2024.05.25 12:00:57 INFO  time: compiled root in 0.73s
+2024.05.25 12:01:04 INFO  compiling root (5 scala sources)
+2024.05.25 12:01:04 INFO  time: compiled root in 0.57s
+2024.05.25 12:01:13 INFO  compiling root (5 scala sources)
+2024.05.25 12:01:13 INFO  time: compiled root in 0.78s
+2024.05.25 12:01:17 INFO  compiling root (5 scala sources)
+2024.05.25 12:01:17 INFO  time: compiled root in 0.7s
+may 25, 2024 12:01:19 P. M. org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+WARNING: Unmatched cancel notification for request id 3689
+2024.05.25 12:01:45 INFO  compiling root (5 scala sources)
+2024.05.25 12:01:46 INFO  time: compiled root in 1.07s
+2024.05.25 12:01:47 INFO  compiling root (5 scala sources)
+2024.05.25 12:01:47 INFO  time: compiled root in 0.54s
+2024.05.25 12:02:01 INFO  compiling root (5 scala sources)
+2024.05.25 12:02:13 INFO  time: compiled root in 12s
+may 25, 2024 12:03:00 P. M. org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+WARNING: Unmatched cancel notification for request id 3983
+2024.05.25 12:03:01 INFO  skipping build import with status 'Installed'
+2024.05.25 12:03:01 INFO  Disconnecting from Bloop session...
+2024.05.25 12:03:01 INFO  Shut down connection with build server.
+2024.05.25 12:03:01 INFO  Shut down connection with build server.
+2024.05.25 12:03:01 INFO  Attempting to connect to the build server...
+2024.05.25 12:03:01 INFO  tracing is disabled for protocol BSP, to enable tracing of incoming and outgoing JSON messages create an empty file at /Users/victoriamac/Desktop/Univalle/Cuarto Semestre/Programacion funcional y concurrente/proyectoFinal/GestioVuelos/.metals/bsp.trace.json or /Users/victoriamac/Library/Caches/org.scalameta.metals/bsp.trace.json
+2024.05.25 12:03:01 INFO  Attempting to connect to the build server...
+2024.05.25 12:03:01 INFO  no build target found for /Users/victoriamac/Desktop/Univalle/Cuarto Semestre/Programacion funcional y concurrente/proyectoFinal/GestioVuelos/build.sbt. Using presentation compiler with project's scala-library version: 2.13.14
+2024.05.25 12:03:01 INFO  tracing is disabled for protocol BSP, to enable tracing of incoming and outgoing JSON messages create an empty file at /Users/victoriamac/Desktop/Univalle/Cuarto Semestre/Programacion funcional y concurrente/proyectoFinal/GestioVuelos/project/.metals/bsp.trace.json or /Users/victoriamac/Library/Caches/org.scalameta.metals/bsp.trace.json
+2024.05.25 12:03:01 INFO  time: Connected to build server in 0.17s
+2024.05.25 12:03:01 INFO  Connected to Build server: Bloop v1.5.17
+2024.05.25 12:03:12 INFO  time: indexed workspace in 10s
+2024.05.25 12:05:43 INFO  Shutting down server
+2024.05.25 12:05:43 INFO  shutting down Metals
+2024.05.25 12:05:43 INFO  Shut down connection with build server.
+2024.05.25 12:05:43 INFO  Shut down connection with build server.
+2024.05.25 12:05:43 INFO  Exiting server
+2024.05.25 12:06:23 INFO  Started: Metals version 1.3.1 in folders '/Users/victoriamac/Desktop/Univalle/Cuarto Semestre/Programacion funcional y concurrente/proyectoFinal/GestioVuelos' for client Visual Studio Code 1.89.1.
+SLF4J(W): Class path contains multiple SLF4J providers.
+SLF4J(W): Found provider [scribe.slf4j.ScribeServiceProvider@1d323fd5]
+SLF4J(W): Found provider [ch.qos.logback.classic.spi.LogbackServiceProvider@3016b62c]
+SLF4J(W): See https://www.slf4j.org/codes.html#multiple_bindings for an explanation.
+SLF4J(I): Actual provider is of type [scribe.slf4j.ScribeServiceProvider@1d323fd5]
+2024.05.25 12:06:25 WARN  Flyway upgrade recommended: H2 2.2.224 is newer than this version of Flyway and support has not been tested. The latest supported version of H2 is 2.2.220.
+2024.05.25 12:06:27 INFO  no build target found for /Users/victoriamac/Desktop/Univalle/Cuarto Semestre/Programacion funcional y concurrente/proyectoFinal/GestioVuelos/src/main/scala/ItinerariosPar/package.scala. Using presentation compiler with project's scala-library version: 3.3.3
+2024.05.25 12:06:27 INFO  Attempting to connect to the build server...
+2024.05.25 12:06:28 INFO  tracing is disabled for protocol BSP, to enable tracing of incoming and outgoing JSON messages create an empty file at /Users/victoriamac/Desktop/Univalle/Cuarto Semestre/Programacion funcional y concurrente/proyectoFinal/GestioVuelos/.metals/bsp.trace.json or /Users/victoriamac/Library/Caches/org.scalameta.metals/bsp.trace.json
+2024.05.25 12:06:28 INFO  Attempting to connect to the build server...
+2024.05.25 12:06:28 INFO  tracing is disabled for protocol BSP, to enable tracing of incoming and outgoing JSON messages create an empty file at /Users/victoriamac/Desktop/Univalle/Cuarto Semestre/Programacion funcional y concurrente/proyectoFinal/GestioVuelos/project/.metals/bsp.trace.json or /Users/victoriamac/Library/Caches/org.scalameta.metals/bsp.trace.json
+2024.05.25 12:06:28 INFO  time: Connected to build server in 1.48s
+2024.05.25 12:06:28 INFO  Connected to Build server: Bloop v1.5.17
+2024.05.25 12:06:29 INFO  time: Imported build in 0.15s
+2024.05.25 12:06:44 INFO  time: indexed workspace in 14s
