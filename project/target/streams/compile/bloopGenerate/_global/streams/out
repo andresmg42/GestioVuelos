@@ -1,4 +1,4 @@
-[debug] [gestionvuelos-build] Classpath dependencies List()
-[debug] [gestionvuelos-build] Dependencies from configurations List()
-[debug] Bloop wrote the configuration of project 'gestionvuelos-build' to '/home/andresuv/cuartoSemestre/PFC/proyecto/proyectoMain/gestionvuelos/project/.bloop/gestionvuelos-build.json'
-[success] Generated .bloop/gestionvuelos-build.json
+[debug] [gestiovuelos-build] Classpath dependencies List()
+[debug] [gestiovuelos-build] Dependencies from configurations List()
+[debug] Bloop wrote the configuration of project 'gestiovuelos-build' to 'C:\Users\jjp28\Desktop\GestioVuelos\project\.bloop\gestiovuelos-build.json'
+[success] Generated .bloop\gestiovuelos-build.json

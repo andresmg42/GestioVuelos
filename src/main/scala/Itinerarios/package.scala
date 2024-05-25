@@ -114,4 +114,95 @@ package object Itinerarios {
 
   }
 
+  /*
+  def itinerarioSalida(vuelos: List[Vuelo], aeropuertos: List[Aeropuerto]): (String, String, Int, Int) => List[Itinerario] = {
+    (c1: String, c2: String, horaCita: Int, minutoCita: Int) => {
+      // Paso 1: Validar entradas
+      if (!aeropuertos.exists(_.Cod == c1) || !aeropuertos.exists(_.Cod == c2)) {
+        println(s"Códigos de aeropuerto inválidos: $c1, $c2")
+        List.empty[Itinerario]
+      } else {
+        // Paso 2: Filtrar vuelos de c1 a c2 que lleguen antes de la hora de la cita
+        val vuelosFiltrados = vuelos.filter(v => v.Org == c1 && v.Dst == c2 &&
+          (v.HL < horaCita || (v.HL == horaCita && v.ML <= minutoCita)))
+
+        // Paso 3: Crear itinerarios
+        val itinerarios: List[Itinerario] = vuelosFiltrados.map(vuelo => List(vuelo))
+
+        // Paso 4: Devolver los itinerarios
+        itinerarios
+      }
+    }
+  }
+  */
+
+  /*
+  def itinerarioSalida(vuelos: List[Vuelo], aeropuertos: List[Aeropuerto]): (String, String, Int, Int) => List[Itinerario] = {
+    (c1: String, c2: String, horaCita: Int, minutoCita: Int) => {
+      // Paso 1: Validar entradas
+      if (!aeropuertos.exists(_.Cod == c1) || !aeropuertos.exists(_.Cod == c2)) {
+        println(s"Códigos de aeropuerto inválidos: $c1, $c2")
+        List.empty[Itinerario]
+      } else {
+        // Paso 2: Filtrar vuelos que lleguen antes de la hora de la cita
+        val vuelosDirectos = vuelos.filter(v => v.Org == c1 && v.Dst == c2 &&
+          (v.HL < horaCita || (v.HL == horaCita && v.ML <= minutoCita)))
+
+        val vuelosConEscala = vuelos.flatMap { v1 =>
+          if (v1.Org == c1 && (v1.HL < horaCita || (v1.HL == horaCita && v1.ML <= minutoCita))) {
+            vuelos.filter(v2 =>
+              v1.Dst == v2.Org && v2.Dst == c2 &&
+                ((v2.HS > v1.HL) || (v2.HS == v1.HL && v2.MS > v1.ML)) && // V2 sale después de que V1 llegue
+                (v2.HL < horaCita || (v2.HL == horaCita && v2.ML <= minutoCita)) // V2 llega antes de la hora de la cita
+            ).map(v2 => List(v1, v2))
+          } else {
+            List.empty[List[Vuelo]]
+          }
+        }
+
+        // Paso 3: Combinar itinerarios directos y con escala
+        val itinerarios: List[Itinerario] = vuelosDirectos.map(vuelo => List(vuelo)) ++ vuelosConEscala
+
+        // Paso 4: Devolver los itinerarios
+        itinerarios
+      }
+    }
+  }
+  */
+
+  def itinerarioSalida(vuelos: List[Vuelo], aeropuertos: List[Aeropuerto]): (String, String, Int, Int) => List[Itinerario] = {
+    (c1: String, c2: String, horaCita: Int, minutoCita: Int) => {
+      // Paso 1: Validar entradas
+      if (!aeropuertos.exists(_.Cod == c1) || !aeropuertos.exists(_.Cod == c2)) {
+        println(s"Códigos de aeropuerto inválidos: $c1, $c2")
+        List.empty[Itinerario]
+      } else {
+        // Paso 2: Filtrar vuelos directos que lleguen antes de la hora de la cita
+        val vuelosDirectos = vuelos.filter(v => v.Org == c1 && v.Dst == c2 &&
+          (v.HL < horaCita || (v.HL == horaCita && v.ML <= minutoCita)))
+
+        // Paso 3: Filtrar vuelos con una escala que lleguen antes de la hora de la cita
+        val vuelosConEscala = vuelos.flatMap { v1 =>
+          if (v1.Org == c1 && (v1.HL < horaCita || (v1.HL == horaCita && v1.ML <= minutoCita))) {
+            vuelos.filter(v2 =>
+              v1.Dst == v2.Org && v2.Dst == c2 &&
+                ((v2.HS > v1.HL) || (v2.HS == v1.HL && v2.MS > v1.ML)) && // V2 sale después de que V1 llegue
+                (v2.HL < horaCita || (v2.HL == horaCita && v2.ML <= minutoCita)) // V2 llega antes de la hora de la cita
+            ).map(v2 => List(v1, v2))
+          } else {
+            List.empty[List[Vuelo]]
+          }
+        }
+
+        // Paso 4: Combinar y ordenar itinerarios por la última hora de salida del aeropuerto de origen
+        val itinerarios: List[Itinerario] = (vuelosDirectos.map(vuelo => List(vuelo)) ++ vuelosConEscala)
+          .sortBy(it => it.head.HS * 60 + it.head.MS)(Ordering[Int].reverse)
+
+        // Paso 5: Devolver el itinerario con la última hora de salida posible que llegue a tiempo
+        itinerarios.headOption.toList
+      }
+    }
+  }
+
+
 }
