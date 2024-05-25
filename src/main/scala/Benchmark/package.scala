@@ -82,7 +82,7 @@ def crearPruebas(
   res.toList
 }
 
-//crear pruebas donde se recorra toda la estructura Map sin Itierar por cada Vuelo, no funciona para itinerarioSalida.
+//crear pruebas donde se recorra toda la estructura Map sin Itierar por cada Vuelo, sino que itera una vez por cada vuelo de la estructura Map,no funciona para itinerarioSalida.
 def crearPruebasSinCiclos(
     vuelosPrueba: Map[List[Vuelo], (String, String)],
     aeropuertos: List[Aeropuerto],
@@ -117,6 +117,25 @@ def crearPruebaSalida(
     rep <- 1 to numPruevas
   } yield (compararAlgoritmoSalida(a1, a2)(codA._1, codA._2,H,M), v.length)).toList
   res.toList
+}
+
+//crea las pruebas para itinerariosSalida, sin iterar por cada vuelo, sino que itera una vez por cada vuelo de la estructura Map.
+def crearPruebaSalidaSinCilos(
+    vuelosPrueba: Map[List[Vuelo], (String, String)],
+    aeropuertos: List[Aeropuerto],
+    numPruevas: Int,
+    H:Int,
+    M:Int,
+    algoritmos: (AlgoritmItS, AlgoritmItS)
+): List[List[((Double, Double, Double), Int)]] = {
+  val res = for {
+    (v, codA) <- vuelosPrueba
+    a1 = algoritmos._1(v, aeropuertos)
+    a2 = algoritmos._2(v, aeropuertos)
+
+  } yield List((compararAlgoritmoSalida(a1, a2)(codA._1, codA._2,H,M), v.length))
+  res.toList
+  
 }
 
 
