@@ -4,7 +4,7 @@ import Itinerarios._
 import Datos._
 package object ItinerariosPar {
 
-    def itinerariosPar(
+  def itinerariosPar(
       vuelos: List[Vuelo],
       aeropuertos: List[Aeropuerto]
   ): (String, String) => List[Itinerario] = {
@@ -45,8 +45,6 @@ package object ItinerariosPar {
     }
   }
 
-
-
   def itinerariosTiempoPar(
       vuelos: List[Vuelo],
       aeropuertos: List[Aeropuerto]
@@ -68,5 +66,46 @@ package object ItinerariosPar {
 
   }
 
+  def itinerariosEscalasPar(
+      vuelos: List[Vuelo],
+      aeropuertos: List[Aeropuerto]
+  ): (String, String) => List[Itinerario] = {
+
+    def aux(it: List[Itinerario]): List[(Int, Itinerario)] = {
+      it.map(i => (i.foldLeft(0)(_ + _.Esc) + (i.length - 1), i))
+    }
+
+    (cod1: String, cod2: String) => {
+      val It = itinerariosPar(vuelos, aeropuertos)(cod1, cod2)
+      val ItA = It.slice(0, It.length / 4)
+      val ItB = It.slice(It.length / 4, It.length * 2 / 4)
+      val ItC = It.slice(It.length * 2 / 4, It.length * 3 / 4)
+      val ItD = It.slice(It.length * 3 / 4, It.length)
+
+      if (It.isEmpty) Nil
+      else {
+
+        val (l1, l2, l3, l4) = parallel(aux(ItA), aux(ItB), aux(ItC), aux(ItD))
+        (l1 ++ l2 ++ l3 ++ l4).sortBy(t => t._1).map(t => t._2).take(3)
+      }
+    }
+
+  }
+
+  def itinerariosAirePar(
+      vuelos: List[Vuelo],
+      aeropuertos: List[Aeropuerto]
+  ): (String, String) => List[Itinerario] = { (c1: String, c2: String) =>
+    {
+      val itinerarioOpc = itinerariosPar(vuelos, aeropuertos)(c1, c2).par
+      val tiemposTotales = itinerarioOpc
+        .map(it => (tiempoVueloIt(it, aeropuertos), it))
+        .seq
+        .sortBy(_._1)
+        .map(_._2)
+        .take(3)
+      tiemposTotales.toList
+    }
+  }
 
 }

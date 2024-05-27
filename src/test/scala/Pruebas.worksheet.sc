@@ -193,6 +193,57 @@ def itinerariosTiempo(
   }
 }
 
+/**
+ * Genera los itinerarios entre dos aeropuertos ordenados por número de escalas.
+ * 
+ * @param vuelos Lista de todos los vuelos disponibles.
+ * @param aeropuertos Lista de aeropuertos con su información.
+ * @return Función que devuelve una lista de itinerarios ordenados por número de escalas entre dos aeropuertos.
+ */
+def itinerariosEscalas(
+    vuelos: List[Vuelo],
+    aeropuertos: List[Aeropuerto]
+): (String, String) => List[Itinerario] = { (cod1: String, cod2: String) =>
+  {
+    // Obtener todos los itinerarios posibles entre los aeropuertos dados
+    val It = itinerarios(vuelos, aeropuertos)(cod1, cod2)
+    if (It.isEmpty) Nil // Si no hay itinerarios, devolver una lista vacía
+    else {
+      // Calcular la suma de escalas para cada itinerario y ordenar por esta suma
+      val sumaEsc =
+        It.map(i => (i.foldLeft(0)(_ + _.Esc) + (i.length - 1), i)) // Sumar las escalas de cada vuelo en el itinerario
+      sumaEsc.sortBy(t => t._1).map(t => t._2).take(3) // Ordenar por la suma de escalas y tomar los primeros 3 itinerarios
+    }
+  }
+}
+
+/**
+ * Genera los itinerarios entre dos aeropuertos ordenados por tiempo de vuelo.
+ * 
+ * @param vuelos Lista de todos los vuelos disponibles.
+ * @param aeropuertos Lista de aeropuertos con su información.
+ * @return Función que devuelve una lista de itinerarios ordenados por tiempo de vuelo entre dos aeropuertos.
+ */
+def itinerariosAire(
+    vuelos: List[Vuelo],
+    aeropuertos: List[Aeropuerto]
+): (String, String) => List[Itinerario] = { (c1: String, c2: String) =>
+  {
+    // Obtener todos los itinerarios posibles entre los aeropuertos dados
+    val itinerarioOpc = itinerarios(vuelos, aeropuertos)(c1, c2)
+    if (itinerarioOpc.isEmpty) Nil // Si no hay itinerarios, devolver una lista vacía
+    else {
+      // Ordenar los itinerarios por tiempo de vuelo y tomar los primeros 3
+      itinerarioOpc
+        .map(it => (tiempoVueloIt(it, aeropuertos), it)) // Calcular el tiempo de vuelo para cada itinerario
+        .sortBy(_._1) // Ordenar por tiempo de vuelo
+        .map(_._2) // Extraer los itinerarios
+        .take(3) // Tomar los primeros 3 itinerarios
+    }
+  }
+}
+
+
 
 
 

@@ -2,7 +2,65 @@ import Datos._
 
 package object Itinerarios {
 
-  
+  //-------------funciones auxiliares-------------------------------------------
+
+  def sumarHoras(h1: Int, m1: Int, h2: Int, m2: Int, op: Char): (Int, Int) = {
+    val H1 = h1 * 60 + m1
+    val H2 = h2 * 60 + m2
+    val suma = op match {
+      case '+' => H1 + H2
+      case '-' => H1 - H2
+    }
+    if (suma < 0) {
+      val result = suma + 1440
+
+      (result / 60, result % 60)
+    } else (suma / 60, suma % 60)
+  }
+
+  def convertirHorasGMT(h: Int, m: Int, gmt: Int): (Int, Int) = if (gmt < 0)
+    sumarHoras(h, m, -gmt, 0, '+')
+  else sumarHoras(h, m, gmt, 0, '-')
+
+  def tiempoVueloIt(
+      itinerario: Itinerario,
+      aeropuertos: List[Aeropuerto]
+  ): Int = {
+
+    val aeropuertosMap =
+      aeropuertos.map(airport => airport.Cod -> airport).toMap
+    itinerario
+      .map(vuelo => {
+        val gmtO = aeropuertosMap(vuelo.Org).GMT / 100
+        val gmtD = aeropuertosMap(vuelo.Dst).GMT / 100
+        val HGMTO = convertirHorasGMT(vuelo.HS, vuelo.MS, gmtO)
+        val HGMTD = convertirHorasGMT(vuelo.HL, vuelo.ML, gmtD)
+        val (h, m) = sumarHoras(HGMTD._1, HGMTD._2, HGMTO._1, HGMTO._2, '-')
+        h * 60 + m
+
+      })
+      .sum
+
+  }
+
+  def tiempoEsperaIt(itinerario: Itinerario): Int = {
+    if (itinerario.isEmpty) 0
+    else {
+      (0 until itinerario.length - 1)
+        .map(i => {
+          val v = itinerario(i)
+          val vNext = itinerario(i + 1)
+          val (h, m) = sumarHoras(vNext.HS, vNext.MS, v.HL, v.ML, '-')
+          h * 60 + m
+
+        })
+        .sum
+
+    }
+  }
+
+  //------------------- funciones solicitadas----------------------------------------------------------------------------
+
   def itinerarios(
       vuelos: List[Vuelo],
       aeropuertos: List[Aeropuerto]
@@ -40,59 +98,6 @@ package object Itinerarios {
     }
   }
 
-  def sumarHoras(h1: Int, m1: Int, h2: Int, m2: Int, op: Char): (Int, Int) = {
-    val H1 = h1 * 60 + m1
-    val H2 = h2 * 60 + m2
-    val suma = op match {
-      case '+' => H1 + H2
-      case '-' => H1 - H2
-    }
-    if (suma < 0) {
-      val result = suma + 1440
-
-      (result / 60, result % 60)
-    } else (suma / 60, suma % 60)
-  }
-
-  def convertirHorasGMT(h: Int, m: Int, gmt: Int): (Int, Int) = if (gmt < 0)
-    sumarHoras(h, m, -gmt, 0, '+')
-  else sumarHoras(h, m, gmt, 0, '-')
-
-  def tiempoVueloIt(
-      itinerario: Itinerario,
-      aeropuertos: List[Aeropuerto]
-  ): Int = {
-
-    val aeropuertosMap =
-      aeropuertos.map(airport => airport.Cod -> airport).toMap
-      itinerario.map(vuelo => {
-        val gmtO = aeropuertosMap(vuelo.Org).GMT / 100
-        val gmtD = aeropuertosMap(vuelo.Dst).GMT / 100
-        val HGMTO = convertirHorasGMT(vuelo.HS, vuelo.MS, gmtO)
-        val HGMTD = convertirHorasGMT(vuelo.HL, vuelo.ML, gmtD)
-        val (h, m) = sumarHoras(HGMTD._1, HGMTD._2, HGMTO._1, HGMTO._2, '-')
-        h * 60 + m
-
-      }).sum
-
-
-  }
-
-  def tiempoEsperaIt(itinerario: Itinerario): Int = {
-    if (itinerario.isEmpty) 0
-    else {
-      (0 until itinerario.length - 1)
-        .map(i => {
-          val v = itinerario(i)
-          val vNext = itinerario(i + 1)
-          val (h, m) = sumarHoras(vNext.HS, vNext.MS, v.HL, v.ML, '-')
-          h * 60 + m
-
-        }).sum
-
-
-    }
-  }
 
   def itinerariosTiempo(
       vuelos: List[Vuelo],
@@ -114,5 +119,41 @@ package object Itinerarios {
     }
 
   }
+
+  def itinerariosEscalas(
+      vuelos: List[Vuelo],
+      aeropuertos: List[Aeropuerto]
+  ): (String, String) => List[Itinerario] = { (cod1: String, cod2: String) =>
+    {
+      val It = itinerarios(vuelos, aeropuertos)(cod1, cod2)
+      if (It.isEmpty) Nil
+      else {
+        val sumaEsc =
+          It.map(i => (i.foldLeft(0)(_ + _.Esc) + (i.length - 1), i))
+        sumaEsc.sortBy(t => t._1).map(t => t._2).take(3)
+      }
+    }
+
+  }
+
+  def itinerariosAire(
+      vuelos: List[Vuelo],
+      aeropuertos: List[Aeropuerto]
+  ): (String, String) => List[Itinerario] = { (c1: String, c2: String) =>
+    {
+      val itinerarioOpc = itinerarios(vuelos, aeropuertos)(c1, c2)
+      if (itinerarioOpc.isEmpty) Nil
+      else {
+        itinerarioOpc
+          .map(it => (tiempoVueloIt(it, aeropuertos), it))
+          .sortBy(_._1)
+          .map(_._2)
+          .take(3)
+
+      }
+
+    }
+  }
+
 
 }
