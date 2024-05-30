@@ -241,7 +241,62 @@ def itinerariosAire(
         .take(3) // Tomar los primeros 3 itinerarios
     }
   }
+
+  
 }
+
+// Definición de la función itinerarioSalida que recibe una lista de vuelos y una lista de aeropuertos.
+// Retorna una función anónima que toma cuatro parámetros: cod1, cod2, H y M, y devuelve un Itinerario.
+def itinerarioSalida(
+      vuelos: List[Vuelo],
+      aeropuertos: List[Aeropuerto]
+  ): (String, String, Int, Int) => Itinerario = {
+
+    // Crea un mapa donde la clave es el código del aeropuerto y el valor es el objeto Aeropuerto.
+    val aeropuertosMap =
+      aeropuertos.map(airport => airport.Cod -> airport).toMap
+
+    // Retorna una función anónima que toma cuatro parámetros.
+    (cod1: String, cod2: String, H: Int, M: Int) => {
+      
+      // Obtiene los itinerarios posibles entre los aeropuertos cod1 y cod2.
+      val It = itinerarios(vuelos, aeropuertos)(cod1, cod2)
+      
+      // Filtra los itinerarios para aquellos cuya hora de llegada es menor o igual a H y cuyo minuto de llegada es menor o igual a M.
+      val itHL = It.filter(it => it.last.HL <= H && it.last.ML <= M)
+      
+      // Si no hay itinerarios que cumplan con el filtro, retorna una lista vacía.
+      if (itHL.isEmpty) Nil
+      else {
+        // Calcula la diferencia en minutos entre la hora de salida y la hora de llegada para cada itinerario filtrado.
+        val difHorasit = itHL.map(it => {
+          // Convierte la hora y minuto de salida a GMT.
+          val (hs, ms) = convertirHorasGMT(
+            it.head.HS,
+            it.head.MS,
+            aeropuertosMap(cod1).GMT / 100
+          )
+          // Convierte la hora y minuto de llegada a GMT.
+          val (hl, ml) = convertirHorasGMT(
+            it.last.HL,
+            it.last.ML,
+            aeropuertosMap(cod2).GMT / 100
+          )
+          // Calcula la diferencia entre la hora de llegada y la hora de salida.
+          val (h, m) = sumarHoras(hl, ml, hs, ms, '-')
+          // Retorna un par que contiene la diferencia en minutos y el itinerario.
+          ( h * 60 + m, it)
+        })
+        
+        // Ordena los itinerarios por la diferencia en minutos y retorna el primero (el que tiene la menor diferencia).
+        difHorasit.sortBy(t => t._1).map(t => t._2).head
+      }
+    }
+  }
+
+
+
+
 
 
 

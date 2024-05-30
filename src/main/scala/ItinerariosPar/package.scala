@@ -108,4 +108,48 @@ package object ItinerariosPar {
     }
   }
 
+  def itinerarioSalidaPar(
+    vuelos: List[Vuelo],
+    aeropuertos: List[Aeropuerto]
+): (String, String, Int, Int) => Itinerario = {
+  val aeropuertosMap = aeropuertos.map(airport => airport.Cod -> airport).toMap
+
+ 
+ 
+  (cod1: String, cod2: String, H: Int, M: Int) => {
+     def aux(itHL:List[Itinerario])={
+    itHL.map(it => {
+      val (hs, ms) = convertirHorasGMT(
+        it.head.HS,
+        it.head.MS,
+        aeropuertosMap(cod1).GMT / 100
+      )
+      val (hl, ml) = convertirHorasGMT(
+        it.last.HL,
+        it.last.ML,
+        aeropuertosMap(cod2).GMT / 100
+      )
+      val (h, m) = sumarHoras(hl, ml, hs, ms, '-')
+      (it, h * 60 + m)
+
+    })
+  }
+  
+    val It = itinerariosPar(vuelos, aeropuertos)(cod1, cod2)
+    val itHL = It.filter(it => it.last.HL <= H && it.last.ML <= M)
+    if (itHL.isEmpty) Nil
+    else{
+    val itA = itHL.slice(0, itHL.length / 4)
+    val itB = itHL.slice(itHL.length / 4, itHL.length / 2)
+    val itC = itHL.slice(itHL.length / 2, itHL.length * 3 / 4)
+    val itD = itHL.slice(itHL.length * 3 / 4, itHL.length)
+    
+    val (ita,itb,itc,itd)=parallel(aux(itA),aux(itB),aux(itC),aux(itD)) 
+    (ita++itb++itc++itd).sortBy(t => t._2).map(t => t._1).head
+    }
+
+
+  }
+}
+
 }

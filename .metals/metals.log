@@ -279,3 +279,122 @@ scala.meta.tokenizers.TokenizeException: <input>:76: error: empty quoted identif
 May 27, 2024 12:14:09 PM scala.meta.internal.pc.CompilerAccess handleError
 SEVERE: A severe compiler error occurred, full details of the error can be found in the error report /home/andresuv/cuartoSemestre/PFC/proyecto/proyectoMain/gestionvuelos/.metals/.reports/metals-full/2024-05-27/r_compiler-error_(root-test)_12-14-09-386.md
 2024.05.27 12:14:13 INFO  time: evaluated worksheet 'PruebasPar.worksheet.sc' in 0.29s[0m
+2024.05.27 12:28:57 INFO  compiling root (1 scala source)[0m
+2024.05.27 12:28:57 INFO  time: compiled root in 0.89s[0m
+2024.05.27 12:30:34 INFO  time: evaluated worksheet 'PruebasBechMark.worksheet.sc' in 0.52s[0m
+2024.05.27 12:30:34 INFO  time: evaluated worksheet 'PruebasPar.worksheet.sc' in 0.3s[0m
+2024.05.27 12:30:40 INFO  time: evaluated worksheet 'Pruebas.worksheet.sc' in 0.31s[0m
+2024.05.27 12:31:08 INFO  time: evaluated worksheet 'PruebasPar.worksheet.sc' in 0.26s[0m
+2024.05.27 12:36:34 INFO  Shutting down server[0m
+2024.05.27 12:36:34 INFO  shutting down Metals[0m
+2024.05.27 12:36:34 INFO  Shut down connection with build server.[0m
+2024.05.27 12:36:34 INFO  Shut down connection with build server.[0m
+2024.05.27 12:36:34 INFO  Exiting server[0m
+2024.05.30 15:23:37 INFO  Started: Metals version 1.3.1 in folders '/home/andresuv/cuartoSemestre/PFC/proyecto/proyectoMain/gestionvuelos' for client Visual Studio Code 1.89.1.[0m
+SLF4J(W): Class path contains multiple SLF4J providers.
+SLF4J(W): Found provider [scribe.slf4j.ScribeServiceProvider@5794cfb0]
+SLF4J(W): Found provider [ch.qos.logback.classic.spi.LogbackServiceProvider@7577e5e1]
+SLF4J(W): See https://www.slf4j.org/codes.html#multiple_bindings for an explanation.
+SLF4J(I): Actual provider is of type [scribe.slf4j.ScribeServiceProvider@5794cfb0]
+2024.05.30 15:23:37 WARN  Flyway upgrade recommended: H2 2.2.224 is newer than this version of Flyway and support has not been tested. The latest supported version of H2 is 2.2.220.[0m
+2024.05.30 15:23:38 INFO  Attempting to connect to the build server...[0m
+2024.05.30 15:23:38 INFO  tracing is disabled for protocol BSP, to enable tracing of incoming and outgoing JSON messages create an empty file at /home/andresuv/cuartoSemestre/PFC/proyecto/proyectoMain/gestionvuelos/.metals/bsp.trace.json or /home/andresuv/.cache/metals/bsp.trace.json[0m
+2024.05.30 15:23:38 INFO  Attempting to connect to the build server...[0m
+2024.05.30 15:23:38 INFO  tracing is disabled for protocol BSP, to enable tracing of incoming and outgoing JSON messages create an empty file at /home/andresuv/cuartoSemestre/PFC/proyecto/proyectoMain/gestionvuelos/project/.metals/bsp.trace.json or /home/andresuv/.cache/metals/bsp.trace.json[0m
+2024.05.30 15:23:38 INFO  time: Connected to build server in 0.59s[0m
+2024.05.30 15:23:38 INFO  Connected to Build server: Bloop v1.5.17[0m
+2024.05.30 15:23:39 INFO  no build target found for /home/andresuv/cuartoSemestre/PFC/proyecto/proyectoMain/gestionvuelos/src/main/scala/ItinerariosPar/package.scala. Using presentation compiler with project's scala-library version: 3.3.3[0m
+May 30, 2024 3:23:39 PM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+WARNING: Unmatched cancel notification for request id 3
+2024.05.30 15:23:38 INFO  time: Imported build in 0.16s[0m
+2024.05.30 15:23:42 INFO  time: indexed workspace in 2.94s[0m
+2024.05.30 15:26:04 INFO  compiling root (1 scala source)[0m
+2024.05.30 15:26:08 INFO  time: compiled root in 3.18s[0m
+2024.05.30 15:27:16 WARN  Flyway upgrade recommended: H2 2.2.224 is newer than this version of Flyway and support has not been tested. The latest supported version of H2 is 2.2.220.[0m
+2024.05.30 15:27:17 INFO  no build target found for /scala/collection/immutable/List.scala. Using presentation compiler with project's scala-library version: 3.3.3[0m
+2024.05.30 15:27:17 INFO  compiling root (1 scala source)[0m
+2024.05.30 15:27:19 INFO  time: compiled root in 2.05s[0m
+2024.05.30 15:27:43 INFO  time: evaluated worksheet 'PruebasBechMark.worksheet.sc' in 4.62s[0m
+2024.05.30 15:28:36 INFO  time: evaluated worksheet 'PruebasBechMark.worksheet.sc' in 1.44s[0m
+May 30, 2024 3:28:36 PM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+WARNING: Unmatched cancel notification for request id 272
+May 30, 2024 3:28:36 PM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+WARNING: Unmatched cancel notification for request id 273
+2024.05.30 15:31:06 INFO  time: evaluated worksheet 'Pruebas.worksheet.sc' in 0.78s[0m
+2024.05.30 15:33:19 INFO  time: evaluated worksheet 'PruebasPar.worksheet.sc' in 0.57s[0m
+[31merror[39m: src/test/scala/PruebasPar.worksheet.sc:201:1: type mismatch;
+ found   : Unit
+ required: List[Datos.Itinerario]
+    (which expands to)  List[List[Datos.Vuelo]]
+}
+^
+2024.05.30 15:33:36 INFO  time: evaluated worksheet 'PruebasPar.worksheet.sc' in 0.2s[0m
+May 30, 2024 3:33:43 PM scala.meta.internal.pc.CompilerAccess handleError
+SEVERE: A severe compiler error occurred, full details of the error can be found in the error report /home/andresuv/cuartoSemestre/PFC/proyecto/proyectoMain/gestionvuelos/.metals/.reports/metals-full/2024-05-30/r_compiler-error_(root-test)_15-33-43-698.md
+[31merror[39m: src/test/scala/PruebasPar.worksheet.sc:205:1: } expected but end of file found
+
+^
+May 30, 2024 3:33:45 PM scala.meta.internal.pc.CompilerAccess handleError
+SEVERE: A severe compiler error occurred, full details of the error can be found in the error report /home/andresuv/cuartoSemestre/PFC/proyecto/proyectoMain/gestionvuelos/.metals/.reports/metals-full/2024-05-30/r_compiler-error_(root-test)_15-33-45-461.md
+2024.05.30 15:33:45 INFO  time: evaluated worksheet 'PruebasPar.worksheet.sc' in 0.15s[0m
+May 30, 2024 3:33:45 PM scala.meta.internal.pc.CompilerAccess handleError
+SEVERE: A severe compiler error occurred, full details of the error can be found in the error report /home/andresuv/cuartoSemestre/PFC/proyecto/proyectoMain/gestionvuelos/.metals/.reports/metals-full/2024-05-30/r_compiler-error_(root-test)_15-33-45-757.md
+[31merror[39m: src/test/scala/PruebasPar.worksheet.sc:201:1: type mismatch;
+ found   : Unit
+ required: List[Datos.Itinerario]
+    (which expands to)  List[List[Datos.Vuelo]]
+}
+^
+2024.05.30 15:33:49 INFO  time: evaluated worksheet 'PruebasPar.worksheet.sc' in 0.15s[0m
+2024.05.30 15:34:29 INFO  time: evaluated worksheet 'PruebasPar.worksheet.sc' in 0.37s[0m
+[31merror[39m: src/test/scala/Pruebas.worksheet.sc:296:1: type mismatch;
+ found   : Unit
+ required: List[Datos.Itinerario]
+    (which expands to)  List[List[Datos.Vuelo]]
+}
+^
+2024.05.30 15:34:30 INFO  time: evaluated worksheet 'Pruebas.worksheet.sc' in 0.24s[0m
+[31merror[39m: src/test/scala/Pruebas.worksheet.sc:296:1: type mismatch;
+ found   : Unit
+ required: List[Datos.Itinerario]
+    (which expands to)  List[List[Datos.Vuelo]]
+}
+^
+2024.05.30 15:34:31 INFO  time: evaluated worksheet 'Pruebas.worksheet.sc' in 0.19s[0m
+[31merror[39m: src/test/scala/Pruebas.worksheet.sc:296:1: type mismatch;
+ found   : Unit
+ required: List[Datos.Itinerario]
+    (which expands to)  List[List[Datos.Vuelo]]
+}
+^
+2024.05.30 15:34:35 INFO  time: evaluated worksheet 'Pruebas.worksheet.sc' in 0.19s[0m
+[31merror[39m: src/test/scala/Pruebas.worksheet.sc:295:1: type mismatch;
+ found   : Unit
+ required: List[Datos.Itinerario]
+    (which expands to)  List[List[Datos.Vuelo]]
+}
+^
+2024.05.30 15:34:51 INFO  time: evaluated worksheet 'Pruebas.worksheet.sc' in 0.16s[0m
+[31merror[39m: src/test/scala/Pruebas.worksheet.sc:284:14: not found: value itinerariosPar
+    val It = itinerariosPar(vuelos, aeropuertos)(cod1, cod2)
+             ^^^^^^^^^^^^^^
+[31merror[39m: src/test/scala/Pruebas.worksheet.sc:299:34: not found: value parallel
+      val (ita, itb, itc, itd) = parallel(aux(itA), aux(itB), aux(itC), aux(itD))
+                                 ^^^^^^^^
+[31merror[39m: src/test/scala/Pruebas.worksheet.sc:302:8: value ++ is not a member of Any
+      (ita ++ itb ++ itc ++ itd).sortBy(t => t._2).map(t => t._1).head
+       ^^^^^^
+2024.05.30 15:34:59 INFO  time: evaluated worksheet 'Pruebas.worksheet.sc' in 0.17s[0m
+[31merror[39m: src/test/scala/Pruebas.worksheet.sc:284:14: not found: value itinerariosPar3
+    val It = itinerariosPar3(vuelos, aeropuertos)(cod1, cod2)
+             ^^^^^^^^^^^^^^^
+[31merror[39m: src/test/scala/Pruebas.worksheet.sc:299:34: not found: value parallel
+      val (ita, itb, itc, itd) = parallel(aux(itA), aux(itB), aux(itC), aux(itD))
+                                 ^^^^^^^^
+[31merror[39m: src/test/scala/Pruebas.worksheet.sc:302:8: value ++ is not a member of Any
+      (ita ++ itb ++ itc ++ itd).sortBy(t => t._2).map(t => t._1).head
+       ^^^^^^
+2024.05.30 15:35:17 INFO  time: evaluated worksheet 'Pruebas.worksheet.sc' in 0.2s[0m
+2024.05.30 15:35:45 INFO  time: evaluated worksheet 'PruebasPar.worksheet.sc' in 0.42s[0m
+2024.05.30 15:36:15 INFO  time: evaluated worksheet 'Pruebas.worksheet.sc' in 0.39s[0m
+2024.05.30 15:36:21 INFO  time: evaluated worksheet 'Pruebas.worksheet.sc' in 0.27s[0m

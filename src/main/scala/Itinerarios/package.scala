@@ -155,5 +155,39 @@ package object Itinerarios {
     }
   }
 
+  def itinerarioSalida(
+      vuelos: List[Vuelo],
+      aeropuertos: List[Aeropuerto]
+  ): (String, String, Int, Int) => Itinerario = {
+    val aeropuertosMap =
+      aeropuertos.map(airport => airport.Cod -> airport).toMap
+
+    (cod1: String, cod2: String, H: Int, M: Int) => {
+      val It = itinerarios(vuelos, aeropuertos)(cod1, cod2)
+      val itHL = It.filter(it => it.last.HL <= H && it.last.ML <= M)
+      if (itHL.isEmpty) Nil
+      else {
+
+        val difHorasit = itHL.map(it => {
+          val (hs, ms) = convertirHorasGMT(
+            it.head.HS,
+            it.head.MS,
+            aeropuertosMap(cod1).GMT / 100
+          )
+          val (hl, ml) = convertirHorasGMT(
+            it.last.HL,
+            it.last.ML,
+            aeropuertosMap(cod2).GMT / 100
+          )
+          val (h, m) = sumarHoras(hl, ml, hs, ms, '-')
+          ( h * 60 + m, it)
+
+        })
+        difHorasit.sortBy(t => t._1).map(t => t._2).head
+      }
+
+    }
+  }
+
 
 }
